@@ -1,0 +1,90 @@
+/* Layout */
+body > header,
+body > main > section,
+body > footer {
+  padding: 0 12.5vw;
+  margin: 0 auto;
+  border-top: 2px solid #dde2e2;
+  clear: both;
+}
+
+section > h2 {
+  width: 30%;
+  float: left;
+}
+
+section > section {
+  width: 60%;
+  float: right;
+  padding-left: 10%;
+  margin: 1.7em 0 3em;
+}
+
+.alt > h2 {
+  float: right;
+}
+
+.alt > section {
+  padding-left: 0;
+  padding-right: 10%;
+  float: left;
+}
+
+@media only screen and (max-width: 960px) {
+  body > header,
+  body > main > section,
+  body > footer {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  section > h2,
+  section > section {
+    width: 100% !important;
+    float: left !important;
+    padding: 0 !important;
+  }
+
+  section > h2 {
+    margin-bottom: 0;
+  }
+  section > section {
+    margin: 0 0 2em;
+  }
+}
+
+/* Typography & color*/
+body {
+  font-family: 'Lora', serif;
+  font-size: 1.25em;
+  line-height: 1.5;
+  color: #395858;
+}
+
+::selection {
+  background: #fffa8d;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Montserrat', sans-serif;
+  color: #e1223d;
+}
+
+h3, h4 {
+  color: #a02b3b;
+}
+
+header h1, header h2 {
+  color: inherit;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 2em;
+}
+
+h2::after {
+  display: block;
+  content: '–';
+  font-weight: lighter;
+}
