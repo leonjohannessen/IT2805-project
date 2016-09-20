@@ -29,7 +29,7 @@ body > header {
   left: 0;
   top: 0;
   opacity: 0.1;
-  -webkit-filter: grayscale(100%) contrast(200%); /* Chrome, Safari, Opera */
+  -webkit-filter: grayscale(100%) contrast(200%); /* Chrome, Safari, Opera (breaks validation) */
   filter: grayscale(100%) contrast(200%);
 }
 
@@ -92,8 +92,6 @@ figure img {
   right: 12.5vw;
 }
 
-
-
 /* Typography */
 body {
   font-family: 'Lora', serif;
@@ -102,7 +100,7 @@ body {
   color: #395858;
 }
 
-::selection {
+::selection { /* not valid, removed from css3 draft */
   background: #fffa8d;
 }
 
@@ -169,7 +167,7 @@ body > header time {
 }
 
 /* layout for small screens */
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 1000px) {
   body > header,
   body > main > section,
   body > footer {
