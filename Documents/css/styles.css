@@ -166,8 +166,8 @@ body > header time {
   opacity: .5;
 }
 
-/* layout for small screens */
-@media only screen and (max-width: 1000px) {
+/* layout for small screens, mobile included */
+@media only screen and (max-width: 960px), only screen and (max-device-width: 960px)  {
   body > header,
   body > main > section,
   body > footer {
@@ -215,7 +215,7 @@ body > header time {
 }
 
 /* smaller text on mobile */
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 500px), only screen and (max-device-width: 500px) {
   body {
     font-size: 1em;
   }
