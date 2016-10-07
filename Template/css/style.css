@@ -10,7 +10,34 @@ html {
   background: #eee;
   font-size: 125%; /* 1 rem = 20px */
   line-height: 1.5em;
+  margin: 0;
 }
+
+body {
+  background: fixed url('../img/webtek_paella.jpeg') no-repeat;
+  background-size: cover;
+  margin: 0;
+}
+
+/* Header layout */
+header {
+  height: 80vh;
+}
+
+header > h1 {
+  margin: 0
+}
+
+/* Footer layout */
+
+footer {
+  background: #222;
+  padding: 8rem 0;
+}
+
+/* section layout and style
+ *
+ */
 
 .row {
   clear: both;
@@ -40,6 +67,10 @@ html {
   padding: 4rem 0;
 }
 
+/* boxes layout and style
+ *
+ */
+
 .box {
   background: grey;
 }
@@ -52,30 +83,10 @@ html {
   background: rgba(0, 0, 255, 1);
 }
 
+/* box layout classes */
 .left,
 .right {
   width: calc(7 * 4rem);
-}
-
-.left + figure,
-.right + figure {
-  width: calc(5 * 4rem);
-  height: calc(5 * 4rem);
-  position: absolute;
-  right: 0;
-  top: calc(2 * 4rem);
-  overflow: hidden;
-  margin: 0;
-}
-
-.right + figure {
-  right: auto;
-  left: 0;
-}
-
-figure img {
-  width: 100%;
-
 }
 
 .right {
@@ -98,4 +109,25 @@ figure img {
 
 .tight > .text-wrapper {
   padding: 4rem;
+}
+
+/* image position */
+.left + figure,
+.right + figure {
+  width: calc(5 * 4rem);
+  height: calc(5 * 4rem);
+  position: absolute;
+  right: 0;
+  top: calc(2 * 4rem);
+  overflow: hidden;
+  margin: 0;
+}
+
+.right + figure {
+  right: auto;
+  left: 0;
+}
+
+figure img {
+  width: 100%;
 }
