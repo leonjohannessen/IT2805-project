@@ -71,7 +71,7 @@ figure.aside.persona {
 }
 
 figure.aside.mockup1 {
-margin-top: 10em;
+  margin-top: 10em;
 
 }
 
@@ -97,6 +97,25 @@ figure img {
 .alt figure.aside {
   left: auto;
   right: 12.5vw;
+}
+
+/* kristines super layout */
+
+.full-width {
+  position: relative;
+  width: 75vw;
+  left: calc(-75vw*0.4);
+}
+
+.full-width > .left {
+  width: 50%;
+  float: left;
+}
+
+.full-width > .right {
+  margin-top: 10em;
+ width: 50%;
+ float: right;
 }
 
 /* Typography */
