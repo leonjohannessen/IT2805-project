@@ -6,10 +6,19 @@ html {
   box-sizing: inherit;
 }
 
+/*
+ *
+ * Global styles
+ *
+ */
+
 html {
-  background: #eee;
+  background: #F1F6F5; /* fallback background color */
+  color: #2d2b2b; /* default text color */
   font-size: 125%; /* 1 rem = 20px */
   line-height: 1.5em;
+  font-family: 'Lora', serif;
+  -webkit-font-smoothing: antialiased; /* font antialiasing in webkit */
   margin: 0;
 }
 
@@ -17,38 +26,120 @@ body {
   background: fixed url('../img/webtek_paella.jpeg') no-repeat;
   background-size: cover;
   margin: 0;
-  color: white;
 }
 
-/*
- *
- * Global styles
- *
- */
+/* Typography & color */
+h1, h2, h3, h4 {
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .11em;
+}
 
+h2 {
+  font-size: 3.2rem;
+}
 
+h3 {
+  font-size: 1.8rem;
+}
+
+a {
+  color: #3cc;
+  text-decoration: none;
+  border-bottom: 6px solid rgba(51,204,204,0.2);
+  font-family: 'Lato', sans-serif;
+  transition: .2s color, .2s border-color;
+}
+
+a:hover, a:focus {
+  color: #099;
+  outline: none;
+  border-bottom-color: rgba(51,204,204,0.5);
+}
+
+a:active {
+  color: #c33;
+  border-bottom-color: rgba(204,51,51,0.5);
+}
+
+/* link styles for large buttons */
+a.button {
+  display: inline-block;
+  height: 4rem;
+  padding: 0 2rem;
+  border: 0;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  line-height: 4rem;
+  font-size: 1rem;
+  color: white;
+  background: #2d2b2b;
+  transition: .1s background;
+}
+
+a.button:hover, a.button:focus {
+  background: #3cc;
+}
+
+a.button:active {
+  background: #248f8f
+}
+
+a.button::before {
+  content: '» ';
+}
+
+/* link styles for large buttons inside boxes */
+.box a.button {
+  background: white;
+  color: #2d2b2b;
+}
+
+.box a.button:hover, .box a.button:focus {
+  background: #3cc;
+  color: #fff;
+}
+
+.box a.button:active{
+  background: #248f8f;
+}
+
+.blue a.button:hover, .blue a.button:focus {
+  background: #2d2b2b;
+  color: #fff;
+}
+
+.blue a.button:active{
+  background: #000;
+}
 
 .intro,
 .cta {
   background: white;
+  font-size: 1.1rem;
+  line-height: 2rem;
 }
+
+/* todo: default link styles in boxes */
 
 /* box styles */
 .box {
-  background: grey;
+  background: #3d3d3d;
+  color: #fff;
 }
 
 .dark {
-  background: #222;
+  background: #000;
 }
 
 .blue {
-  background: rgba(0, 0, 255, 1);
+  background: #3cc;
 }
 
 footer {
   background: #222;
-  padding: 4rem 0
+  color: #fff;
+  padding: 4rem 0;
 }
 
 /*
@@ -58,7 +149,7 @@ footer {
  */
 
  header {
-   height: 80vh;
+   height: 70vh;
  }
 
  header > h1 {
@@ -89,6 +180,69 @@ footer {
  */
 
 @media screen and (min-width: 960px) {
+
+  header {
+    position: relative;
+  }
+
+  header h1 {
+    width: 515px;
+    height: 145px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: calc(-515px / 2);
+    margin-top: calc(-145px / 2);
+    text-indent: -9999px;
+    overflow: hidden;
+    background: url('../img/dacarlo_logo@2x.png') no-repeat;
+    background-size: contain;
+  }
+
+  header nav {
+    position: absolute;
+    width: 100%;
+    background: white;
+    bottom: 0
+  }
+
+  header nav ul {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+  }
+
+  header nav ul li {
+    display: inline-block;
+    float: none
+  }
+
+  header nav ul li a {
+    display: inline-block;
+    height: 5rem;
+    padding: 0 2rem;
+    line-height: 5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #2b2d2d;
+    border-bottom: 0;
+  }
+
+  header nav ul li a::after {
+    content: '';
+    display: block;
+    height: 6px;
+    background: #3cc;
+    margin: -1.5em auto 0;
+    width: 0;
+    transition: .2s width;
+  }
+
+  header nav ul li a:hover::after,
+  header nav ul li a:active::after,
+  header nav ul li a.active::after {
+    width: 100%;
+  }
 
   footer {
     padding: 8rem 0;
