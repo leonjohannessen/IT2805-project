@@ -19,58 +19,20 @@ body {
   margin: 0;
 }
 
-/* Header layout */
-header {
-  height: 80vh;
-}
-
-header > h1 {
-  margin: 0
-}
-
-/* Footer layout */
-
-footer {
-  background: #222;
-  padding: 8rem 0;
-}
-
-/* section layout and style
+/*
+ *
+ * Global styles
  *
  */
 
-.row {
-  clear: both;
-}
 
-.container {
-  width: 960px;
-  margin: 0 auto;
-  position: relative;
-}
 
 .intro,
 .cta {
   background: white;
 }
 
-.intro > .container,
-.cta > .container {
-  width: calc(960px - 8rem);
-}
-
-.intro {
-  padding: 8rem 0;
-}
-
-.cta {
-  padding: 4rem 0;
-}
-
-/* boxes layout and style
- *
- */
-
+/* box styles */
 .box {
   background: grey;
 }
@@ -83,51 +45,132 @@ footer {
   background: rgba(0, 0, 255, 1);
 }
 
-/* box layout classes */
-.left,
-.right {
-  width: calc(7 * 4rem);
+footer {
+  background: #222;
+  padding: 4rem 0
 }
 
-.right {
-  float: right;
-}
+/*
+ *
+ * Mobile layout
+ *
+ */
 
-.full {
-  width: calc(10 * 4rem);
-  margin: 0 auto;
-}
+ header {
+   height: 80vh;
+ }
 
-.center {
-  width: calc(8 * 4rem);
-  margin: 0 auto;
-}
+ header > h1 {
+   margin: 0
+ }
 
-.box > .text-wrapper {
-  padding: 8rem 4rem;
-}
+ .intro,
+ .cta,
+ .box,
+ footer {
+   padding: 2rem;
+ }
 
-.tight > .text-wrapper {
-  padding: 4rem;
-}
+ figure {
+   width: 100%;
+   margin: 0;
+ }
 
-/* image position */
-.left + figure,
-.right + figure {
-  width: calc(5 * 4rem);
-  height: calc(5 * 4rem);
-  position: absolute;
-  right: 0;
-  top: calc(2 * 4rem);
-  overflow: hidden;
-  margin: 0;
-}
+ figure img {
+   width: 100%;
+   vertical-align: middle; /* remove trailing space */
+ }
 
-.right + figure {
-  right: auto;
-  left: 0;
-}
+/*
+ *
+ * layout for screens wider than 960 px
+ *
+ */
 
-figure img {
-  width: 100%;
+@media screen and (min-width: 960px) {
+
+  footer {
+    padding: 8rem 0;
+  }
+
+  /* section layout and style
+   *
+   */
+
+  .row {
+    clear: both;
+  }
+
+  .container {
+    width: 960px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+
+  .intro > .container,
+  .cta > .container {
+    width: calc(960px - 8rem);
+  }
+
+  .intro {
+    padding: 8rem 0;
+  }
+
+  .cta {
+    padding: 4rem 0;
+  }
+
+  /* box layout classes */
+  .box {
+    padding: 0;
+  }
+
+  .left,
+  .right {
+    width: calc(7 * 4rem);
+  }
+
+  .right {
+    float: right;
+  }
+
+  .full {
+    width: calc(10 * 4rem);
+    margin: 0 auto;
+  }
+
+  .center {
+    width: calc(8 * 4rem);
+    margin: 0 auto;
+  }
+
+  .box > .text-wrapper {
+    padding: 8rem 4rem;
+  }
+
+  .tight > .text-wrapper {
+    padding: 4rem;
+  }
+
+  /* image position */
+  .left + figure,
+  .right + figure {
+    width: calc(5 * 4rem);
+    height: calc(5 * 4rem);
+    position: absolute;
+    right: 0;
+    top: calc(2 * 4rem);
+    overflow: hidden;
+    margin: 0;
+  }
+
+  .right + figure {
+    right: auto;
+    left: 0;
+  }
+
+  figure img {
+    width: 100%;
+  }
 }
