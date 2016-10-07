@@ -1,0 +1,101 @@
+/* box reset */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  background: #eee;
+  font-size: 125%; /* 1 rem = 20px */
+  line-height: 1.5em;
+}
+
+.row {
+  clear: both;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.intro,
+.cta {
+  background: white;
+}
+
+.intro > .container,
+.cta > .container {
+  width: calc(960px - 8rem);
+}
+
+.intro {
+  padding: 8rem 0;
+}
+
+.cta {
+  padding: 4rem 0;
+}
+
+.box {
+  background: grey;
+}
+
+.dark {
+  background: #222;
+}
+
+.blue {
+  background: rgba(0, 0, 255, 1);
+}
+
+.left,
+.right {
+  width: calc(7 * 4rem);
+}
+
+.left + figure,
+.right + figure {
+  width: calc(5 * 4rem);
+  height: calc(5 * 4rem);
+  position: absolute;
+  right: 0;
+  top: calc(2 * 4rem);
+  overflow: hidden;
+  margin: 0;
+}
+
+.right + figure {
+  right: auto;
+  left: 0;
+}
+
+figure img {
+  width: 100%;
+
+}
+
+.right {
+  float: right;
+}
+
+.full {
+  width: calc(10 * 4rem);
+  margin: 0 auto;
+}
+
+.center {
+  width: calc(8 * 4rem);
+  margin: 0 auto;
+}
+
+.box > .text-wrapper {
+  padding: 8rem 4rem;
+}
+
+.tight > .text-wrapper {
+  padding: 4rem;
+}
