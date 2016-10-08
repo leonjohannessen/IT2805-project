@@ -72,7 +72,7 @@ figure.aside.persona {
 
 /* maias skrollemockup */
 figure.aside.mockup {
-  height: calc(75vw*0.32);
+  height: 18em;
   overflow-y: scroll;
 }
 
@@ -243,7 +243,7 @@ body > header time {
     margin-top: 0 !important;
   }
 
-  figure.full {
+  figure.full, figure.aside.mockup {
     position: static !important;
     float: left !important;
     width: 100% !important;
