@@ -162,6 +162,8 @@ h4 {
 table {
   width: 100%;
   border-spacing: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: .8em;
 }
 
 table tr:nth-of-type(2n-1){
