@@ -15,6 +15,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
 
+
   </head>
 
   <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
@@ -24,8 +25,13 @@
     <!-- page header and global navigation -->
     <header>
       <!-- logo -->
-      <h1>Da Carlo Catering</h1>
-      <nav>
+      <h1 id="logo">Da Carlo Catering</h1>
+      <div id="main-nav-toggler">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav id="main-nav">
         <ul>
           <li><a class="active" href="#">Hjem</a></li>
           <li><a href="#">Catering</a></li>
@@ -126,5 +132,9 @@
           <!-- copyright -->
       </div>
     </footer>
+
+    <!-- include javascript files in end of body, so we don't have to care
+         about cross browser dom-ready crap -->
+    <script src="js/sticky-header.js"></script>
   </body>
 </html>

@@ -22,6 +22,8 @@ html {
   margin: 0;
 }
 
+/* TODO: Move background images to separate layer */
+
 body {
   background: fixed url('../img/webtek_paella.jpeg') no-repeat;
   background-size: cover;
@@ -113,6 +115,7 @@ a.button::before {
   background: #000;
 }
 
+/* white banners */
 .intro,
 .cta {
   background: white;
@@ -130,12 +133,15 @@ a.button::before {
 
 .dark {
   background: #000;
+  /* TODO: Add texture */
 }
 
 .blue {
   background: #3cc;
+  /* TODO: Add texture */
 }
 
+/* footer styles */
 footer {
   background: #222;
   color: #fff;
@@ -148,13 +154,117 @@ footer {
  *
  */
 
- header {
-   height: 70vh;
- }
+header {
+ height: 70vh;
+}
 
- header > h1 {
-   margin: 0
- }
+header > h1 {
+ margin: 0
+}
+
+#main-nav {
+ position: fixed;
+ z-index: 1;
+ width: 100%;
+ height: 100%;
+ top: 0;
+ right: -100%;
+ background: #fff;
+ transition: .2s right;
+}
+
+#main-nav.toggled {
+  right: 0;
+}
+
+#main-nav ul {
+  text-align: center;
+  list-style: none;
+  margin: 0;
+  padding: 20vh 0 0;
+}
+
+#main-nav a {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #2b2d2d;
+  border-bottom: 0;
+  height: 3rem;
+  padding: 0 2rem;
+  line-height: 3rem;
+  letter-spacing: .05em;
+  transition: .2s color;
+}
+
+#main-nav a::after {
+  content: '';
+  display: block;
+  height: 6px;
+  background: #3cc;
+  margin: -.5em auto 0;
+  width: 0;
+  transition: .2s width;
+}
+
+#main-nav a:hover,
+#main-nav a:active,
+#main-nav a.active, /* active page class */
+#main-nav a:focus {
+  color: #3cc;
+}
+
+#main-nav a:hover::after,
+#main-nav a:active::after,
+#main-nav a.active::after, /* active page class */
+#main-nav a:focus::after {
+  width: 100%;
+}
+
+#main-nav-toggler {
+  width: 2rem;
+  height: 2rem;
+  background: #fff;
+  position: fixed;
+  z-index: 2;
+  top: 1rem;
+  right: 1rem;
+  border-radius: 100%;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+  cursor: pointer;
+}
+
+#main-nav-toggler span {
+  background: #2b2d2d;
+  width: 40%;
+  height: 2px;
+  margin: 3px auto;
+  display: block;
+  position: relative;
+  transition: .2s transform;
+}
+
+#main-nav-toggler span:first-of-type {
+  margin-top: 15px;
+}
+
+#main-nav-toggler.active span {
+  visibility: hidden;
+}
+
+#main-nav-toggler.active span:first-of-type {
+  visibility: visible;
+  transform: rotate(45deg);
+  top: 5px;
+  left: 1px;
+}
+
+#main-nav-toggler.active span:last-of-type {
+  visibility: visible;
+  transform: rotate(-45deg);
+  bottom: 5px;
+  left: 1px;
+}
 
  .intro,
  .cta,
@@ -181,15 +291,16 @@ footer {
 
 @media screen and (min-width: 960px) {
 
+  /* Header layout */
   header {
     position: relative;
   }
 
-  header h1 {
+  #logo {
     width: 515px;
     height: 145px;
     position: absolute;
-    top: 50%;
+    top: calc(50% - 2.5rem); /* remove half the menu height */
     left: 50%;
     margin-left: calc(-515px / 2);
     margin-top: calc(-145px / 2);
@@ -199,61 +310,59 @@ footer {
     background-size: contain;
   }
 
-  header nav {
+  #main-nav {
     position: absolute;
     width: 100%;
+    height: auto;
     background: white;
-    bottom: 0
+    bottom: 0;
+    right: auto;
+    top: auto;
+    box-shadow: 0 0 0 0 rgba(0,0,0,0);
+    transition: .2s box-shadow;
   }
 
-  header nav ul {
-    list-style: none;
-    text-align: center;
-    margin: 0;
+  #main-nav.sticky {
+    position: fixed;
+    bottom: auto;
+    top: 0;
+    z-index: 1;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
   }
 
-  header nav ul li {
+  #main-nav ul {
+    padding: 0;
+  }
+
+  #main-nav li {
     display: inline-block;
     float: none
   }
 
-  header nav ul li a {
-    display: inline-block;
+  #main-nav a {
     height: 5rem;
     padding: 0 2rem;
     line-height: 5rem;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: #2b2d2d;
-    border-bottom: 0;
-    letter-spacing: .05em;
   }
 
-  header nav ul li a::after {
-    content: '';
-    display: block;
-    height: 6px;
-    background: #3cc;
-    margin: -1.5em auto 0;
-    width: 0;
-    transition: .2s width;
+  #main-nav a::after {
+    margin-top: -1.5em;
   }
 
-  header nav ul li a:hover::after,
-  header nav ul li a:active::after,
-  header nav ul li a.active::after {
-    width: 100%;
+  #main-nav-toggler {
+    display: none;
   }
 
-  footer {
-    padding: 8rem 0;
-  }
 
   /* section layout and style
    *
    */
 
-  .row {
+   /* clearfix hack */
+  .row::before,
+  .row::after {
+    display: table;
+    content: " ";
     clear: both;
   }
 
@@ -263,7 +372,6 @@ footer {
     position: relative;
   }
 
-
   .intro > .container,
   .cta > .container {
     width: calc(960px - 8rem);
@@ -271,20 +379,24 @@ footer {
 
   .intro {
     padding: 8rem 0;
+    margin-bottom: 4rem;
+  }
+
+  main {
+    margin-bottom: 4rem;
   }
 
   .cta {
     padding: 4rem 0;
+    margin-bottom: 4rem;
   }
 
   /* box layout classes */
   .box {
-    padding: 0;
-  }
-
-  .left,
-  .right {
     width: calc(7 * 4rem);
+    float: left;
+    padding: 0;
+    margin: 0;
   }
 
   .right {
@@ -294,12 +406,12 @@ footer {
   /* TODO: maa ha float for aa kunne ha negativ margin */
   .full {
     width: calc(10 * 4rem);
-    margin: 0 auto;
+    margin-left: 4rem;
   }
 
   .center {
     width: calc(8 * 4rem);
-    margin: 0 auto;
+    margin-left: calc(2 * 4rem);
   }
 
   .box > .text-wrapper {
@@ -329,5 +441,10 @@ footer {
 
   figure img {
     width: 100%;
+  }
+
+  /* footer */
+  footer {
+    padding: 8rem 0;
   }
 }
