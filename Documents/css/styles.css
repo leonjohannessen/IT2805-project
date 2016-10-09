@@ -120,9 +120,11 @@ figure img {
 
 .full-width > .right {
   margin-top: 10em;
- width: 50%;
- float: right;
+  width: 50%;
+  float: right;
 }
+
+
 
 /* Typography */
 body {
@@ -172,11 +174,11 @@ table tr:nth-of-type(2n-1){
 
 th,td {
   text-align: left;
-  padding: 5px 15px 5px 2px;
+  padding-right: 15px;
 }
 
 th {
-  padding: 10px 15px 10px 2px;
+  background-color: #ccc;
 }
 
 figcaption {
