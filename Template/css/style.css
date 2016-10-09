@@ -162,6 +162,7 @@ header > h1 {
  margin: 0
 }
 
+/* navbar styles */
 #main-nav {
  position: fixed;
  z-index: 1;
@@ -266,22 +267,26 @@ header > h1 {
   left: 1px;
 }
 
- .intro,
- .cta,
- .box,
- footer {
-   padding: 2rem;
- }
+main {
+  overflow: hidden;
+}
 
- figure {
-   width: 100%;
-   margin: 0;
- }
+.intro,
+.cta,
+.box,
+footer {
+ padding: 2rem;
+}
 
- figure img {
-   width: 100%;
-   vertical-align: middle; /* remove trailing space */
- }
+figure {
+ width: 100%;
+ margin: 0;
+}
+
+figure img {
+ width: 100%;
+ vertical-align: middle; /* remove trailing space */
+}
 
 /*
  *
