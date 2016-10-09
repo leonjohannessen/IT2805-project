@@ -258,6 +258,11 @@ body > header time {
   section > section {
     margin: 0 0 2em;
   }
+
+  /* kristines super layout fix for small screens */
+  .full-width {
+    left: auto;
+  }
 }
 
 /* smaller text on mobile */

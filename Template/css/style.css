@@ -226,6 +226,7 @@ footer {
     font-weight: bold;
     color: #2b2d2d;
     border-bottom: 0;
+    letter-spacing: .05em;
   }
 
   header nav ul li a::after {
@@ -290,6 +291,7 @@ footer {
     float: right;
   }
 
+  /* TODO: maa ha float for aa kunne ha negativ margin */
   .full {
     width: calc(10 * 4rem);
     margin: 0 auto;
