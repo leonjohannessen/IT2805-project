@@ -1,8 +1,8 @@
 // Get the main-nav element
-var navbar = document.getElementById('main-nav');
+const navbar = document.getElementById('main-nav');
 
 // Get the initial navbar position
-var stickyDistance = getDistance();
+const stickyDistance = getDistance();
 
 // Set state flags
 var sticky = false;
@@ -49,7 +49,8 @@ setInterval(function() {
 window.onscroll = updateNavbarState;
 
 // Mobile menu toggler
-var navbarToggler = document.getElementById('main-nav-toggler');
+const navbarToggler = document.getElementById('main-nav-toggler');
+
 var toggled = false;
 
 function toggleNavbar() {

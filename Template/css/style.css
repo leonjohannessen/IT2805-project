@@ -6,11 +6,8 @@ html {
   box-sizing: inherit;
 }
 
-/*
- *
- * Global styles
- *
- */
+/* Global styles
+   ================================================================================ */
 
 html {
   background: #F1F6F5; /* fallback background color */
@@ -43,6 +40,34 @@ h2 {
 
 h3 {
   font-size: 1.8rem;
+}
+
+blockquote {
+  margin: 0;
+}
+
+blockquote p {
+  font-size: 1.8rem;
+  line-height: 1.25;
+  font-style: italic;
+}
+
+blockquote p:before {
+  content: '«';
+}
+
+blockquote p:after{
+  content: '»';
+}
+
+blockquote footer {
+  font-family: 'Lato', sans-serif;
+  font-size: .8rem;
+  line-height: 1;
+}
+
+blockquote footer:before {
+  content: '—';
 }
 
 a {
@@ -123,12 +148,13 @@ a.button::before {
   line-height: 2rem;
 }
 
-/* todo: default link styles in boxes */
+/* TODO: default link styles in boxes */
 
 /* box styles */
 .box {
   background: #3d3d3d;
   color: #fff;
+  position: relative;
 }
 
 .dark {
@@ -141,31 +167,49 @@ a.button::before {
   /* TODO: Add texture */
 }
 
+/* hack that makes use of one background image for both textured boxes */
+.box * {
+  position: relative;
+  z-index: 2;
+}
+
+.dark::before,
+.blue::before{
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: url('../img/latin_pattern.png');
+  z-index: 1;
+  opacity: .1;
+  -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+  filter: grayscale(100%);
+}
+
 /* footer styles */
-footer {
+body > footer {
   background: #222;
   color: #fff;
   padding: 4rem 0;
 }
 
-/*
+/* Mobile layout
  *
- * Mobile layout
+ *   NB: Some of these styles are used in the desktop layout as well
  *
- */
-
-header {
+   ================================================================================ */
+body > header {
  height: 70vh;
 }
 
-header > h1 {
+body > header > h1 {
  margin: 0
 }
 
 /* navbar styles */
 #main-nav {
  position: fixed;
- z-index: 1;
+ z-index: 10;
  width: 100%;
  height: 100%;
  top: 0;
@@ -208,15 +252,15 @@ header > h1 {
   transition: .2s width;
 }
 
-#main-nav a:hover,
 #main-nav a:active,
+#main-nav a:hover,
 #main-nav a.active, /* active page class */
 #main-nav a:focus {
   color: #3cc;
 }
 
-#main-nav a:hover::after,
 #main-nav a:active::after,
+#main-nav a:hover::after,
 #main-nav a.active::after, /* active page class */
 #main-nav a:focus::after {
   width: 100%;
@@ -274,7 +318,7 @@ main {
 .intro,
 .cta,
 .box,
-footer {
+body > footer {
  padding: 2rem;
 }
 
@@ -288,16 +332,12 @@ figure img {
  vertical-align: middle; /* remove trailing space */
 }
 
-/*
- *
- * layout for screens wider than 960 px
- *
- */
-
+/* Layout for screens larger than 960px
+   ================================================================================ */
 @media screen and (min-width: 960px) {
 
   /* Header layout */
-  header {
+  body > header {
     position: relative;
   }
 
@@ -331,7 +371,7 @@ figure img {
     position: fixed;
     bottom: auto;
     top: 0;
-    z-index: 1;
+    z-index: 10;
     box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
   }
 
@@ -449,7 +489,7 @@ figure img {
   }
 
   /* footer */
-  footer {
+  body > footer {
     padding: 8rem 0;
   }
 }
