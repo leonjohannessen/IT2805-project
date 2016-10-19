@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Da Carlo Template</title>
+
+    <!-- define viewport to ensure no horizontal scroll -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- include stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Internal style sheet only relevant for catering.html -->
+
+    <!-- HUSK!!!!!!!!!!!! LAG EMBEDDED STYLES FØRST FOR MOBIL
+    OG SÅ MEDIA QUERY for desktops!
+  -->
+    <style>
+
+      /*Styling h3 and all the text inside menu-class TO DO: ta bort h3? */
+      h3, .menu {
+        text-align: center;
+        font-family: 'Lato', sans-serif; /* TO DO: bør vel egentlig legges inn i style.css? */
+      }
+
+      /*Styling the p inside menuclasses */
+      .menu p {
+        font-size: 0.9rem;
+      }
+      /*Styling the h4 inside menuclasses */
+      .menu h4 {
+        text-transform: none;
+      }
+      small{
+        font-size: 0.6rem;
+        color: #999999; /*TO DO en lysegrå, bruker vi en annen en annen plass?*/
+      }
+
+      a.button{
+        float:right
+      }
+
+      a.button svg{
+        fill: #099;
+        position: relative;
+        bottom: -0.3rem;
+        left: -0.5rem;
+      }
+      a.button::before {
+        content: ' ';
+      }
+
+      a.button:hover svg {
+        fill: white;
+      }
+
+      /* TO DO: legg til informasjon hvis trengs*/
+      /* Layout for screens larger than 960px
+         ================================================================================ */
+    /*  @media screen and (min-width: 960px) {
+
+      }*/
+    </style>
+
+
+    <!-- include google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+
+  </head>
+
+  <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+  <body>
+    <!-- page header and global navigation -->
+    <header>
+      <!-- logo -->
+      <h1 id="logo">Da Carlo Catering</h1>
+      <div id="main-nav-toggler">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav id="main-nav">
+        <ul>
+          <li><a class="active" href="#">Hjem</a></li>
+          <li><a href="#">Catering</a></li>
+          <li><a href="#">Kantine</a></li>
+          <li><a href="#">Om</a></li>
+          <li><a href="#">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="intro">
+        <div class="container">
+          <h2>Catering </h2>
+          <p> Introtekst om cateringleveranser Lorem ipsum dolor sit amet, condidunt ut labore et dolore magna aliqua. Sgdfg Tempor.</p>
+        </div>
+      </section>
+    </main>
+
+    <section class="row menu">
+      <div class="container">
+        <div class="box full dark tight">
+          <div class="text-wrapper">
+            <h3>Meny - catering </h3>
+
+            <!-- TO DO: Finn ut om JAVASCRIPTDELEN menyen -->
+            <div id="menus">
+              <ul>
+                <li> Meny 1 </li>
+                <li> Meny 2 </li>
+                <li> Meny 3 </li>
+              </ul>
+            </div>
+
+            <p> Introtekst til meny 1 – en herlig sammensetning av kjøtt fra mellomamerika og arktisk fisk gir en kulinarisk opplevelse lorem ipsum dolor sit amet, consectetuer adipliscing elit. </p>
+            <h4> Forrett </h4>
+            <p> Beskrivelse av forrettmenyen lorem ipsum dolor sit amet, consectetuer adiplscing elit.</p>
+            <p> <small> Inneholder fisk, gluten, allergen 1, allergen 2 </small> </p>
+
+            <h4> Hovedrett </h4>
+            <p> Beskrivelse av hovedrett lorem ipsum dolor sit amet, consectetuer adiplscing elit.</p>
+            <p> <small> Inneholder: Kjøtt, allergen 3, skalldyr </small> </p>
+
+            <h4> Dessert </h4>
+            <p> Lorem ipsum beskrivelse av desserten </p>
+            <p> <small> Inneholder: Laktose, nøtter, allergen </small> </p>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="row">
+      <div class="container">
+        <div class="box full tight">
+          <div class="text-wrapper">
+            <h4> Nedlastbar meny </h4>
+            <p> Lorem ipsum dolor sit amet consectetuer adipliscing elit </p>
+            <a href="#" class="button">
+              <!-- An svg icon inside the button-->
+              <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+                  <path d="M0 0h24v24H0z" fill="none"/>
+              </svg>
+              Last ned PDF </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- call to action -->
+    <!-- TO DO legg inn på ny og legg inn spesifikktekst om cateringrelatertspørsmål -->
+    <section class="cta">
+      <div class="container">
+        <p>Ta kontakt for et uforpliktende tilbud.</p>
+        <p>telefon, epost</p>
+        <a href="#" class="button">Kontakt oss</a>
+      </div>
+    </section>
+
+    <!-- page footer -->
+    <footer>
+      <!-- <div class="container">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+          <! navbar -->
+          <!-- logo -->
+          <!-- copyright -->
+          <!--  </div>  -->
+
+      <!-- including the footer as its own html -->
+      <object name="footer" type="text/html" data="footer.inc"> </object>
+
+    </footer>
+
+
+    <!-- include javascript files in end of body, so we don't have to care
+         about cross browser dom-ready crap -->
+    <script src="js/sticky-header.js"></script>
+  </body>
+</html>
