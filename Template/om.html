@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Da Carlo Template</title>
+    <title>Om Da Carlo</title>
 
     <!-- define viewport to ensure no horizontal scroll -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -28,16 +28,21 @@
     }
 
     #row_1 {
-      margin-top: calc(2 * 4rem);
+      margin-top: 4rem;
     }
 
-    /*stilark mangler en float-todo for negative marginer?*/
     #row_2 {
-      margin-top: calc(-2 * 4rem);
+      margin: -4rem auto 0;
+      z-index: 1;
     }
 
     #row_3 {
-      margin-top: calc(-2 * 4rem);
+      margin: -4rem auto -4rem ;
+      z-index: 0;
+    }
+
+    .cta {
+      margin: 12rem auto 4rem;
     }
     </style>
 
@@ -76,8 +81,8 @@
         </div>
       </section>
 
-      <section class="row" id="row_1">
-        <div class="container">
+      <section class="row">
+        <div class="container" id="row_1">
           <div class="box left">
             <div class="text-wrapper">
               <h3>Juan Carlos</h3>
@@ -97,9 +102,10 @@
         </div>
       </section>
 
-      <section class="row" id="row_2">
-        <div class="container">
-          <div class="box right">
+      <section class="row" >
+        <div class="container" id="row_2">
+          <!-- TODO teksturen for .dark legger seg ikke riktig på mobil, får padding-->
+          <div class="box right dark">
             <div class="text-wrapper">
               <h3>Juan Carlos</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -118,8 +124,8 @@
         </div>
       </section>
 
-      <section class="row" id="row_3">
-        <div class="container">
+      <section class="row">
+        <div class="container"  id="row_3">
           <div class="box left">
             <div class="text-wrapper">
               <h3>Juan Carlos</h3>
@@ -141,24 +147,20 @@
     </main>
 
     <!-- call to action -->
+    <!-- TODO: fiks stygge avstander -->
     <section class="cta">
       <div class="container">
-        <p>Ta kontakt for et uforpliktende tilbud.</p>
-        <p>telefon, epost</p>
-        <a href="#" class="button">Kontakt oss</a>
+        <p>Ta gjerne kontakt for et uforpliktende tilbud.</p>
+        <a href="../kontakt.html" class="button" style="float: right; display=inline;">Kontakt oss</a>
+            <p style="font-size: 1.8rem; display=inline;">+47 428 83 247</p>
+          <p style="font-size=1rem;"><a href="mailto:epost@epost.no">epost</a>
+          </p>
       </div>
     </section>
 
     <!-- page footer -->
     <footer>
-      <div class="container">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-          <!-- navbar -->
-          <!-- logo -->
-          <!-- copyright -->
-      </div>
+      <object name="footer" type="text/html" data="footer.inc"> </object>
     </footer>
 
     <!-- include javascript files in end of body, so we don't have to care

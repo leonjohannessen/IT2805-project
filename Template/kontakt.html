@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Kontakt oss</title>
+
+    <!-- define viewport to ensure no horizontal scroll -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- include stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- include google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i"rel="stylesheet">
+
+    <style>
+    .intro {
+      padding-bottom: 120vh;
+    }
+
+    #kontakt {
+      margin-left: 0;
+      text-align: center;
+    }
+
+    .box > .text-wrapper {
+      padding: 4rem 4rem;
+    }
+
+    .left {
+      float:left;
+    }
+
+    </style>
+  </head>
+
+  <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+  <body>
+
+    <!-- page header and global navigation -->
+    <header>
+      <!-- logo -->
+      <h1 id="logo">Da Carlo Catering</h1>
+      <div id="main-nav-toggler">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav id="main-nav">
+        <ul>
+          <li><a class="active" href="#">Hjem</a></li>
+          <li><a href="#">Catering</a></li>
+          <li><a href="#">Kantine</a></li>
+          <li><a href="#">Om</a></li>
+          <li><a href="#">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- page content -->
+    <main>
+      <section class="intro">
+        <div class="container">
+            <div class="text-wrapper">
+              <h2>Kontakt</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <p style="font-size: 1.8rem; display=inline;">
+                +47 428 83 247
+              </p>
+              <p style="font-size= 1rem;">
+                <a href="mailto:epost@epost.no">epost</a>
+              </p>
+            </div>
+          <div id="kontakt" class="box full dark" >
+            <div class="text-wrapper">
+              <h3>Be om pristilbud</h3>
+              <p>Hva ønsker du pristilbud på?</p>
+              <a href="#" class="button left">Cateringtjenester</a>
+              <a href="#" class="button right">Kantinedrift</a>
+              <h3>Om arrangementet</h3>
+              <p>Da Carlo kan levere cateringtjenester til alle typer arrangementer. Fortell oss litt mer om hva du ønsker hjelp til.</p>
+              <form>
+                <input type="text" id="place" name="sted"/>
+                <label for="place">Sted</label>
+                <input type="date" id="date" name="dato" />
+                <label for="date">Dato</label>
+                <input type="text" id="guestNo" name="antallGjester"/>
+                <label for="guestNo">Antall Gjester</label>
+                <select id="meny" name="meny">
+                  <option value="meny1">Meny 1</option>
+                  <option value="meny2">Meny 2</option>
+                  <option value="meny3">Meny 3</option>
+                </select>
+                <label for="meny">Ønsket meny</label>
+                <textarea id="info" name="extraInfo"/>Ekstrainformasjon og eventuelle spørsmål</textarea>
+                <h3>Om deg</h3>
+                <p>Legg igjen din kontaktinformasjon, så tar vi kontakt så snart som mulig.</p>
+                <input type="text" id="name" name="navn"/>
+                <label for="name">Ditt navn</label>
+                <input type="tel" id="number" name="telefonnummer"/>
+                <label for="number">Ditt telefonnummer</label>
+                <input type="email" id="email" name="epost"/>
+                <label for="email">Din e-postadresse</label>
+
+              </form>
+            </div>
+          </div>
+      </div>
+    </div>
+    </section>
+
+    </main>
+
+
+    <!-- page footer -->
+    <footer>
+      <object name="footer" type="text/html" data="footer.inc"> </object>
+    </footer>
+
+    <!-- include javascript files in end of body, so we don't have to care
+         about cross browser dom-ready crap -->
+    <script src="js/sticky-header.js"></script>
+  </body>
+</html>
