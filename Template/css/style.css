@@ -229,6 +229,8 @@ body > header > h1 {
   padding: 20vh 0 0;
 }
 
+/* Styling of the linked text in the main navigation */
+/* TO DO X: burde alle disse stylene (ned til "toggler") puttes utenfor mobil css? Ble ganske forvirrende ?*/
 #main-nav a {
   display: inline-block;
   text-transform: uppercase;
@@ -242,6 +244,7 @@ body > header > h1 {
   transition: .2s color;
 }
 
+/* Styling of the animated line beneath the text in the main navigation */
 #main-nav a::after {
   content: '';
   display: block;
@@ -252,6 +255,7 @@ body > header > h1 {
   transition: .2s width;
 }
 
+/* Styling of the different modes for links in main navigation*/
 #main-nav a:active,
 #main-nav a:hover,
 #main-nav a.active, /* active page class */
@@ -259,6 +263,7 @@ body > header > h1 {
   color: #3cc;
 }
 
+/* The line beneath the links in the main navigation goes to full width */
 #main-nav a:active::after,
 #main-nav a:hover::after,
 #main-nav a.active::after, /* active page class */
@@ -266,6 +271,7 @@ body > header > h1 {
   width: 100%;
 }
 
+/* The style for the button for opening the mobile menu*/
 #main-nav-toggler {
   width: 2rem;
   height: 2rem;
@@ -278,7 +284,7 @@ body > header > h1 {
   box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
   cursor: pointer;
 }
-
+/* Styles for the three lines in the button for openning the mobile menu*/
 #main-nav-toggler span {
   background: #2b2d2d;
   width: 40%;
@@ -288,29 +294,30 @@ body > header > h1 {
   position: relative;
   transition: .2s transform;
 }
-
+/* Styles for the three lines in the button for opening the mobile menu*/
 #main-nav-toggler span:first-of-type {
   margin-top: 15px;
 }
 
+/* Styles to animate the middle line in the button for opening the mobile menu*/
 #main-nav-toggler.active span {
   visibility: hidden;
 }
-
+/* Styles to animate the first line in the button for opening the mobile menu*/
 #main-nav-toggler.active span:first-of-type {
   visibility: visible;
   transform: rotate(45deg);
   top: 5px;
   left: 1px;
 }
-
+/* Styles to animate the last line in the button for opening the mobile menu*/
 #main-nav-toggler.active span:last-of-type {
   visibility: visible;
   transform: rotate(-45deg);
   bottom: 5px;
   left: 1px;
 }
-
+/* TO DO : usikker, hvorfor denne her?*/
 main {
   overflow: hidden;
 }
@@ -355,6 +362,7 @@ figure img {
     background-size: contain;
   }
 
+  /* Styling specific for the main navigation for desktop view*/
   #main-nav {
     position: absolute;
     width: 100%;
@@ -366,7 +374,8 @@ figure img {
     box-shadow: 0 0 0 0 rgba(0,0,0,0);
     transition: .2s box-shadow;
   }
-
+  
+  /* Styling the main navigation for desktop view so that it sticks to the top when the page is scrolled*/
   #main-nav.sticky {
     position: fixed;
     bottom: auto;
@@ -375,25 +384,28 @@ figure img {
     box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
   }
 
+/* No padding on the unordered list in the main navigation*/
   #main-nav ul {
     padding: 0;
   }
 
+/* Styling for the list-elements in the main navigation so that its shown correctly on one line in desktop view*/
   #main-nav li {
     display: inline-block;
     float: none
   }
 
+/* Styling for the links in the main navigation to make them the right size and in the right position*/
   #main-nav a {
     height: 5rem;
     padding: 0 2rem;
     line-height: 5rem;
   }
-
+/* Placing of the line beneath the links in the main navigation */
   #main-nav a::after {
     margin-top: -1.5em;
   }
-
+/* In desktop view, removing the menu-button used in mobile view*/
   #main-nav-toggler {
     display: none;
   }
