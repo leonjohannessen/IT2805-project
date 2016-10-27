@@ -55,6 +55,34 @@
         fill: white;
       }
 
+      ul.tabMenu{
+        list-style-type: none;
+        margin-right: 200px;
+        padding:0; /* TO DO trenger margin og padding her? */
+        overflow: hidden; /*TO DO hvorfor denne her?*/
+      }
+
+      ul.tabMenu li {
+        float: left;
+        margin-right: 50px;
+      }
+
+      ul.tabMenu li a {
+        display: inline-block;
+        color: grey;
+        text-align: center; /* TO DO trenger denne?*/
+        padding: 14px 16px;
+        transition: 0.3s; /* ?? */
+      }
+
+      ul.tabMenu li a:hover, ul.tabMenu li a:focus{
+        /*TO DO hvis trengs*/
+      }
+      ul.tabMenu li a:active{
+        /*TO DO*/
+
+      }
+
       /* TO DO: legg til informasjon hvis trengs*/
       /* Layout for screens larger than 960px
          ================================================================================ */
@@ -110,26 +138,68 @@
 
             <!-- TO DO: Finn ut om JAVASCRIPTDELEN menyen -->
             <div id="menus">
-              <ul>
-                <li> Meny 1 </li>
-                <li> Meny 2 </li>
-                <li> Meny 3 </li>
+              <ul class="tabMenu">
+                <li> <a href="javascript:void(0)" class="menuLinks" onclick="openMenu(event, "meny1")"> Meny 1 </a> </li>
+                <li> <a href="javascript:void(0)" class="menuLinks" onclick="openMenu(event, "meny2")"> Meny 2 </a> </li>
+                <li> <a href="javascript:void(0)" class="menuLinks" onclick="openMenu(event, "meny3")"> Meny 3 </a> </li>
               </ul>
             </div>
+            <div id="meny1" class="tabContent">
+              <p> Introtekst til meny 1 – en herlig sammensetning av kjøtt fra mellomamerika og arktisk fisk gir en kulinarisk opplevelse lorem ipsum dolor sit amet, consectetuer adipliscing elit. </p>
+              <h4> Forrett </h4>
+              <p> Beskrivelse av forrettmenyen lorem ipsum dolor sit amet, consectetuer adiplscing elit.</p>
+              <p> <small> Inneholder fisk, gluten, allergen 1, allergen 2 </small> </p>
 
-            <p> Introtekst til meny 1 – en herlig sammensetning av kjøtt fra mellomamerika og arktisk fisk gir en kulinarisk opplevelse lorem ipsum dolor sit amet, consectetuer adipliscing elit. </p>
-            <h4> Forrett </h4>
-            <p> Beskrivelse av forrettmenyen lorem ipsum dolor sit amet, consectetuer adiplscing elit.</p>
-            <p> <small> Inneholder fisk, gluten, allergen 1, allergen 2 </small> </p>
+              <h4> Hovedrett </h4>
+              <p> Beskrivelse av hovedrett lorem ipsum dolor sit amet, consectetuer adiplscing elit.</p>
+              <p> <small> Inneholder: Kjøtt, allergen 3, skalldyr </small> </p>
 
-            <h4> Hovedrett </h4>
-            <p> Beskrivelse av hovedrett lorem ipsum dolor sit amet, consectetuer adiplscing elit.</p>
-            <p> <small> Inneholder: Kjøtt, allergen 3, skalldyr </small> </p>
+              <h4> Dessert </h4>
+              <p> Lorem ipsum beskrivelse av desserten </p>
+              <p> <small> Inneholder: Laktose, nøtter, allergen </small> </p>
+            </div>
 
-            <h4> Dessert </h4>
-            <p> Lorem ipsum beskrivelse av desserten </p>
-            <p> <small> Inneholder: Laktose, nøtter, allergen </small> </p>
+            <div id="meny2" class="tabContent">
+              <p> Introtekst til meny 2 –  lorem ipsum dolor sit amet, consectetuer adipliscing elit. </p>
+              <h4> Forrett </h4>
+              <p> Beskrivelse av forrettmenyen lorem ipsum dolor sit amet, consectetuer adiplscing elit.</p>
+              <p> <small> Inneholder fisk, gluten, allergen 1, allergen 2 </small> </p>
 
+              <h4> Hovedrett </h4>
+              <p> Beskrivelse av hovedrett lorem ipsum dolor sit amet, consectetuer adiplscing elit.</p>
+              <p> <small> Inneholder: Kjøtt, allergen 3, skalldyr </small> </p>
+
+              <h4> Hovedrett 2 </h4>
+              <p> Beskrivelse av hovedrett lorem ipsum dolor sit amet, consectetuer adiplscing elit.</p>
+              <p> <small> Inneholder: Kjøtt, allergen 3, skalldyr </small> </p>
+
+              <h4> Dessert </h4>
+              <p> Lorem ipsum beskrivelse av desserten </p>
+              <p> <small> Inneholder: Laktose, nøtter, allergen </small> </p>
+            </div>
+
+            <div id="meny3" class="tabContent">
+              <p> Introtekst til meny 3 – en herlig sammensetning av kjøtt fra mellomamerika og arktisk fisk gir en kulinarisk opplevelse lorem ipsum dolor sit amet, consectetuer adipliscing elit. </p>
+              <h4> Forrett </h4>
+              <p> Beskrivelse av forrettmenyen lorem ipsum dolor sit amet, consectetuer adiplscing elit.</p>
+              <p> <small> Inneholder fisk, gluten, allergen 1, allergen 2 </small> </p>
+
+              <h4> Hovedrett </h4>
+              <p> Beskrivelse av hovedrett lorem ipsum dolor sit amet, consectetuer adiplscing elit.</p>
+              <p> <small> Inneholder: Kjøtt, allergen 3, skalldyr </small> </p>
+
+              <h4> Hovedrett </h4>
+              <p> Beskrivelse av hovedrett lorem ipsum dolor sit amet, consectetuer adiplscing elit.</p>
+              <p> <small> Inneholder: Kjøtt, allergen 3, skalldyr </small> </p>
+
+              <h4> Frukt </h4>
+              <p> Lorem ipsum beskrivelse av desserten </p>
+              <p> <small> Inneholder: sitrus </small> </p>
+
+              <h4> Dessert </h4>
+              <p> Lorem ipsum beskrivelse av desserten </p>
+              <p> <small> Inneholder: Laktose, nøtter, allergen </small> </p>
+            </div>
           </div>
         </div>
       </div>
