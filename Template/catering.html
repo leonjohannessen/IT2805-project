@@ -57,29 +57,41 @@
 
       ul.tabMenu{
         list-style-type: none;
-        margin-right: 200px;
+        margin-right: 0;
         padding:0; /* TO DO trenger margin og padding her? */
         overflow: hidden; /*TO DO hvorfor denne her?*/
+        margin: auto;
       }
 
       ul.tabMenu li {
         float: left;
-        margin-right: 50px;
       }
 
       ul.tabMenu li a {
         display: inline-block;
         color: grey;
         text-align: center; /* TO DO trenger denne?*/
-        padding: 14px 16px;
-        transition: 0.3s; /* ?? */
+        padding: 1rem 3.69rem; /*TO DO er det en bedre måte å plassere disse på? Dette bør gjøres forskjellig fra mobil til desktop!*/
+        border-bottom: 0;
       }
+
+      /* TO DO 2 ??
+      ul.tabMenu li a {
+        width: 0;
+        background-color: red;
+        height: 20px;
+        border-bottom: 10px solid red;
+      }*/
 
       ul.tabMenu li a:hover, ul.tabMenu li a:focus{
         /*TO DO hvis trengs*/
+        color: white;
+        font-weight: bold;
+        border-bottom: 6px solid #099;
       }
       ul.tabMenu li a:active{
         /*TO DO*/
+        color: white;
 
       }
 
@@ -252,6 +264,7 @@
 
     <!-- include javascript files in end of body, so we don't have to care
          about cross browser dom-ready crap -->
+    <script src="js/menu_panel.js"></script>
     <script src="js/sticky-header.js"></script>
   </body>
 </html>
