@@ -37,7 +37,7 @@
         color: #999999; /*TO DO en lysegrå, bruker vi en annen en annen plass?*/
       }
 
-      a.button{
+      a#buttonLastNed{
         float:right
       }
 
@@ -55,6 +55,13 @@
         fill: white;
       }
 
+      /*TO DO er dette grei måte å ordne det på? Eller bør ha samme regel på alle knappene?*/
+      p#lastNed{
+        display: inline-block;
+        width:50%;
+        margin: 0;
+      }
+
       ul.tabMenu{
         list-style-type: none;
         margin-right: 0;
@@ -66,14 +73,14 @@
       ul.tabMenu li {
         float: left;
       }
-
+/*
       ul.tabMenu li a {
         display: inline-block;
         color: grey;
-        text-align: center; /* TO DO trenger denne?*/
-        padding: 1rem 3.69rem; /*TO DO er det en bedre måte å plassere disse på? Dette bør gjøres forskjellig fra mobil til desktop!*/
+        text-align: center; /* TO DO trenger denne?
+        padding: 1rem 3.69rem; /*TO DO er det en bedre måte å plassere disse på? Dette bør gjøres forskjellig fra mobil til desktop!
         border-bottom: 0;
-      }
+      } */
 
       /* TO DO 2 ??
       ul.tabMenu li a {
@@ -82,17 +89,73 @@
         height: 20px;
         border-bottom: 10px solid red;
       }*/
-
+/*
       ul.tabMenu li a:hover, ul.tabMenu li a:focus{
-        /*TO DO hvis trengs*/
+        /*TO DO hvis trengs
         color: white;
         font-weight: bold;
         border-bottom: 6px solid #099;
       }
       ul.tabMenu li a:active{
-        /*TO DO*/
+        /*TO DO
         color: white;
+        border-bottom: 15px solid #099;
+        background-color: red;
+*/
 
+/*TO DO Kopiert inn alle stylene fra style.css klarer vi å ikke gjøre dette dobbelt?*/
+
+        /* Styling of the different modes for links in the tabbed menu panel*/
+        ul.tabMenu li a {
+          display: inline-block;
+          font-weight: bold;
+          color: grey; /*TO DO endre til riktig gråfarge*/
+          border-bottom: 0;
+          height: 3rem;
+          padding: 0 3rem;
+          line-height: 3rem;
+          letter-spacing: .05em;
+          transition: .2s color;
+        }
+
+        /* Styling of the animated line beneath the text in the tabbed menu panel */
+        ul.tabMenu li a::after {
+          content: '';
+          display: block;
+          height: 6px;
+          background: #3cc;
+          margin: -.3em auto 0;
+          width: 0;
+          transition: .2s width;
+        }
+
+        /* TO DO: style the initial state of menu 1*/
+
+        /* Styling of the different modes for links in tabbed menu panel*/
+        ul.tabMenu li a:active,
+        ul.tabMenu li a:hover,
+        ul.tabMenu li a:active, /* active page class */
+        ul.tabMenu li a:focus {
+          color: white;
+        }
+
+        /* The line beneath the links in the tabbed menu panel goes to full width */
+        ul.tabMenu li a:active::after,
+        ul.tabMenu li a:hover::after,
+        ul.tabMenu li a:active::after, /* active page class */
+        ul.tabMenu li a:focus::after {
+          width: 100%;
+        }
+
+        /* TO DO ? Får ikke rekke frem til denne slik at den som er valgt som default option er stylet hvit*/
+        ul.tabMenu li a:focus, .active {
+          color: white;
+        }
+
+        /*The content is initially not shown */
+        .tabContent{
+          display:none;
+        }
       }
 
       /* TO DO: legg til informasjon hvis trengs*/
@@ -109,8 +172,6 @@
     <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
 
   </head>
-
-  <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 
   <body>
     <!-- page header and global navigation -->
@@ -148,20 +209,17 @@
           <div class="text-wrapper">
             <h3>Meny - catering </h3>
 
-            <!-- TO DO: Finn ut om JAVASCRIPTDELEN menyen -->
+            <!-- TO DO: Kommenter JAVASCRIPTDELEN menyen -->
             <div id="menus">
               <ul class="tabMenu">
-                <li> <a href="javascript:void(0)" class="menuLinks" onclick="openMenu(event, "meny1")"> Meny 1 </a> </li>
-                <li> <a href="javascript:void(0)" class="menuLinks" onclick="openMenu(event, "meny2")"> Meny 2 </a> </li>
-                <li> <a href="javascript:void(0)" class="menuLinks" onclick="openMenu(event, "meny3")"> Meny 3 </a> </li>
+                <!-- TO DO: skriv forklaring hva linkene betyr-->
+                <li> <a href="javascript:void(0)" class="menuLinks" onclick="openMenu(event, 'meny1')" id="defaultOpen"> Meny 1 </a> </li>
+                <li> <a href="javascript:void(0)" class="menuLinks" onclick="openMenu(event, 'meny2')"> Meny 2 </a> </li>
+                <li> <a href="javascript:void(0)" class="menuLinks" onclick="openMenu(event, 'meny3')"> Meny 3 </a> </li>
               </ul>
             </div>
             <div id="meny1" class="tabContent">
-              <p> Introtekst til meny 1 – en herlig sammensetning av kjøtt fra mellomamerika og arktisk fisk gir en kulinarisk opplevelse lorem ipsum dolor sit amet, consectetuer adipliscing elit. </p>
-              <h4> Forrett </h4>
-              <p> Beskrivelse av forrettmenyen lorem ipsum dolor sit amet, consectetuer adiplscing elit.</p>
-              <p> <small> Inneholder fisk, gluten, allergen 1, allergen 2 </small> </p>
-
+              <p> Introtekst til meny 1 – en herlig ssammensetning av kjøtt fra mellomamerika og arktisk fisk gir en kulinarisk opplevelse lorem ipsum dolor sit amet, consectetuer adipliscing elit. </p>
               <h4> Hovedrett </h4>
               <p> Beskrivelse av hovedrett lorem ipsum dolor sit amet, consectetuer adiplscing elit.</p>
               <p> <small> Inneholder: Kjøtt, allergen 3, skalldyr </small> </p>
@@ -222,8 +280,8 @@
         <div class="box full tight">
           <div class="text-wrapper">
             <h4> Nedlastbar meny </h4>
-            <p> Lorem ipsum dolor sit amet consectetuer adipliscing elit </p>
-            <a href="#" class="button">
+            <p id="lastNed"> Lorem ipsum dolor sit amet consectetuer adipliscing elit </p>
+            <a href="#" class="button" id="buttonLastNed">
               <!-- An svg icon inside the button-->
               <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
                   <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
@@ -257,7 +315,7 @@
           <!--  </div>  -->
 
       <!-- including the footer as its own html -->
-      <object name="footer" type="text/html" data="footer.inc"> </object>
+    <!--  <object name="footer" type="text/html" data="footer.inc"> </object> -->
 
     </footer>
 
@@ -265,6 +323,6 @@
     <!-- include javascript files in end of body, so we don't have to care
          about cross browser dom-ready crap -->
     <script src="js/menu_panel.js"></script>
-    <script src="js/sticky-header.js"></script>
+    <!--   <script src="js/sticky-header.js"></script>   -->
   </body>
 </html>
