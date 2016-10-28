@@ -1,3 +1,24 @@
+/*
+Colors used in Da Carlos website:
+#F1F6F5   lyselysegrå
+#fff			hvit
+#999			grå
+#3d3d3d		mørkegrå
+#2d2b2b		varm mørkemørkegrå
+#222			mørkemørkegrå
+#000			svart
+
+#3cc	    Turkis
+#099		  Dull turkis
+#248f8f	  Mørkere dull turkis
+
+rgba(51,204,204,0.2) 	turkis - gjennomsiktig
+rgba(51,204,204,0.5)	turkis - litt gjennomsiktig
+
+#c33		  Rød
+rgba(204,51,51,0.5)		rød - litt gjennomsiktig
+*/
+
 /* box reset */
 html {
   box-sizing: border-box;

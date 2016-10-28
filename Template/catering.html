@@ -34,7 +34,7 @@
       }
       small{
         font-size: 0.6rem;
-        color: #999999; /*TO DO en lysegrå, bruker vi en annen en annen plass?*/
+        color: #999;
       }
 
       a#buttonDownload{
@@ -52,7 +52,7 @@
       }
 
       a.button:hover svg {
-        fill: white;
+        fill: #fff;
       }
 
       /*TO DO er dette grei måte å ordne det på? Eller bør ha samme regel på alle knappene?*/
@@ -70,17 +70,16 @@
         margin: auto;
       }
 
-      /* Float all list-elements on one horizontal line and center*/
+      /* All list element underneath eachother*/
       ul.tabMenu li {
-        display: inline-block;
-        float: none;
+        display: block;
       }
 
       /* Styling of the different modes for links in the tabbed menu panel*/
       ul.tabMenu li a {
         display: inline-block;
         font-weight: bold;
-        color: grey; /*TO DO endre til riktig gråfarge*/
+        color: #999;
         border-bottom: 0;
         height: 3rem;
         padding: 0 3.2rem;
@@ -105,7 +104,7 @@
       ul.tabMenu li a:hover,
       ul.tabMenu li a.isActive, /* active page class */
       ul.tabMenu li a:focus {
-        color: white;
+        color: #fff;
       }
 
       /* The line beneath the links in the tabbed menu panel goes to full width */
@@ -131,11 +130,20 @@
       /* TO DO: legg til informasjon hvis trengs*/
       /* Layout for screens larger than 960px
          ================================================================================ */
-    /*  @media screen and (min-width: 960px) {
+@media only screen and (min-width: 960px) {
 
-      }*/
+/* TO DO ? Får ikke "kontakt" med media screen, ingenting som gjøres her endres? */
+  /* Float all list-elements on one horizontal line and center*/
+  ul.tabMenu li {
+    display: inline-block;
+    float: none;
+  }
+/*TESTER----------*/
+  .intro {
+    background-color: red;
+  }
+}
     </style>
-
 
     <!-- include google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
