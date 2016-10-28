@@ -58,7 +58,7 @@
       /*TO DO er dette grei måte å ordne det på? Eller bør ha samme regel på alle knappene?*/
       p#lastNed{
         display: inline-block;
-        width:50%;
+        width:50%; /*TO DO hvis veldig smal skjerm, så gjør dette at knappen hopper ned, hvordan fikse?*/
         margin: 0;
       }
 
@@ -305,20 +305,14 @@
 
     <!-- page footer -->
     <footer>
-      <!-- <div class="container">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-          <! navbar -->
-          <!-- logo -->
-          <!-- copyright -->
-          <!--  </div>  -->
+      <div class="container">
+        <img src="img/dacarlo_logo.png" alt="logo" class="smallLogo">
+        <p id="footerCopyright">2016 © Da Carlo Catering</p>
+      </div>
 
-      <!-- including the footer as its own html -->
+      <!-- TO DO including the footer as its own html -->
     <!--  <object name="footer" type="text/html" data="footer.inc"> </object> -->
-
     </footer>
-
 
     <!-- include javascript files in end of body, so we don't have to care
          about cross browser dom-ready crap -->

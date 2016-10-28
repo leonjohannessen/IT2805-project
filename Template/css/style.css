@@ -70,6 +70,7 @@ blockquote footer:before {
   content: '—';
 }
 
+
 a {
   color: #3cc;
   text-decoration: none;
@@ -187,10 +188,11 @@ a.button::before {
 }
 
 /* footer styles */
+/* TO DO litt mange footer styles? */
 body > footer {
   background: #222;
   color: #fff;
-  padding: 4rem 0;
+  padding: 6rem 0;
 }
 
 /* Mobile layout
@@ -339,6 +341,26 @@ figure img {
  vertical-align: middle; /* remove trailing space */
 }
 
+/* footer styles for mobile*/
+body > footer {
+  padding: 4rem 0;
+}
+
+/* Logo image in footer*/
+img.smallLogo{
+  width: 60%;
+  height: auto;
+  display: block;
+  margin:auto;
+}
+
+p#footerCopyright{
+  text-align: center;
+  font-size: small;
+  position: relative;
+  bottom: -2rem;
+}
+
 /* Layout for screens larger than 960px
    ================================================================================ */
 @media screen and (min-width: 960px) {
@@ -374,7 +396,7 @@ figure img {
     box-shadow: 0 0 0 0 rgba(0,0,0,0);
     transition: .2s box-shadow;
   }
-  
+
   /* Styling the main navigation for desktop view so that it sticks to the top when the page is scrolled*/
   #main-nav.sticky {
     position: fixed;
@@ -500,8 +522,22 @@ figure img {
     width: 100%;
   }
 
-  /* footer */
+  /* footer styles */
   body > footer {
-    padding: 8rem 0;
+    padding: 6rem 0;
+  }
+  /* Logo image in footer*/
+  img.smallLogo{
+    width: 30%;
+    height: auto;
+    display: block;
+    margin:auto;
+  }
+
+  p#footerCopyright{
+    text-align: center;
+    font-size: small;
+    position: relative;
+    bottom: -3rem;
   }
 }
