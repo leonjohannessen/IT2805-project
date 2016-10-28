@@ -14,15 +14,16 @@ function openMenu(evt, menuNumber){
   /*Get all the menuLinks */
   var menuLinks = document.getElementsByClassName("menuLinks");
 
-  /*Go through all menuLinks and remove the active and replace it with nothing*/
+  /*Go through all menuLinks and remove the isActive class if it is there*/
   for(var i = 0; i < menuLinks.length ; i++){
-    menuLinks[i].className = menuLinks[i].className.replace("active"," ");
+    menuLinks[i].classList.remove("isActive");
   }
 
-  /*Get the menu numbers (from the function) and set them to be shown  */
+  /*Get the menu number that is clicked and set the content for for example menu3 to be shown by turning it "on" with "block" */
   document.getElementById(menuNumber).style.display = "block";
-  /*Add an active class to that number*/
-  evt.currentTarget.className = evt.currentTarget.className + "active";
+
+  /*Add a class called isActive to that menu-number that was clicked*/
+  evt.currentTarget.classList.add("isActive");
 }
 
 /* Set Meny 1 to be initially opened by making javascript click on it*/

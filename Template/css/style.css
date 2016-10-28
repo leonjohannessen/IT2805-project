@@ -70,7 +70,6 @@ blockquote footer:before {
   content: '—';
 }
 
-
 a {
   color: #3cc;
   text-decoration: none;
@@ -188,7 +187,6 @@ a.button::before {
 }
 
 /* footer styles */
-/* TO DO litt mange footer styles? */
 body > footer {
   background: #222;
   color: #fff;
@@ -326,8 +324,7 @@ main {
 
 .intro,
 .cta,
-.box,
-body > footer {
+.box {
  padding: 2rem;
 }
 
