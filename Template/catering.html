@@ -62,7 +62,7 @@
         margin: 0;
       }
 
-      ul.tabMenu{
+      ul.tabPanel{
         list-style-type: none;
         margin-right: 0;
         padding:0;
@@ -71,12 +71,12 @@
       }
 
       /* All list element underneath eachother*/
-      ul.tabMenu li {
+      ul.tabPanel li {
         display: block;
       }
 
       /* Styling of the different modes for links in the tabbed menu panel*/
-      ul.tabMenu li a {
+      ul.tabPanel li a {
         display: inline-block;
         font-weight: bold;
         color: #999;
@@ -89,7 +89,7 @@
       }
 
       /* Styling of the animated line beneath the text in the tabbed menu panel */
-      ul.tabMenu li a::after {
+      ul.tabPanel li a::after {
         content: '';
         display: block;
         height: 6px;
@@ -100,18 +100,18 @@
       }
 
       /* Styling of the different modes for links in tabbed menu panel*/
-      ul.tabMenu li a:active,
-      ul.tabMenu li a:hover,
-      ul.tabMenu li a.isActive, /* active page class */
-      ul.tabMenu li a:focus {
+      ul.tabPanel li a:active,
+      ul.tabPanel li a:hover,
+      ul.tabPanel li a.isActive, /* active page class */
+      ul.tabPanel li a:focus {
         color: #fff;
       }
 
       /* The line beneath the links in the tabbed menu panel goes to full width */
-      ul.tabMenu li a:active::after,
-      ul.tabMenu li a:hover::after,
-      ul.tabMenu li a.isActive::after, /* active page class */
-      ul.tabMenu li a:focus::after {
+      ul.tabPanel li a:active::after,
+      ul.tabPanel li a:hover::after,
+      ul.tabPanel li a.isActive::after, /* active page class */
+      ul.tabPanel li a:focus::after {
         width: 100%;
       }
 
@@ -134,7 +134,7 @@
 
 /* TO DO ? Får ikke "kontakt" med media screen, ingenting som gjøres her endres? */
   /* Float all list-elements on one horizontal line and center*/
-  ul.tabMenu li {
+  ul.tabPanel li {
     display: inline-block;
     float: none;
   }
@@ -189,11 +189,11 @@
 
             <!-- A tabbed panel showing the different menus provided -->
             <div id="menus">
-              <ul class="tabMenu">
+              <ul class="tabPanel">
                 <!-- A horizontal list for the Menu titles. The javascript:void(0) is added to tell the javascript to stay on the same page when the link is clicked -->
-                <li> <a href="javascript:void(0)" class="menuLinks" onclick="openMenu(event, 'meny1')" id="defaultOpen"> Meny 1 </a> </li>
-                <li> <a href="javascript:void(0)" class="menuLinks" onclick="openMenu(event, 'meny2')" > Meny 2 </a> </li>
-                <li> <a href="javascript:void(0)" class="menuLinks" onclick="openMenu(event, 'meny3')"> Meny 3 </a> </li>
+                <li> <a href="javascript:void(0)" class="panelLinks" onclick="openPanel(event, 'meny1')" id="defaultOpen"> Meny 1 </a> </li>
+                <li> <a href="javascript:void(0)" class="panelLinks" onclick="openPanel(event, 'meny2')" > Meny 2 </a> </li>
+                <li> <a href="javascript:void(0)" class="panelLinks" onclick="openPanel(event, 'meny3')"> Meny 3 </a> </li>
               </ul>
             </div>
             <div id="meny1" class="tabContent">
