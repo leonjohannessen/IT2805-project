@@ -63,7 +63,7 @@
             </div>
         </div>
       </section>
-      
+
       <section class="row">
         <div class="container">
           <div class="box full dark">
@@ -72,22 +72,22 @@
               <p>Hva ønsker du pristilbud på?</p>
 
               <div class="btn-wrapper">
-                <a href="javascript:void(0)" class="menuLinks button left" onclick="openMenu(event, 'catering')" id="defaultOpen"> Cateringtjenester </a>
-                <a href="javascript:void(0)" class="menuLinks button right" onclick="openMenu(event, 'canteen')"> Kantinedrift </a>
+                <a href="javascript:void(0)" class="panelLinks button left" onclick="openPanel(event, 'catering')" id="defaultOpen"> Cateringtjenester </a>
+                <a href="javascript:void(0)" class="panelLinks button right" onclick="openPanel(event, 'canteen')"> Kantinedrift </a>
               </div>
 
               <div id="catering" class="tabContent">
               <h3>Om arrangementet</h3>
               <p>Da Carlo kan levere cateringtjenester til alle typer arrangementer. Fortell oss litt mer om hva du ønsker hjelp til.</p>
               <form>
-                <input id="place" type="text" name="sted" value="Sted"/>
-                <label for="place">Sted</label>
+                <input id="place" type="text" name="adresse" value="Adresse"/>
+                <label for="adresse">Adresse</label>
 
                 <input id="date" class="right" type="date" name="dato" value="Dato"/>
-                <label for="date">Dato</label>
+                <label for="dato">Dato</label>
 
                 <input id="guestNo" type="text" name="antallGjester" value="Antall gjester"/>
-                <label for="guestNo">Antall Gjester</label>
+                <label for="antallGjester">Antall Gjester</label>
 
                 <div class="styledSelect">
                   <select  id="meny" name="meny" value="Ønsket meny">
@@ -108,8 +108,8 @@
                 <input id="companyName" type="text" name="bedriftsNavn" value="Bedriftens navn"/>
                 <label for="bedriftsNavn">Bedriftens navn</label>
 
-                <input id="companyPlace" class="left" type="text" name="bedriftsSted" value="Sted"/>
-                <label for="bedriftsSted">Sted</label>
+                <input id="companyPlace" class="left" type="text" name="bedriftsAdresse" value="Adresse"/>
+                <label for="bedriftsAdresse">Adresse</label>
 
                 <input id="emplNo" class="right" type="text" name="antallAnsatte" value="Antall ansatte"/>
                 <label for="antallAnsatte">Antall ansatte</label>
