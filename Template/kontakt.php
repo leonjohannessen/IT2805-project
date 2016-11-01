@@ -1,4 +1,20 @@
+<?php
 
+if($_POST["submit"]) {
+    $recipient="kristinerisefry@gmail.com";
+    $subject="Form to email message";
+    $sender=$_POST["sender"];
+    $senderEmail=$_POST["Email"];
+    $message=$_POST["extraInfo"];
+
+    $mailBody="Name: $name\nEmail: $email\nTelefon: $number\n $message";
+
+    mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
+
+    $thankYou="<p>Thank you! Your message has been sent.</p>";
+}
+
+?>
 <!DOCTYPE html>
 <html>
   <head>
