@@ -13,7 +13,7 @@
 
     <!-- Internal style sheet only relevant for catering.html -->
 
-    <!-- HUSK!!!!!!!!!!!! LAG EMBEDDED STYLES FØRST FOR MOBIL
+    <!-- TO DO HUSK!!!!!!!!!!!! LAG EMBEDDED STYLES FØRST FOR MOBIL
     OG SÅ MEDIA QUERY for desktops!
   -->
     <style>
@@ -32,7 +32,10 @@
         margin: 2rem 0 -0.5rem;
         text-transform: none;
       }
-
+      p.menuNorsk {
+        margin: -1rem 0 -1rem;
+        font-size: 0.8rem;
+      }
       small{
         font-size: 0.6rem;
         color: #999;
@@ -64,8 +67,12 @@
         margin: 0;
       }
 
-      ul.tabPanel{
+      ul{
         list-style-type: none;
+        text-align: center; /*TO DO hvorfor er de ikke centered?*/
+      }
+
+      ul.tabPanel{
         margin-right: 0;
         padding:0;
         overflow: hidden;
@@ -188,7 +195,7 @@
       <section class="intro">
         <div class="container">
           <h2>Catering </h2>
-          <p> Vi leverer personlig service og individuell tilpasning. Kokkene som gjør avtale med deg, er også de som lager maten og følger den helt frem til lokalet der maten presenteres for gjestene. På denne måten sikrer vi at dine ønsker og preferanser ivaretas på en god måte. Vi bruker kun råvarer av topp kvalitet og tilbereder dem på beste måte med vår erfaring fra det latinske kjøkkenet. </p>
+          <p> Vi leverer personlig service og individuell tilpasning. Kokkene som gjør avtale med deg, er også de som lager maten og følger den helt frem til lokalet der maten presenteres for gjestene. På denne måten sikrer vi at dine ønsker og preferanser ivaretas på en god måte. Vi bruker kun råvarer av topp kvalitet og tilbereder dem på beste måte med vår erfaring fra det latinske kjøkkenet. Se om en av menyene for tapas eller treretters frister, men vær oppmerksom på at menyene kan skreddersys til din preferanse. </p>
         </div>
       </section>
     </main>
@@ -197,9 +204,103 @@
       <div class="container">
         <div class="box full dark tight">
           <div class="text-wrapper">
-            <h3>Meny - catering </h3>
+            <h3>Meny - Tapas </h3>
 
-            <!-- A tabbed panel showing the different menus provided -->
+            <!-- A tabbed panel showing the different tapas menus provided -->
+            <div>
+              <ul class="tabPanel">
+                <!-- A horizontal list for the Menu titles. The javascript:void(0) is added to tell the javascript to stay on the same page when the link is clicked -->
+                <li> <a href="javascript:void(0)" class="panelLinks" onclick="openPanel(event, 'menyTapas1')" id="defaultOpen"> Basic </a> </li>
+                <li> <a href="javascript:void(0)" class="panelLinks" onclick="openPanel(event, 'menyTapas2')" > Premium </a> </li>
+                <li> <a href="javascript:void(0)" class="panelLinks" onclick="openPanel(event, 'menyTapas3')"> Deluxe </a> </li>
+              </ul>
+            </div> <br>
+            <div id="menyTapas1" class="tabContent">
+              <h4> Kalde retter </h4>
+              <ul>
+                <li>Manchego</li>
+                <li>Serrano skinke</li>
+                <li>Marinerte oliven</li>
+                <li>Marinerte artisjokk</li>
+                <li>Aioli</li>
+                <li>Salsa</li>
+              </ul>
+
+              <h4> Varme retter </h4>
+              <ul>
+                <li>Ovnsstekte poteter med rosmarin</li>
+                <li>Scampi al ajillo</li>
+                <li>Albondigas i tomatsaus</li>
+                <li>Kylling a la cordobesa</li>
+                <li>Ciabatta med urter</li>
+                <li>Salat TO DO: er den varm?</li>
+              </ul>
+            </div>
+
+            <div id="menyTapas2" class="tabContent">
+              <h4> Kalde retter </h4>
+              <ul>
+                <li>Crostini de verdura<small> - ristet brød med grillede marinerte grønnsaker</small></li>
+                <li>Manchego</li>
+                <li>Serrano skinke</li>
+                <li>Marinerte oliven</li>
+                <li>Caprese <small> - tomater, mozarella, basilikum, olivenolje </small></li>
+                <li>Ensalada de Mediterraneo <small>- oliven, tomat, agurk, fetaost, salat og tzatziki</small></li>
+                <li>Focaccia med urter</li>
+                <li>Aioli</li>
+                <li>Salsa</li>
+              </ul>
+
+              <h4> Varme retter </h4>
+              <ul>
+                <li>Ovnsstekte poteter med rosmarin</li>
+                <li>Scampi med hummersaus</li>
+                <li>Albondigas i rødvinsaus</li>
+                <li>Kylling a la cordobesa</li>
+                <li>Paella</li>
+                <li>Spansk omelett</li>
+              </ul>
+            </div>
+
+            <div id="menyTapas3" class="tabContent">
+              <h4> Kalde retter </h4>
+              <ul>
+                <li>Manchego</li>
+                <li>Serrano skinke</li>
+                <li>Asorterte oliven med hvitløk og oregano</li>
+                <li>Marinerte artisjokk</li>
+                <li>Aioli</li>
+                <li>Pebre <small> - tomatsalsa fra Chile med hvitløk, chili, koriander, løk og lime</small></li>
+                <li>Bruchetta med tomat og pesto</li>
+                <li>Caprese <small> - tomater, mozarella, basilikum, olivenolje </small> </li>
+                <li>Ensalada de pollo</li>
+                <li>Ciabatta med urter</li>
+              </ul>
+
+              <h4> Varme retter </h4>
+              <ul>
+                <li>Chorizos</li>
+                <li>Pannestekte kamskjell med hvitløk og timian</li>
+                <li>Ovnsstekte poteter med rosmarin</li>
+                <li>Scampi med hummersaus</li>
+                <li>Albondigas i rødvinsaus</li>
+                <li>Kylling a la cordobesa</li>
+                <li>Paella</li>
+                <li>Chilenske empanadas med kjøttdeig eller ost</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="row menu">
+      <div class="container">
+        <div class="box full tight">
+          <div class="text-wrapper">
+            <h3>Meny - treretters </h3>
+
+            <!-- A tabbed panel showing the different three course dinners provided -->
             <div>
               <ul class="tabPanel">
                 <!-- A horizontal list for the Menu titles. The javascript:void(0) is added to tell the javascript to stay on the same page when the link is clicked -->
@@ -210,67 +311,69 @@
             </div> <br>
             <div id="meny1" class="tabContent">
               <p> Introtekst til meny 1 – en herlig ssammensetning av kjøtt fra mellomamerika og arktisk fisk gir en kulinarisk opplevelse lorem ipsum dolor sit amet, consectetuer adipliscing elit. </p>
+              <h4> Forrett </h4>
+              <p> Jamon gratinado de ajo con gambas </p>
+              <p class="menuNorsk"> Hvitløksgratinert spekeskinke med reker</p>
+              <p> <small> Inneholder fisk, gluten, allergen 1, allergen 2 </small> </p>
+
               <h4> Hovedrett </h4>
-              <p> Beskrivelse av hovedrett lorem ipsum dolor sit amet, consectetuer adiplscing elit.</p>
-              <p> <small> Inneholder: Kjøtt, allergen 3, skalldyr </small> </p>
+              <p> Lomo de cordero al horno </p>
+              <p class="menuNorsk"> Lammecarret med rødvinssaus, glaserte grønnsaker og fløtegratinerte poteter </p>
+              <p> <small> TO DO Inneholder: Kjøtt, allergen 3, skalldyr </small> </p>
 
               <h4> Dessert </h4>
-              <p> Lorem ipsum beskrivelse av desserten </p>
-              <p> <small> Inneholder: Laktose, nøtter, allergen </small> </p>
+              <p> Velg blant en av disse: </p>
+              <p> Pannacotta med bringebærsaus <br> Creme catalana <br> Sjokoladefondant <br> Tiramisu </p>
+              <p> <small> TODO Inneholder: Laktose, nøtter, allergen </small> </p>
             </div>
 
             <div id="meny2" class="tabContent">
-              <p> Introtekst til meny 2 –  lorem ipsum dolor sit amet, consectetuer adipliscing elit. </p>
+              <p> Introtekst til meny 2 – en herlig ssammensetning av kjøtt fra mellomamerika og arktisk fisk gir en kulinarisk opplevelse lorem ipsum dolor sit amet, consectetuer adipliscing elit. </p>
               <h4> Forrett </h4>
-              <p> Beskrivelse av forrettmenyen lorem ipsum dolor sit amet, consectetuer adiplscing elit.</p>
+              <p> Carpaccio </p>
+              <p class="menuNorsk"> Ytrefilet servert med parmasan, ruccolasalat, olivenolje og sitron</p>
               <p> <small> Inneholder fisk, gluten, allergen 1, allergen 2 </small> </p>
 
               <h4> Hovedrett </h4>
-              <p> Beskrivelse av hovedrett lorem ipsum dolor sit amet, consectetuer adiplscing elit.</p>
-              <p> <small> Inneholder: Kjøtt, allergen 3, skalldyr </small> </p>
-
-              <h4> Hovedrett 2 </h4>
-              <p> Beskrivelse av hovedrett lorem ipsum dolor sit amet, consectetuer adiplscing elit.</p>
-              <p> <small> Inneholder: Kjøtt, allergen 3, skalldyr </small> </p>
+              <p> Baccalao en salsa verde y papas panaderas </p>
+              <p class="menuNorsk"> Baccalao med grønn saus??? TO DO og poteter stekt med løk, hvitløk, olivenolje og hvitvin </p>
+              <p> <small> TO DO Inneholder: Kjøtt, allergen 3, skalldyr </small> </p>
 
               <h4> Dessert </h4>
-              <p> Lorem ipsum beskrivelse av desserten </p>
-              <p> <small> Inneholder: Laktose, nøtter, allergen </small> </p>
+              <p> Velg blant en av disse: </p>
+              <p> Pannacotta med bringebærsaus <br> Creme catalana <br> Sjokoladefondant <br> Tiramisu </p>
+              <p> <small> TODO Inneholder: Laktose, nøtter, allergen </small> </p>
             </div>
 
             <div id="meny3" class="tabContent">
-              <p> Introtekst til meny 3 – en herlig sammensetning av kjøtt fra mellomamerika og arktisk fisk gir en kulinarisk opplevelse lorem ipsum dolor sit amet, consectetuer adipliscing elit. </p>
+              <p> Introtekst til meny 3 – en herlig ssammensetning av kjøtt fra mellomamerika og arktisk fisk gir en kulinarisk opplevelse lorem ipsum dolor sit amet, consectetuer adipliscing elit. </p>
               <h4> Forrett </h4>
-              <p> Beskrivelse av forrettmenyen lorem ipsum dolor sit amet, consectetuer adiplscing elit.</p>
-              <p> <small> Inneholder fisk, gluten, allergen 1, allergen 2 </small> </p>
+              <p> Gambas al ajillo </p>
+              <p class="menuNorsk"> Scampi med hvitløk, persille og chili servert med godt brød </p>
+              <p> <small> TO DO Inneholder fisk, gluten, allergen 1, allergen 2 </small> </p>
 
               <h4> Hovedrett </h4>
-              <p> Beskrivelse av hovedrett lorem ipsum dolor sit amet, consectetuer adiplscing elit.</p>
-              <p> <small> Inneholder: Kjøtt, allergen 3, skalldyr </small> </p>
-
-              <h4> Hovedrett </h4>
-              <p> Beskrivelse av hovedrett lorem ipsum dolor sit amet, consectetuer adiplscing elit.</p>
-              <p> <small> Inneholder: Kjøtt, allergen 3, skalldyr </small> </p>
-
-              <h4> Frukt </h4>
-              <p> Lorem ipsum beskrivelse av desserten </p>
-              <p> <small> Inneholder: sitrus </small> </p>
+              <p> Filete de ternera con salsa vino de porto </p>
+              <p class="menuNorsk"> Kalvefilet med portvinsaus, glaserte grønnsaker og ovnsstekte poteter </p>
+              <p> <small> TO DO Inneholder: Kjøtt, allergen 3, skalldyr </small> </p>
 
               <h4> Dessert </h4>
-              <p> Lorem ipsum beskrivelse av desserten </p>
-              <p> <small> Inneholder: Laktose, nøtter, allergen </small> </p>
+              <p> Velg blant en av disse: </p>
+              <p> Pannacotta med bringebærsaus <br> Creme catalana <br> Sjokoladefondant <br> Tiramisu </p>
+              <p> <small> TODO Inneholder: Laktose, nøtter, allergen </small> </p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
+
     <section class="row">
       <div class="container">
-        <div class="box full tight">
+        <div class="box full dark tight">
           <div class="text-wrapper">
             <h4> Nedlastbar meny </h4>
-            <p id="download"> Hvis du ønsker å skrive ut menyen, kan du laste den ned her: </p>
+            <p id="download"> Hvis du ønsker å skrive ut menyene, kan du laste dem ned her: </p>
             <a href="#" class="button" id="buttonDownload">
               <!-- An svg icon inside the button-->
               <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
@@ -290,8 +393,8 @@
         <div class="box right tight blue">
           <div class="text-wrapper">
             <blockquote>
-              <p>Vi har benyttet Da Carlo Catering både i forbindelse med 50 års bursdag og konfirmasjoner. De leverer alltid meget god mat, gode råd for sammensetting av retter og hyggelig service. Anbefaler Da Carlo Catering på det varmeste! </p>
-              <footer>Christian Lilloe Salvesen</footer>
+              <p>De leverer alltid meget god mat, gode råd for sammensetting av retter og hyggelig service. Anbefaler Da Carlo Catering på det varmeste! </p>
+              <footer> Christian Lilloe Salvesen <br> Bestilt mat til konfirmasjoner og 50årsdag</footer>
             </blockquote> <br> <br>
           </div>
         </div>
