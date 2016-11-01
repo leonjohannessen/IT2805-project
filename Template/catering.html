@@ -18,10 +18,9 @@
   -->
     <style>
 
-      /*Styling h3 and all the text inside menu-class TO DO: ta bort h3? */
+      /*Styling h3 and all the text inside menu-class */
       h3, .menu {
         text-align: center;
-        font-family: 'Lato', sans-serif; /* TO DO: bør vel egentlig legges inn i style.css? */
       }
 
       /*Styling the p inside menuclasses */
@@ -30,11 +29,14 @@
       }
       /*Styling the h4 inside menuclasses */
       .menu h4 {
+        margin: 2rem 0 -0.5rem;
         text-transform: none;
       }
+
       small{
         font-size: 0.6rem;
         color: #999;
+        margin-top: -2rem; /*TO DO. hvorfor får jeg ikke pushet denne opp?*/
       }
 
       a#buttonDownload{
@@ -58,7 +60,7 @@
       /*TO DO er dette grei måte å ordne det på? Eller bør ha samme regel på alle knappene?*/
       p#download{
         display: inline-block;
-        width:50%; /*TO DO hvis veldig smal skjerm, så gjør dette at knappen hopper ned, hvordan fikse?*/
+        width:50%; /*TO DO hvis veldig smal skjerm, så gjør dette at knappen hopper ned, hvordan kan det fikses?*/
         margin: 0;
       }
 
@@ -66,7 +68,7 @@
         list-style-type: none;
         margin-right: 0;
         padding:0;
-        overflow: hidden; /*TO DO hvorfor denne her?*/
+        overflow: hidden;
         margin: auto;
       }
 
@@ -121,27 +123,37 @@
       }
 
       /*To fix the pattern overlay to correct place*/
+      /*TO DO alle? er denne generell på alle sidene?*/
       .dark::before{
         left: 0;
         top: 0;
       }
-    }
+      .blue::before{
+        left: 0;
+        top: 0;
+      }
 
-      /* TO DO: legg til informasjon hvis trengs*/
       /* Layout for screens larger than 960px
          ================================================================================ */
 @media only screen and (min-width: 960px) {
 
-/* TO DO ? Får ikke "kontakt" med media screen, ingenting som gjøres her endres? */
   /* Float all list-elements on one horizontal line and center*/
   ul.tabPanel li {
     display: inline-block;
     float: none;
   }
-/*TESTER----------*/
-  .intro {
-    background-color: red;
+  /*Moving the boxes in correct places*/
+  .menu{
+    margin-top: -12rem;
   }
+  .cateringQuote{
+    margin-top: -4rem;
+    z-index: 20; /*TO DO: riktig måte å gjør det på?*/
+  }
+  .lastRow{ /* TO DO alle?: legge til på andre sider?*/
+    margin-bottom: 4rem;
+  }
+
 }
     </style>
 
@@ -176,7 +188,7 @@
       <section class="intro">
         <div class="container">
           <h2>Catering </h2>
-          <p> Introtekst om cateringleveranser Lorem ipsum dolor sit amet, condidunt ut labore et dolore magna aliqua. Sgdfg Tempor.</p>
+          <p> Vi leverer personlig service og individuell tilpasning. Kokkene som gjør avtale med deg, er også de som lager maten og følger den helt frem til lokalet der maten presenteres for gjestene. På denne måten sikrer vi at dine ønsker og preferanser ivaretas på en god måte. Vi bruker kun råvarer av topp kvalitet og tilbereder dem på beste måte med vår erfaring fra det latinske kjøkkenet. </p>
         </div>
       </section>
     </main>
@@ -188,14 +200,14 @@
             <h3>Meny - catering </h3>
 
             <!-- A tabbed panel showing the different menus provided -->
-            <div id="menus">
+            <div>
               <ul class="tabPanel">
                 <!-- A horizontal list for the Menu titles. The javascript:void(0) is added to tell the javascript to stay on the same page when the link is clicked -->
                 <li> <a href="javascript:void(0)" class="panelLinks" onclick="openPanel(event, 'meny1')" id="defaultOpen"> Meny 1 </a> </li>
                 <li> <a href="javascript:void(0)" class="panelLinks" onclick="openPanel(event, 'meny2')" > Meny 2 </a> </li>
                 <li> <a href="javascript:void(0)" class="panelLinks" onclick="openPanel(event, 'meny3')"> Meny 3 </a> </li>
               </ul>
-            </div>
+            </div> <br>
             <div id="meny1" class="tabContent">
               <p> Introtekst til meny 1 – en herlig ssammensetning av kjøtt fra mellomamerika og arktisk fisk gir en kulinarisk opplevelse lorem ipsum dolor sit amet, consectetuer adipliscing elit. </p>
               <h4> Hovedrett </h4>
@@ -258,7 +270,7 @@
         <div class="box full tight">
           <div class="text-wrapper">
             <h4> Nedlastbar meny </h4>
-            <p id="download"> Lorem ipsum dolor sit amet consectetuer adipliscing elit </p>
+            <p id="download"> Hvis du ønsker å skrive ut menyen, kan du laste den ned her: </p>
             <a href="#" class="button" id="buttonDownload">
               <!-- An svg icon inside the button-->
               <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
@@ -266,13 +278,39 @@
                   <path d="M0 0h24v24H0z" fill="none"/>
               </svg>
               Last ned PDF </a>
+              <br>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Quotes from customers-->
+    <section class="row">
+      <div class="container">
+        <div class="box right tight blue">
+          <div class="text-wrapper">
+            <blockquote>
+              <p>Vi har benyttet Da Carlo Catering både i forbindelse med 50 års bursdag og konfirmasjoner. De leverer alltid meget god mat, gode råd for sammensetting av retter og hyggelig service. Anbefaler Da Carlo Catering på det varmeste! </p>
+              <footer>Christian Lilloe Salvesen</footer>
+            </blockquote> <br> <br>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="row lastRow">
+      <div class="container cateringQuote">
+        <div class="box left tight">
+          <div class="text-wrapper">
+            <blockquote>
+              <p>Anbefales på det sterkeste. Jeg er spesielt glad i blåskjellsuppen, paellaen og Campisausen. Han lager også verdens beste salsadipp og foccacia. </p>
+              <footer>Amie Secka</footer>
+            </blockquote>
           </div>
         </div>
       </div>
     </section>
 
     <!-- call to action -->
-    <!-- TO DO legg inn på ny og legg inn spesifikktekst om cateringrelatertspørsmål -->
     <section class="cta">
       <div class="container">
         <p>Ta kontakt for et uforpliktende tilbud.</p>

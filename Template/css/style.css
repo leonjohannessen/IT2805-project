@@ -200,7 +200,7 @@ a.button::before {
   width: 100%;
   height: 100%;
   position: absolute;
-  background: url('../img/triangle_pattern.jpg');
+  background: url('../img/peru_pattern2.jpg');
   z-index: 1;
   opacity: .1;
   -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
