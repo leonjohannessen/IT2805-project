@@ -36,11 +36,16 @@
         margin: -1rem 0 -1rem;
         font-size: 0.8rem;
       }
-      small{
+
+      .menu small{
         font-size: 0.6rem;
+        font-family: Lato, sans-serif;
         color: #999;
-        margin-top: -2rem; /*TO DO. hvorfor får jeg ikke pushet denne opp?*/
+        margin-top: -0.4rem;/*TO DO få opp margin */
+        margin-bottom: -0.3rem;
       }
+      .menu small::before{
+/*TO DO ta bort?*/      }
 
       a#buttonDownload{
         float:right
@@ -66,6 +71,7 @@
         width:50%; /*TO DO hvis veldig smal skjerm, så gjør dette at knappen hopper ned, hvordan kan det fikses?*/
         margin: 0;
       }
+
 
       ul{
         list-style-type: none;
@@ -218,21 +224,21 @@
             <div id="menyTapas1" class="tabContent">
               <h4> Kalde retter </h4>
               <ul>
-                <li>Manchego</li>
+                <li>Manchego <small> M, E  </small></li>
                 <li>Serrano skinke</li>
                 <li>Marinerte oliven</li>
                 <li>Marinerte artisjokk</li>
-                <li>Aioli</li>
+                <li>Aioli <small> E </small> </li>
                 <li>Salsa</li>
               </ul>
 
               <h4> Varme retter </h4>
               <ul>
                 <li>Ovnsstekte poteter med rosmarin</li>
-                <li>Scampi al ajillo</li>
-                <li>Albondigas i tomatsaus</li>
+                <li>Scampi al ajillo<small> M, SK </small></li>
+                <li>Albondigas i tomatsaus<small> E, S</small> </li>
                 <li>Kylling a la cordobesa</li>
-                <li>Ciabatta med urter</li>
+                <li>Ciabatta med urter<small> HV </small></li>
                 <li>Salat TO DO: er den varm?</li>
               </ul>
             </div>
@@ -240,41 +246,41 @@
             <div id="menyTapas2" class="tabContent">
               <h4> Kalde retter </h4>
               <ul>
-                <li>Crostini de verdura<small> - ristet brød med grillede marinerte grønnsaker</small></li>
-                <li>Manchego</li>
+                <li>Crostini de verdura<small> - ristet brød med grillede marinerte grønnsaker. HV</small></li>
+                <li>Manchego<small>M, E</small></li>
                 <li>Serrano skinke</li>
                 <li>Marinerte oliven</li>
-                <li>Caprese <small> - tomater, mozarella, basilikum, olivenolje </small></li>
-                <li>Ensalada de Mediterraneo <small>- oliven, tomat, agurk, fetaost, salat og tzatziki</small></li>
-                <li>Focaccia med urter</li>
-                <li>Aioli</li>
+                <li>Caprese <small> - tomater, mozarella, basilikum, olivenolje. M</small></li>
+                <li>Ensalada de Mediterraneo <small>- oliven, tomat, agurk, fetaost, salat og tzatziki. M</small></li>
+                <li>Focaccia med urter <small> TO DO HV?</small></li>
+                <li>Aioli<small>E </small></li>
                 <li>Salsa</li>
               </ul>
 
               <h4> Varme retter </h4>
               <ul>
                 <li>Ovnsstekte poteter med rosmarin</li>
-                <li>Scampi med hummersaus</li>
-                <li>Albondigas i rødvinsaus</li>
+                <li>Scampi med hummersaus<small>M, SK </small></li>
+                <li>Albondigas i rødvinsaus<small> TO DO?</small></li>
                 <li>Kylling a la cordobesa</li>
-                <li>Paella</li>
-                <li>Spansk omelett</li>
+                <li>Paella<small>F TO DO SK? </small></li>
+                <li>Spansk omelett<small>E</small></li>
               </ul>
             </div>
 
             <div id="menyTapas3" class="tabContent">
               <h4> Kalde retter </h4>
               <ul>
-                <li>Manchego</li>
+                <li>Manchego<small>M,E </small></li>
                 <li>Serrano skinke</li>
                 <li>Asorterte oliven med hvitløk og oregano</li>
                 <li>Marinerte artisjokk</li>
-                <li>Aioli</li>
+                <li>Aioli<small>E </small></li>
                 <li>Pebre <small> - tomatsalsa fra Chile med hvitløk, chili, koriander, løk og lime</small></li>
-                <li>Bruchetta med tomat og pesto</li>
-                <li>Caprese <small> - tomater, mozarella, basilikum, olivenolje </small> </li>
-                <li>Ensalada de pollo</li>
-                <li>Ciabatta med urter</li>
+                <li>Bruchetta med tomat og pesto <small> HV, P, M</small></li>
+                <li>Caprese <small> - tomater, mozarella, basilikum, olivenolje. M </small></li>
+                <li>Ensalada de pollo<small>M</small></li>
+                <li>Ciabatta med urter<small>HV</small></li>
               </ul>
 
               <h4> Varme retter </h4>
@@ -282,13 +288,15 @@
                 <li>Chorizos</li>
                 <li>Pannestekte kamskjell med hvitløk og timian</li>
                 <li>Ovnsstekte poteter med rosmarin</li>
-                <li>Scampi med hummersaus</li>
-                <li>Albondigas i rødvinsaus</li>
+                <li>Scampi med hummersaus<small>M, SK </small></li>
+                <li>Albondigas i rødvinsaus<small>E, S </small></li>
                 <li>Kylling a la cordobesa</li>
-                <li>Paella</li>
-                <li>Chilenske empanadas med kjøttdeig eller ost</li>
+                <li>Paella <small>F TO DO SK? </small></li>
+                <li>Chilenske empanadas med kjøttdeig eller ost <small>M, E, HV </small></li>
               </ul>
             </div>
+          <p> <small> ALLERGIER: </small> </p>
+          <p> <small> HV: hvete. SK: skalldyr. F: fisk. M: melk og laktose. Bl: bløtdyr. <br> SO: soya. P: peanøtter. E: egg. SF: sesamfrø. SE: sennep. MA: mandler. </small></p>
           </div>
         </div>
       </div>
@@ -304,7 +312,7 @@
             <div>
               <ul class="tabPanel">
                 <!-- A horizontal list for the Menu titles. The javascript:void(0) is added to tell the javascript to stay on the same page when the link is clicked -->
-                <li> <a href="javascript:void(0)" class="panelLinks" onclick="openPanel(event, 'meny1')" id="defaultOpen"> Meny 1 </a> </li>
+                <li> <a href="javascript:void(0)" class="panelLinks" onclick="openPanel(event, 'meny1')"> Meny 1 </a> </li>
                 <li> <a href="javascript:void(0)" class="panelLinks" onclick="openPanel(event, 'meny2')" > Meny 2 </a> </li>
                 <li> <a href="javascript:void(0)" class="panelLinks" onclick="openPanel(event, 'meny3')"> Meny 3 </a> </li>
               </ul>
@@ -314,17 +322,21 @@
               <h4> Forrett </h4>
               <p> Jamon gratinado de ajo con gambas </p>
               <p class="menuNorsk"> Hvitløksgratinert spekeskinke med reker</p>
-              <p> <small> Inneholder fisk, gluten, allergen 1, allergen 2 </small> </p>
+              <p><small> Inneholder fisk, melk og laktose</small> </p>
 
               <h4> Hovedrett </h4>
               <p> Lomo de cordero al horno </p>
               <p class="menuNorsk"> Lammecarret med rødvinssaus, glaserte grønnsaker og fløtegratinerte poteter </p>
-              <p> <small> TO DO Inneholder: Kjøtt, allergen 3, skalldyr </small> </p>
+              <p><small> Inneholder melk og laktose</small> </p>
 
               <h4> Dessert </h4>
               <p> Velg blant en av disse: </p>
-              <p> Pannacotta med bringebærsaus <br> Creme catalana <br> Sjokoladefondant <br> Tiramisu </p>
-              <p> <small> TODO Inneholder: Laktose, nøtter, allergen </small> </p>
+              <ul>
+                <li>Pannacotta med bringebærsaus<small>Inneholder melk og laktose</small></li>
+                <li>Creme catalana<small>Inneholder melk, laktose og egg</small></li>
+                <li>Sjokoladefondant<small> Inneholder melk, laktose, egg, hvete og soya</small></li>
+                <li>Tiramisu <small>Inneholder melk, laktose, egg og hvete </small> </li>
+              </ul>
             </div>
 
             <div id="meny2" class="tabContent">
@@ -332,17 +344,21 @@
               <h4> Forrett </h4>
               <p> Carpaccio </p>
               <p class="menuNorsk"> Ytrefilet servert med parmasan, ruccolasalat, olivenolje og sitron</p>
-              <p> <small> Inneholder fisk, gluten, allergen 1, allergen 2 </small> </p>
+              <p><small> Inneholder melk og laktose</small></p>
 
               <h4> Hovedrett </h4>
               <p> Baccalao en salsa verde y papas panaderas </p>
               <p class="menuNorsk"> Baccalao med grønn saus??? TO DO og poteter stekt med løk, hvitløk, olivenolje og hvitvin </p>
-              <p> <small> TO DO Inneholder: Kjøtt, allergen 3, skalldyr </small> </p>
+              <p><small> Inneholder fisk</small></p>
 
               <h4> Dessert </h4>
               <p> Velg blant en av disse: </p>
-              <p> Pannacotta med bringebærsaus <br> Creme catalana <br> Sjokoladefondant <br> Tiramisu </p>
-              <p> <small> TODO Inneholder: Laktose, nøtter, allergen </small> </p>
+              <ul>
+                <li>Pannacotta med bringebærsaus<small>Inneholder melk og laktose</small></li>
+                <li>Creme catalana<small>Inneholder melk, laktose og egg</small></li>
+                <li>Sjokoladefondant<small> Inneholder melk, laktose, egg, hvete og soya</small></li>
+                <li>Tiramisu <small>Inneholder melk, laktose, egg og hvete </small> </li>
+              </ul>
             </div>
 
             <div id="meny3" class="tabContent">
@@ -350,17 +366,20 @@
               <h4> Forrett </h4>
               <p> Gambas al ajillo </p>
               <p class="menuNorsk"> Scampi med hvitløk, persille og chili servert med godt brød </p>
-              <p> <small> TO DO Inneholder fisk, gluten, allergen 1, allergen 2 </small> </p>
+              <p><small> Inneholder skalldyr </small> </p>
 
               <h4> Hovedrett </h4>
               <p> Filete de ternera con salsa vino de porto </p>
               <p class="menuNorsk"> Kalvefilet med portvinsaus, glaserte grønnsaker og ovnsstekte poteter </p>
-              <p> <small> TO DO Inneholder: Kjøtt, allergen 3, skalldyr </small> </p>
 
               <h4> Dessert </h4>
               <p> Velg blant en av disse: </p>
-              <p> Pannacotta med bringebærsaus <br> Creme catalana <br> Sjokoladefondant <br> Tiramisu </p>
-              <p> <small> TODO Inneholder: Laktose, nøtter, allergen </small> </p>
+              <ul>
+                <li>Pannacotta med bringebærsaus<br><small>Inneholder melk og laktose</small></li>
+                <li>Creme catalana<br><small>Inneholder melk, laktose og egg</small></li>
+                <li>Sjokoladefondant<br><small> Inneholder melk, laktose, egg, hvete og soya</small></li>
+                <li>Tiramisu <br><small>Inneholder melk, laktose, egg og hvete </small> </li>
+              </ul>
             </div>
           </div>
         </div>
