@@ -1,3 +1,24 @@
+/*
+Colors used in Da Carlos website:
+#F1F6F5   lyselysegrå
+#fff			hvit
+#999			grå
+#3d3d3d		mørkegrå
+#2d2b2b		varm mørkemørkegrå
+#222			mørkemørkegrå
+#000			svart
+
+#3cc	    Turkis
+#099		  Dull turkis
+#248f8f	  Mørkere dull turkis
+
+rgba(51,204,204,0.2) 	turkis - gjennomsiktig
+rgba(51,204,204,0.5)	turkis - litt gjennomsiktig
+
+#c33		  Rød
+rgba(204,51,51,0.5)		rød - litt gjennomsiktig
+*/
+
 /* box reset */
 html {
   box-sizing: border-box;
@@ -179,7 +200,7 @@ a.button::before {
   width: 100%;
   height: 100%;
   position: absolute;
-  background: url('../img/triangle_pattern.jpg');
+  background: url('../img/peru_pattern2.jpg');
   z-index: 1;
   opacity: .1;
   -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
@@ -190,7 +211,7 @@ a.button::before {
 body > footer {
   background: #222;
   color: #fff;
-  padding: 4rem 0;
+  padding: 6rem 0;
 }
 
 /* Mobile layout
@@ -324,8 +345,7 @@ main {
 
 .intro,
 .cta,
-.box,
-body > footer {
+.box {
  padding: 2rem;
 }
 
@@ -337,6 +357,26 @@ figure {
 figure img {
  width: 100%;
  vertical-align: middle; /* remove trailing space */
+}
+
+/* footer styles for mobile*/
+body > footer {
+  padding: 4rem 0;
+}
+
+/* Logo image in footer*/
+img.smallLogo{
+  width: 60%;
+  height: auto;
+  display: block;
+  margin:auto;
+}
+
+p#footerCopyright{
+  text-align: center;
+  font-size: small;
+  position: relative;
+  bottom: -2rem;
 }
 
 /* Layout for screens larger than 960px
@@ -374,7 +414,7 @@ figure img {
     box-shadow: 0 0 0 0 rgba(0,0,0,0);
     transition: .2s box-shadow;
   }
-  
+
   /* Styling the main navigation for desktop view so that it sticks to the top when the page is scrolled*/
   #main-nav.sticky {
     position: fixed;
@@ -500,8 +540,22 @@ figure img {
     width: 100%;
   }
 
-  /* footer */
+  /* footer styles */
   body > footer {
-    padding: 8rem 0;
+    padding: 6rem 0;
+  }
+  /* Logo image in footer*/
+  img.smallLogo{
+    width: 30%;
+    height: auto;
+    display: block;
+    margin:auto;
+  }
+
+  p#footerCopyright{
+    text-align: center;
+    font-size: small;
+    position: relative;
+    bottom: -3rem;
   }
 }
