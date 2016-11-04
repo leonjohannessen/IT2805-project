@@ -70,14 +70,16 @@ a.button::before {
   content: none;
 }
 
+/*If the option is active*/
 .box a.isActive, .box a:active{
-  background: transparent;
-  border: 2px solid white;
-  color: white;
+  background: white;
+  /*border: 2px solid white;*/
+  /*color: white;*/
 }
 
 .box a.button:focus {
-  background: transparent;
+  background: #3cc;
+  /*border: 2px solid white;*/
 }
 
 /*The forms are initially not shown */
