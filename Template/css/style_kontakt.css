@@ -17,6 +17,11 @@
 
 p.phone {
   font-size: 1.8rem;
+  margin-bottom: 0;
+}
+
+p.mailto {
+  margin-top: 0;
 }
 
 /*placement of phone and signature in intro*/
@@ -189,7 +194,7 @@ textarea {
   }
 
   p.phone {
-    padding-top: 4rem;
+    padding-top: 5rem;
   }
 
   /*box styles for big screen

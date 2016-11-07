@@ -17,7 +17,7 @@
 
     <style>
     body {
-      background: fixed url('img/lmh-kokker072.jpg') no-repeat;
+      background: fixed url('img/webtek_kylling.jpeg') no-repeat;
       background-size: cover;
       margin: 0;
     }
@@ -41,9 +41,29 @@
       z-index: 0;
     }
 
+    #camilla {
+      margin: -4rem auto 0;
+      z-index: 1;
+    }
+
+    #camilla p {
+      padding-bottom: 4rem;
+    }
+
     .cta {
       margin: 12rem auto 4rem;
     }
+
+    p.phone {
+      font-size: 1.8rem;
+      display: inline;
+    }
+
+    p.email {
+      font-size:1.1rem;
+      margin-top: 0;
+    }
+
     </style>
 
   </head>
@@ -64,10 +84,10 @@
       <nav id="main-nav">
         <ul>
           <li><a class="active" href="#">Hjem</a></li>
-          <li><a href="#">Catering</a></li>
-          <li><a href="#">Kantine</a></li>
-          <li><a href="#">Om</a></li>
-          <li><a href="#">Kontakt</a></li>
+          <li><a href="catering.html">Catering</a></li>
+          <li><a href="kantine.html">Kantine</a></li>
+          <li><a href="om.html">Om</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
         </ul>
       </nav>
     </header>
@@ -77,10 +97,12 @@
       <section class="intro">
         <div class="container">
           <h2>Om Da Carlo</h2>
-          <p>God mat gir en ekstra dimensjon til alle møter mellom mennesker, om det er i kantina på jobben, store høytidsdager eller uformelle firmafester.
-VI har samlet de beste smakene fra det italienske, spanske og latinamerikanske kjøkkenet og ønsker å gi dere spennende og minneverdige smaksopplevelser tilpasset den sammenheng der maten skal serveres.
-Da Carlo leverer tapas eller individuelt tilpassede menyer til enhver anledning i Oslo og omegn. Vi kan også stille med profesjonelle servitører og gi vinforslag til maten hvis det er ønskelig.
-Da Carlo har flere års erfaring med drift av kantiner og har gode referanser å vise til. Ta kontakt dersom dere ønsker kantinemat som gir arbeidsdagen et løft!</p></div>
+          <p>
+            God mat gir en ekstra dimensjon til alle møter mellom mennesker, om det er i kantina på jobben, store høytidsdager eller uformelle firmafester.
+            Vi har samlet de beste smakene fra det italienske, spanske og latinamerikanske kjøkkenet og ønsker å tilby spennende og minneverdige smaksopplevelser tilpasset dere.
+            Da Carlo leverer tapas eller individuelt tilpassede menyer til enhver anledning i Oslo og omegn. Vi har i tillegg knyttet til oss dyktige servitører representert ved Camilla, som kan tilføre din sammenkomst et ekstra løft. Vi kan også stille med dyktig bartender med lang erfaring innen bransjen.
+            Da Carlo har flere års erfaring med drift av kantiner og har gode referanser å vise til. Ta kontakt dersom dere ønsker kantinemat som gir arbeidsdagen et løft!
+          </p></div>
       </section>
 
       <section class="row">
@@ -90,9 +112,9 @@ Da Carlo har flere års erfaring med drift av kantiner og har gode referanser å
               <h3>Juan Carlos</h3>
               <p> Fra min oppvekst ved Chiles langstrakte kyst har jeg lært meg å verdsette havets mangfoldige variasjon av delikatesser. Da jeg var liten opplevde jeg hvordan min mor tryllet frem de herligste smaker fra enkle basis råvarer i det chilenske kjøkkenet. Dette har jeg brakt med meg til Norge hvor jeg har jobbet mange år i restaurantbransjen og nå de siste 10 årene med drift av Nets, Teller og Visa sine kantiner i Oslo.</p>
               <div>
-                <blockquote>
+                <!--<blockquote>
                   <p>Sitat om ditt og datt Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                </blockquote>
+                </blockquote>-->
               </div>
             </div>
           </div>
@@ -104,15 +126,17 @@ Da Carlo har flere års erfaring med drift av kantiner og har gode referanser å
 
       <section class="row" >
         <div class="container" id="cecare">
-          <!-- TODO teksturen for .dark legger seg ikke riktig på mobil, får padding-->
           <div class="box right dark">
             <div class="text-wrapper">
               <h3>Cecare</h3>
-              <p>Jeg vokste opp i en liten landsby ved Toscanas kyst. Foreldrene mine kommer fra Sardinia, og på den måten har jeg fått tilegnet meg matkultur fra to viktige tradisjoner innen det italienske kjøkken. Familien min har arbeidet I flere generasjoner med jordbruk, husdyrhold og produksjon av meiriprodukter, og fra disse erfaringene kommer kunnskapene jeg har om gode råvarer og foredlingen av disse. Jeg har bodd i Norge siden 2002, og har i mange år jobbet hos San Lorenzo i Vika, en italiensk restaurant og pizzeria. I kjøkkenet til San Lorenzo utvidet jeg min kunnskap om tradisjonelle matretter fra flere regioner i Italia.
-              Det er det jeg elsker å gjøre: lage ekte italiensk mat med tradisjoner tilbake til antikkens Roma!</p>
+              <p>
+                Jeg vokste opp i en liten landsby ved Toscanas kyst med foreldre som kommer opprinnelig fra Sardinia. På den måten har jeg tilegnet meg matkultur fra to viktige tradisjoner innen det italienske kjøkkenet. I flere generasjoner har familien min drevet med jordbruk, husdyrhold og produksjon av meiriprodukter.
+                Fra disse erfaringene kommer kunnskapen jeg har om gode råvarer og foredlingen av disse.
+                Etter at jeg kom til Norge i 2002, har jeg i mange år jobbet på kjøkkenet hos San Lorenzo i Vika, en italiensk restaurant og pizzeria og der utvidet jeg min kunnskap om tradisjonelle matretter fra flere regioner i Italia.
+              </p>
               <div>
                 <blockquote>
-                  <p>Sitat om ditt og datt Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                  <p>Det er det jeg elsker å gjøre: lage ekte italiensk mat med tradisjoner tilbake til antikkens Roma!</p>
                 </blockquote>
               </div>
             </div>
@@ -128,10 +152,13 @@ Da Carlo har flere års erfaring med drift av kantiner og har gode referanser å
           <div class="box left">
             <div class="text-wrapper">
               <h3>Roberto</h3>
-              <p>I 20 år har jeg reist gjennom Spania både gastronomisk og geografisk. På min reise har jeg blitt kjent med mange steder, ulike kjøkken og tradisjonsrike spanske restauranter. Jeg har blitt innviet i kulinariske hemmeligheter! I 2008 kom jeg til Oslo og jobbet som kokk på en av Oslos største tapasrestauranter og var med å sette standard for god iberisk mat i hovedstaden. Med min kunnskap og erfaringer vil jeg bidra til at Da Carlo leverer mat av ypperste klasse.</p>
-              <div>
+              <p>
+                I 20 år har jeg reist gjennom Spania både gastronomisk og geografisk. På min reise har jeg blitt kjent med de ulike regionene som er bærere av stolte mattradisjoner, fra Valencia med sin paella til Baskerland med sine berømte fiskeretter.
+                Jeg har vært heldig og blitt innviet i kulinariske hemmeligheter på min veg! I 2008 kom jeg til Oslo og jobbet som kokk på en av Oslos største tapasrestauranter og var med å sette standard for god iberisk mat i hovedstaden.
+              </p>
+                <div>
                 <blockquote>
-                  <p>Sitat om ditt og datt Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                  <p>Med min kunnskap og erfaringer vil jeg bidra til at Da Carlo leverer mat av ypperste klasse</p>
                 </blockquote>
               </div>
             </div>
@@ -141,16 +168,33 @@ Da Carlo har flere års erfaring med drift av kantiner og har gode referanser å
           </figure>
         </div>
       </section>
+
+      <section class="row" >
+        <div class="container" id="camilla">
+          <div class="box right blue">
+            <div class="text-wrapper">
+              <h3>Camilla</h3>
+              <p>
+                Camilla er faglært servitør og sommelier, og har jobbet 10 år i restaurantbransjen i København og Oslo!
+                Hun og hennes kollegaer vil ivareta alle gjestene på en utmerket måte!
+                Interesse for mat og vin har camilla arvet fra sine besteforeldre i Chile og hun bidrar gjerne med valg av vin til maten ved behov!
+              </p>
+            </div>
+          </div>
+          <figure>
+            <img src="img/servitoer.png" alt="" />
+          </figure>
+        </div>
+      </section>
     </main>
 
     <!-- call to action -->
-    <!-- TODO: fiks stygge avstander -->
     <section class="cta">
       <div class="container">
-        <p>Ta gjerne kontakt for et uforpliktende tilbud.</p>
-        <a href="kontakt.html" class="button" style="float: right; display=inline;">Kontakt oss</a>
-            <p style="font-size: 1.8rem; display=inline;">+47 428 83 247</p>
-          <p style="font-size=1rem;"><a href="mailto:epost@epost.no">epost</a>
+        <p>Trenger du en dyktig og erfaren kokk med gode referanser til firmaets kantine, ta kontakt.</p>
+        <a href="kontakt.html" class="button right">Kontakt oss</a>
+            <p class="phone">+47 428 83 247</p>
+          <p class="email"><a href="mailto:juanpequeno@gmail.com">juanpequeno@gmail.com</a>
           </p>
       </div>
     </section>
