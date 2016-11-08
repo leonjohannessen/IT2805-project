@@ -24,6 +24,8 @@ function openPanel(evt, specificTab){
 
   /*Add a class called isActive to that tab-number that was clicked*/
   evt.currentTarget.classList.add("isActive");
+  /*Scroll to current position*/
+  evt.currentTarget.scrollIntoView();
 }
 
 /* Set Meny 1 to be initially opened by making javascript click on it*/

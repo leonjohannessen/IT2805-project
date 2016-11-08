@@ -205,6 +205,8 @@ a.button::before {
   opacity: .1;
   -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
   filter: grayscale(100%);
+  left: 0;
+  top: 0;
 }
 
 /* footer styles */
