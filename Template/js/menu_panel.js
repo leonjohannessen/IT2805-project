@@ -2,7 +2,7 @@
 
 
 function openPanel(evt, specificTab){
-
+  //console.log(evt.currentTarget);
   /*Get all the tabContent-elements*/
   var content = document.getElementsByClassName("tabContent");
 

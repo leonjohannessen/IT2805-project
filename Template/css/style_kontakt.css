@@ -75,19 +75,30 @@ a.button::before {
   content: none;
 }
 
-.box a.isActive, .box a:active{
-  background: transparent;
-  border: 2px solid white;
-  color: white;
-}
+/*If the option is active*/
+/*.box a.isActive, .box a:active{
+  background: white;
 
+}
+/*
+Ikke fokus
 .box a.button:focus {
-  background: transparent;
+  background: #3cc;
+
+}*/
+
+.box a.button.isActive{
+    background: #3cc;
+    color: white;
 }
 
 /*The forms are initially not shown */
 .tabContent{
   display:none;
+}
+
+#main-nav.kristine-tar-denne-bort {
+  display: none;
 }
 
 /*form styling*/

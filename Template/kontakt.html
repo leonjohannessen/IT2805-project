@@ -19,7 +19,7 @@
 
   </head>
 
-  <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+  <!-- <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script> -->
 
   <body>
 
@@ -41,7 +41,12 @@
           <li><a href="kontakt.html">Kontakt</a></li>
         </ul>
       </nav>
+      <style>
+
+      </style>
     </header>
+
+
 
     <!-- page content -->
     <main>
@@ -49,7 +54,13 @@
         <div class="container">
           <div class="text-wrapper">
             <h2>Kontakt</h2>
+<<<<<<< HEAD
+              <p id="introtext">Ikke nøl med å ta kontakt for en uforpliktende samtale der vi ser om vi kan imøtekomme dine behov og preferanser. Vårt mål er å gjøre din sammenkomst til en minneverdig, og genuin smaksopplevelse med en latinsk signatur! <br>
+              Eller trenger du kanskje en dyktig og erfaren kokk med gode referanser til firmaets kantine, ta kontakt.</p>
+              <!--TODO: remove space between number and mail-->
+=======
               <p id="introtext">Ikke nøl med å ta kontakt for en uforpliktende samtale der vi ser om vi kan imøtekomme dine behov og preferanser. Vårt mål er å gjøre din sammenkomst til en minneverdig, og genuin smaksopplevelse med en latinsk signatur! </p>
+>>>>>>> master
               <div class="right">
                 <p class="phone">+47 428 83 247</p>
                 <p class="mailto">
@@ -71,90 +82,80 @@
               <h3>Be om pristilbud</h3>
               <p>Hva ønsker du pristilbud på?</p>
 
+<!-- NOTE: KNAPPER -->
+              <!-- NoKnapper som velger hva slags type kunde du er -->
               <div class="btn-wrapper">
                 <a href="javascript:void(0)" class="panelLinks button left" onclick="openPanel(event, 'catering')" id="defaultOpen"> Cateringtjenester </a>
+
                 <a href="javascript:void(0)" class="panelLinks button right" onclick="openPanel(event, 'canteen')"> Kantinedrift </a>
               </div>
 
+              <!-- Du har valgt catering -->
               <div id="catering" class="tabContent">
               <h3>Om arrangementet</h3>
-              <p>Da Carlo kan levere cateringtjenester til alle typer arrangementer. Fortell oss litt mer om hva du ønsker hjelp til.</p>
-<<<<<<< HEAD
-              <form method="post" action= "kontakt.php">
-                <input type="text" id="place" name="sted" value="Sted"/>
-                <label for="place">Sted</label>
-
-                <input class="right" type="date" id="date" name="dato" value="Dato"/>
-                <label for="date">Dato</label>
-
-                <input type="text" id="guestNo" name="antallGjester" value="Antall gjester"/>
-                <label for="guestNo">Antall Gjester</label>
-
-              <div class="styledSelect">
-                <select  id="meny" name="meny" value="Ønsket meny">
-                  <option value="meny1">Meny 1</option>
-                  <option value="meny2">Meny 2</option>
-                  <option value="meny3">Meny 3</option>
-                </select>
-                <label for="meny">Ønsket meny</label>
-=======
+              <p>Da Carlo kan levere cateringtjenester til alle typer arrangementer. </p>
               <form>
-                <input id="place" type="text" name="adresse" value="Adresse"/>
-                <label for="adresse">Adresse</label>
-
-                <input id="date" class="right" type="date" name="dato" value="Dato"/>
+                <input id="date" class="right" type="date" name="dato" placeholder="Dato" =""/>
                 <label for="dato">Dato</label>
 
-                <input id="guestNo" type="text" name="antallGjester" placeholder="Antall gjester"/>
+                <input id="place" type="text" name="adresse" placeholder="Adresse" />
+                <label for="adresse">Adresse</label>
+
+                <input id="guestNo" type="text" name="antallGjester" placeholder="Antall gjester" />
                 <label for="antallGjester">Antall Gjester</label>
 
                 <div class="styledSelect">
-                  <select  id="meny" name="meny" value="Ønsket meny">
-                    <!--TODO: add text or nonchoosable option with "Ønsket meny"-->
+                  <select  id="meny" name="meny" value="Ønsket meny" >
+                    <!--Drop down menu-->
+                    <option value="" disabled selected>Velg din meny</option>
                     <option value="meny1">Meny 1</option>
                     <option value="meny2">Meny 2</option>
                     <option value="meny3">Meny 3</option>
                   </select>
-                  <label for="meny">Ønsket meny</label>
+
                 </div>
-                <textarea id="cateringInfo" name="extraInfo"/>Ekstra informasjon og eventuelle spørsmål</textarea>
->>>>>>> origin/master
+                <textarea id="cateringInfo" name="extraInfo" placeholder="Fortell oss om ditt arrangement" ></textarea>
               </div>
 
+
+              <!-- Du har valgt kantine -->
+            </form>
               <div id="canteen" class="tabContent">
               <h3>Om bedriften</h3>
-              <p>Da Carlo har N års erfaring med kantinedrift. Fortell oss litt mer om din bedrift og hva du ønsker hjelp til.</p>
+              <p>Da Carlo har mange års erfaring med kantinedrift. Fortell oss litt mer om din bedrift og hva du ønsker hjelp til.</p>
               <form>
-                <input id="companyName" type="text" name="bedriftsNavn" placeholder="Bedriftens navn"/>
+                <input id="companyName" type="text" name="bedriftsNavn" placeholder="Bedriftens navn" />
                 <label for="bedriftsNavn">Bedriftens navn</label>
 
-                <input id="companyPlace" class="left" type="text" name="bedriftsAdresse" placeholder="Adresse"/>
+                <input id="companyPlace" class="left" type="text" name="bedriftsAdresse" placeholder="Adresse" />
                 <label for="bedriftsAdresse">Adresse</label>
 
-                <input id="emplNo" class="right" type="text" name="antallAnsatte" placeholder="Antall ansatte"/>
+                <input id="emplNo" class="right" type="text" name="antallAnsatte" placeholder="Antall ansatte" />
                 <label for="antallAnsatte">Antall ansatte</label>
 
-                <textarea id="canteenInfo" name="ekstraInfo"/>Hvilken type kantinedrift ønsker dere?</textarea>
+                <textarea id="canteenInfo" name="ekstraInfo" placeholder="Hva slags kantinedrift ønsker dere?"></textarea>
               </div>
 
                 <h3>Om deg</h3>
                 <p>Legg igjen din kontaktinformasjon, så tar vi kontakt så snart som mulig.</p>
-                <input type="text" id="name" name="navn" value="Ditt navn"/>
+                <input type="text" id="name" name="navn" placeholder="Ditt navn" />
                 <label for="name">Ditt navn</label>
 
-                <input type="tel" id="number" name="telefonnummer" value="Ditt telefonnummer"/>
+                <input type="tel" id="number" name="telefonnummer" placeholder="Ditt telefonnummer"/>
                 <label for="number">Ditt telefonnummer</label>
 
-                <input type="email" id="email" name="epost" value="Din e-postadresse"/>
+                <input type="email" id="email" name="epost" placeholder="Din e-postadresse" />
                 <label for="email">Din e-postadresse</label>
 
                 <div class="btn-wrapper">
-                <!-- TODO: finn ut om denne burde være button type submit i stedet
-                (krever i så fall ekstra css)-->
-                <a id="btnSubmit" href="#" name="submit" class="button">Send prisforespørsel</a>
+
+
+      <!-- SUBMIT - BUTTON -->
+                <!-- <input id="btnSubmit" type="submit" name="submit" value="Send prisforespørsel" onclick="submitInfo()" /> -->
+                  <a id="btnSubmit" href="#" name="submit" class="button" onclick="submitInfo()">Send prisforespørsel
+                  </a>
                 </div>
               </form>
-
             </div>
           </div>
       </div>
@@ -174,6 +175,19 @@
     <!-- include javascript files in end of body, so we don't have to care
          about cross browser dom-ready crap -->
     <script src="js/menu_panel.js"></script>
+    <script>
+      var sendForm = document.getElementById('btnSubmit');
+      // document.getElementById("btnSubmit").addEventListener("click", submitInfo());
+      function submitInfo(){
+        event.preventDefault();
+        //sendForm.innerHTML = "Info sendt";
+
+        const mainNav = document.getElementById('main-nav');
+        mainNav.classList.add('kristine-tar-denne-bort');
+    }
+
+    </script>
+
     <script src="js/sticky-header.js"></script>
     <script src="js/mobile-menu-toggler.js"></script>
   </body>
