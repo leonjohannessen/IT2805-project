@@ -1,4 +1,19 @@
-/*jshint esversion: 6 */
+/* ========================================
+ *
+ * File name: js/sticky-header.js
+ * Author: leonkj@stud.ntnu.no
+ * Date: September 2016
+ *
+ * JavaScript file for dacarlo.no that sticks the main nav bar to the top
+ * of the screen if the user has scrolled passed it, thus making it accessible
+ * at all scroll positions.
+ *
+ * Because the website is "mobile first", and the sticky header is unnecessary
+ * on mobile, the javascript sets up an timed interval that chekcs if the user
+ * is on desktop every 1000 ms. If the user is a desktop user, the sticky header
+ * code is initialized, and the interval is killed off.
+ *
+ * ======================================== */
 
 // Get the main-nav element
 const navbar = document.getElementById('main-nav');
@@ -8,7 +23,7 @@ function initializeStickyHeader(){
   // Get the initial navbar position
   const stickyDistance = navbar.offsetTop;
 
-  //
+  // Non positive stickyDistance values puts the page in an invalid state
   console.assert(stickyDistance > 0, 'stickyDistance is not positive!');
 
   // Set state flags
@@ -53,7 +68,7 @@ function initializeStickyHeader(){
 }
 
 /* Set up a interval that checks if the user is a desktop user every 1000 ms
- * If the user is on desktop, initialize the sticky header, and stop the interval
+ * If the user is on desktop, initialize the sticky header, and stop the interval.
  *
  * NOTE: The purpouse of this code is to only load the sticky header javascript
  * if the user is a deskttop user, and also allow for the user to change from
@@ -70,22 +85,3 @@ const initializeStickyHeaderIntervalID = setInterval(function (){
     window.clearInterval(initializeStickyHeaderIntervalID);
   }
 }, 1000);
-
-
-// Mobile menu toggler
-const navbarToggler = document.getElementById('main-nav-toggler');
-
-var isActive = false;
-
-function toggleNavbar() {
-  if (!isActive) {
-    navbar.classList.add('toggled');
-    navbarToggler.classList.add('active');
-  } else {
-    navbar.classList.remove('toggled');
-    navbarToggler.classList.remove('active');
-  }
-  isActive = !isActive;
-}
-
-navbarToggler.onclick = toggleNavbar;

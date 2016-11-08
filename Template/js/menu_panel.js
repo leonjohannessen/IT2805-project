@@ -9,7 +9,7 @@ PURPOSE: The javascript for the tabbed menu panel in the catering page and the t
 */
 
 function openPanel(evt, specificTab){
-
+  //console.log(evt.currentTarget);
   /*Get all the tabContent-elements*/
   var content = document.getElementsByClassName("tabContent");
 
