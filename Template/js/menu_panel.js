@@ -1,5 +1,12 @@
-/*The javascript for the tabbed menu panel in the catering page and the tabbed panel in the contact page*/
+/*
+FILE NAME: js/menu_panel.js
 
+WRITTEN BY: Linn Harbo Dahle
+
+WHEN: October 2016
+
+PURPOSE: The javascript for the tabbed menu panel in the catering page and the tabbed panel in the contact page
+*/
 
 function openPanel(evt, specificTab){
 
