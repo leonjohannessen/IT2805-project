@@ -1,17 +1,8 @@
-<!--
-FILE NAME: catering.html
-
-WRITTEN BY: Linn Harbo Dahle
-
-WHEN: October 2016
-
-PURPOSE: this page gives information about the menus that Da Carlo provide
--->
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Da Carlo Template</title>
+    <title>Da Carlo Catering - Catering</title>
 
     <!-- define viewport to ensure no horizontal scroll -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,9 +11,12 @@ PURPOSE: this page gives information about the menus that Da Carlo provide
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- Internal style sheet only relevant for catering.html -->
+    <!-- include google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i"rel="stylesheet">
 
-  -->
+    <!-- page specific styles for catering.html -->
+
     <style>
 
       /*Styling h3 and all the text inside menu-class */
@@ -40,7 +34,7 @@ PURPOSE: this page gives information about the menus that Da Carlo provide
         text-transform: none;
       }
       /*Styling the h5 inside menuclasses */
-      .menu h5{
+      .menu h5 {
         margin-bottom: -0.7rem;
         font-family: 'Lato', sans-serif;
         text-transform: uppercase;
@@ -53,23 +47,22 @@ PURPOSE: this page gives information about the menus that Da Carlo provide
         font-size: 0.8rem;
       }
 
-      .menu small{
+      .menu small {
         font-size: 0.6rem;
         font-family: Lato, sans-serif;
         color: #999;
       }
 
-      /*TO DO er dette grei måte å ordne det på? Eller bør ha samme regel på alle knappene?*/
-      p#download{
+      p#download {
         display: inline-block;
-        width:50%; /*TO DO hvis veldig smal skjerm, så gjør dette at knappen hopper ned, hvordan kan det fikses?*/
+        width:50%;
         margin: 0;
       }
-      a#buttonDownload{
+      a#buttonDownload {
         float:right
       }
 
-      a.button svg{
+      a.button svg {
         fill: #099;
         position: relative;
         bottom: -0.3rem;
@@ -84,17 +77,17 @@ PURPOSE: this page gives information about the menus that Da Carlo provide
         fill: #fff;
       }
 
-      .menu ul{
+      .menu ul {
         list-style-type: none;
         text-align: center;
         padding:0;
       }
 
-      ul.dessert li{
+      ul.dessert li {
         padding-bottom: 0.9rem;
       }
 
-      ul.tabPanel{
+      ul.tabPanel {
         margin-right: 0;
         padding:0;
         overflow: hidden;
@@ -147,38 +140,33 @@ PURPOSE: this page gives information about the menus that Da Carlo provide
       }
 
       /*The content is initially not shown */
-      .tabContent{
+      .tabContent {
         display:none;
       }
 
       /* Layout for screens larger than 960px
          ================================================================================ */
-@media only screen and (min-width: 960px) {
+      @media screen and (min-width: 960px) {
 
-  /* Float all list-elements on one horizontal line and center*/
-  ul.tabPanel li {
-    display: inline-block;
-    float: none;
-  }
-  /*Moving the boxes in the correct place*/
-  /*TO DO gjøres på alle sidene?*/
-  .menu{
-    margin-top: -12rem;
-  }
-  .cateringQuote{
-    margin-top: -4rem;
-    /*z-index: 20; /*TO DO : riktig måte å gjør det på?*/
-  }
-  .lastRow{ /* TO DO alle?: legge til på andre sider?*/
-    margin-bottom: 4rem;
-  }
+        /* Float all list-elements on one horizontal line and center */
+        ul.tabPanel li {
+          display: inline-block;
+          float: none;
+        }
 
-}
+        /*Moving the boxes in the correct place*/
+        .menu {
+          margin-top: -12rem;
+        }
+        .cateringQuote {
+          margin-top: -4rem;
+          z-index: 2;
+        }
+        .lastRow {
+          margin-bottom: 4rem;
+        }
+      }
     </style>
-
-    <!-- include google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
 
   </head>
 
@@ -207,7 +195,16 @@ PURPOSE: this page gives information about the menus that Da Carlo provide
       <section class="intro">
         <div class="container">
           <h2>Catering </h2>
-          <p> Vi leverer personlig service og individuell tilpasning. Kokkene som gjør avtale med deg, er også de som lager maten og følger den helt frem til lokalet der maten presenteres for gjestene. På denne måten sikrer vi at dine ønsker og preferanser ivaretas på en god måte. Vi bruker kun råvarer av topp kvalitet og tilbereder dem på beste måte med vår erfaring fra det latinske kjøkkenet. Se om en av menyene for tapas eller treretters frister, men vær oppmerksom på at menyene kan skreddersys til din preferanse. </p>
+          <p>
+            Vi leverer personlig service og individuell tilpasning. Kokkene som
+            gjør avtale med deg, er også de som lager maten og følger den helt
+            frem til lokalet der maten presenteres for gjestene. På denne måten
+            sikrer vi at dine ønsker og preferanser ivaretas på en god måte.
+            Vi bruker kun råvarer av topp kvalitet og tilbereder dem på beste
+            måte med vår erfaring fra det latinske kjøkkenet. Se om en av menyene
+            for tapas eller treretters frister, men vær oppmerksom på at menyene
+            kan skreddersys til din preferanse.
+          </p>
         </div>
       </section>
     </main>
@@ -216,7 +213,7 @@ PURPOSE: this page gives information about the menus that Da Carlo provide
       <div class="container">
         <div class="box full dark tight">
           <div class="text-wrapper">
-            <h3>Meny - Tapas </h3>
+            <h3>Meny - Tapas</h3>
 
             <!-- A tabbed panel showing the different tapas menus provided -->
             <div>
@@ -228,9 +225,9 @@ PURPOSE: this page gives information about the menus that Da Carlo provide
               </ul>
             </div> <br>
             <div id="menyTapas1" class="tabContent">
-              <h4> Kalde retter </h4>
+              <h4> Kalde retter</h4>
               <ul>
-                <li>Manchego <small> M, E  </small></li>
+                <li>Manchego <small> M, E</small></li>
                 <li>Serrano skinke</li>
                 <li>Marinerte oliven</li>
                 <li>Marinerte artisjokk</li>
@@ -241,7 +238,7 @@ PURPOSE: this page gives information about the menus that Da Carlo provide
               <h4> Varme retter </h4>
               <ul>
                 <li>Ovnsstekte poteter med rosmarin</li>
-                <li>Scampi al ajillo<small> M, SK </small></li>
+                <li>Scampi al ajillo<small> M, SK</small></li>
                 <li>Albondigas i tomatsaus<small> E, S, HV</small> </li>
                 <li>Kylling a la cordobesa</li>
                 <li>Ciabatta med urter<small> HV </small></li>
@@ -265,8 +262,8 @@ PURPOSE: this page gives information about the menus that Da Carlo provide
               <h4> Varme retter </h4>
               <ul>
                 <li>Ovnsstekte poteter med rosmarin</li>
-                <li>Scampi med hummersaus<small> M, SK </small></li>
-                <li>Albondigas i rødvinsaus<small> E, S, HV </small></li>
+                <li>Scampi med hummersaus<small> M, SK</small></li>
+                <li>Albondigas i rødvinsaus<small> E, S, HV</small></li>
                 <li>Kylling a la cordobesa</li>
                 <li>Paella<small> F SK </small></li>
                 <li>Spansk omelett<small> E</small></li>
@@ -414,8 +411,12 @@ PURPOSE: this page gives information about the menus that Da Carlo provide
         <div class="box right tight blue">
           <div class="text-wrapper">
             <blockquote>
-              <p>De leverer alltid meget god mat, gode råd for sammensetting av retter og hyggelig service. Anbefaler Da Carlo Catering på det varmeste! </p>
-              <footer> Christian Lilloe Salvesen <br> Bestilt mat til konfirmasjoner og 50årsdag</footer>
+              <p>
+                De leverer alltid meget god mat, gode råd for sammensetting av
+                retter og hyggelig service. Anbefaler Da Carlo Catering på det
+                varmeste!
+              </p>
+              <footer>Christian Lilloe Salvesen <br> Bestilt mat til konfirmasjoner og 50-årsdag</footer>
             </blockquote> <br> <br>
           </div>
         </div>
@@ -453,9 +454,11 @@ PURPOSE: this page gives information about the menus that Da Carlo provide
       </div>
     </footer>
 
-    <!-- include javascript files in end of body, so we don't have to care
-         about cross browser dom-ready crap -->
-    <script src="js/menu_panel.js"></script>
-    <!--   <script src="js/sticky-header.js"></script>   -->
+    <!-- include javascript files -->
+    <script src="js/sticky-header.js"></script>
+    <script src="js/mobile-menu-toggler.js"></script>
+
+    <!-- include page specific javascript files -->
+    <script src="js/menu-panel.js"></script>
   </body>
 </html>

@@ -1,23 +1,41 @@
-/*
-Colors used in Da Carlos website:
-#F1F6F5   lyselysegrå
-#fff			hvit
-#999			grå
-#3d3d3d		mørkegrå
-#2d2b2b		varm mørkemørkegrå
-#222			mørkemørkegrå
-#000			svart
-
-#3cc	    Turkis
-#099		  Dull turkis
-#248f8f	  Mørkere dull turkis
-
-rgba(51,204,204,0.2) 	turkis - gjennomsiktig
-rgba(51,204,204,0.5)	turkis - litt gjennomsiktig
-
-#c33		  Rød
-rgba(204,51,51,0.5)		rød - litt gjennomsiktig
-*/
+/* ==========================================================================
+ *
+ *   Main style sheet for dacarlo.no
+ *   Authors: Aurura, Leon, Linn, Kristine and Maia.
+ *   Created: October 2016
+ *
+ *
+ *   Design manifest
+ *
+ *   The style sheet is designed mobile first. Generic classes for layout
+ *   are used as fas as possible. Each sub page declares page specific styles
+ *   embedded in the page head, or as a specific style sheet.
+ *
+ *   The page utilize normaize.css to make cross browser rendering
+ *   more consistent. This is discussed with and approved by Camilla Tran.
+ *
+ *
+ *   Color guides
+ *
+ *   #F1F6F5  lyselysegrå
+ *   #fff     hvit
+ *   #999     grå
+ *   #3d3d3d  mørkegrå
+ *   #2d2b2b  varm mørkemørkegrå
+ *   #222     mørkemørkegrå
+ *   #000     svart
+ *
+ *   #3cc	    Turkis
+ *   #099		  Dull turkis
+ *   #248f8f  Mørkere dull turkis
+ *
+ *   rgba(51,204,204,0.2) 	turkis - gjennomsiktig
+ *   rgba(51,204,204,0.5)	  turkis - litt gjennomsiktig
+ *
+ *   #c33		  Rød
+ *   rgba(204,51,51,0.5)		rød - litt gjennomsiktig
+ *
+ * ========================================================================== */
 
 /* box reset */
 html {
@@ -27,8 +45,11 @@ html {
   box-sizing: inherit;
 }
 
-/* Global styles
-   ================================================================================ */
+/* ==========================================================================
+ *
+ *   Global styles
+ *
+ * ========================================================================== */
 
 html {
   background: #F1F6F5; /* fallback background color */
@@ -40,15 +61,17 @@ html {
   margin: 0;
 }
 
-/* TODO: Move background images to separate layer */
-
 body {
   background: fixed url('../img/webtek_paella.jpeg') no-repeat;
   background-size: cover;
   margin: 0;
 }
 
-/* Typography & color */
+/* NOTE: Background image is overridden on each page */
+
+/* ---------------------------
+   Typography & color
+   --------------------------- */
 h1, h2, h3, h4 {
   font-family: 'Lato', sans-serif;
   text-transform: uppercase;
@@ -56,11 +79,11 @@ h1, h2, h3, h4 {
 }
 
 h2 {
-  font-size: 3.2rem;
+  font-size: 2rem;
 }
 
 h3 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 
 blockquote {
@@ -169,8 +192,6 @@ a.button::before {
   line-height: 2rem;
 }
 
-/* TODO: default link styles in boxes */
-
 /* box styles */
 .box {
   background: #3d3d3d;
@@ -188,7 +209,12 @@ a.button::before {
   /* TODO: Add texture */
 }
 
-/* hack that makes use of one background image for both textured boxes */
+
+/* ------------------------------
+   hack that makes use of one background
+   image for both textured boxes
+   ------------------------------ */
+
 .box * {
   position: relative;
   z-index: 2;
@@ -216,18 +242,38 @@ body > footer {
   padding: 6rem 0;
 }
 
-/* Mobile layout
+/* ==========================================================================
+ *
+ *   Mobile layout
  *
  *   NB: Some of these styles are used in the desktop layout as well
  *
-   ================================================================================ */
+ * ========================================================================== */
+
 body > header {
  height: 70vh;
+ position: relative;
 }
 
 body > header > h1 {
  margin: 0
 }
+
+#logo {
+  width: 300px;
+  height: 85px;
+  top: 50%;
+  left: 50%;
+  margin-left: calc(-300px/2);
+  margin-top: calc(-85px/2);
+  text-indent: -9999px;
+  overflow: hidden;
+  background: url('../img/dacarlo_logo@2x.png') no-repeat;
+  background-size: contain;
+  z-index: 5; /* place the logo on top of the carousel */
+  position: absolute;
+}
+
 
 /* navbar styles */
 #main-nav {
@@ -381,30 +427,42 @@ p#footerCopyright{
   bottom: -2rem;
 }
 
-/* Layout for screens larger than 960px
-   ================================================================================ */
+/* ==========================================================================
+ *
+ *   Layout for screens larger than 960px
+ *
+ * ========================================================================== */
 @media screen and (min-width: 960px) {
+
+  /* lager titles on desktop */
+  h2 {
+    font-size: 3.2rem;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+  }
 
   /* Header layout */
   body > header {
     position: relative;
   }
 
+  /* desktop logo placement */
   #logo {
     width: 515px;
     height: 145px;
-    position: absolute;
+    z-index: 5; /* place the logo on top of the carousel */
     top: calc(50% - 2.5rem); /* remove half the menu height */
     left: 50%;
     margin-left: calc(-515px / 2);
     margin-top: calc(-145px / 2);
-    text-indent: -9999px;
-    overflow: hidden;
-    background: url('../img/dacarlo_logo@2x.png') no-repeat;
-    background-size: contain;
   }
 
-  /* Styling specific for the main navigation for desktop view*/
+  /* ---------------------------
+     Styling specific for the main navigation for desktop view
+     --------------------------- */
+
   #main-nav {
     position: absolute;
     width: 100%;
@@ -417,7 +475,8 @@ p#footerCopyright{
     transition: .2s box-shadow;
   }
 
-  /* Styling the main navigation for desktop view so that it sticks to the top when the page is scrolled*/
+  /* Styling the main navigation for desktop view so that it sticks
+     to the top when the page is scrolled */
   #main-nav.sticky {
     position: fixed;
     bottom: auto;
@@ -426,36 +485,37 @@ p#footerCopyright{
     box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
   }
 
-/* No padding on the unordered list in the main navigation*/
+  /* No padding on the unordered list in the main navigation */
   #main-nav ul {
     padding: 0;
   }
 
-/* Styling for the list-elements in the main navigation so that its shown correctly on one line in desktop view*/
+  /* Styling for the list-elements in the main navigation so
+     that its shown correctly on one line in desktop view */
   #main-nav li {
     display: inline-block;
     float: none
   }
 
-/* Styling for the links in the main navigation to make them the right size and in the right position*/
+  /* Styling for the links in the main navigation to make them
+     the right size and in the right position*/
   #main-nav a {
     height: 5rem;
     padding: 0 2rem;
     line-height: 5rem;
   }
-/* Placing of the line beneath the links in the main navigation */
+  /* Placing of the line beneath the links in the main navigation */
   #main-nav a::after {
     margin-top: -1.5em;
   }
-/* In desktop view, removing the menu-button used in mobile view*/
+  /* In desktop view, remove the menu-button used in mobile view*/
   #main-nav-toggler {
     display: none;
   }
 
-
-  /* section layout and style
-   *
-   */
+  /* ---------------------------
+     Section layout and style
+     --------------------------- */
 
    /* clearfix hack */
   .row::before,
@@ -490,7 +550,9 @@ p#footerCopyright{
     margin-bottom: 4rem;
   }
 
-  /* box layout classes */
+  /* ---------------------------
+     Box layout and reusable classes
+     --------------------------- */
   .box {
     width: calc(7 * 4rem);
     float: left;
@@ -502,7 +564,6 @@ p#footerCopyright{
     float: right;
   }
 
-  /* TODO: maa ha float for aa kunne ha negativ margin */
   .full {
     width: calc(10 * 4rem);
     margin-left: 4rem;
@@ -542,7 +603,9 @@ p#footerCopyright{
     width: 100%;
   }
 
-  /* footer styles */
+  /* ---------------------------
+     Footer layout
+     --------------------------- */
   body > footer {
     padding: 6rem 0;
   }
