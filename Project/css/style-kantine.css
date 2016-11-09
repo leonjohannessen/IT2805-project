@@ -1,0 +1,41 @@
+body {
+  background-image: url('../img/header-images/header-catering.jpg');
+}
+
+/* Mobile first */
+@media screen and (min-width: 960px){
+
+  .right{
+    margin-top: -8rem;
+    z-index: 2;
+  }
+  .left{
+    margin-top: -2rem;
+  }
+
+  .container footer {
+    font-family: 'Lato', sans-serif;
+    font-size: .8rem;
+    line-height: 1;
+  }
+
+  }
+  h3{
+    line-height: 1.2;
+
+  }
+
+  #nets-logo{
+
+      margin: 2em 0 4em 0;
+  }
+  #list-right{
+    float: right;
+    margin: 0;
+  }
+  #container-left{
+    float: left;
+    width: 400px;
+  }
+
+}

@@ -1,0 +1,55 @@
+body {
+  background-image: url('../img/header-images/header-kylling.jpg');
+}
+
+.cta {
+  margin: 12rem auto 4rem;
+}
+
+p.phone {
+  font-size: 1.8rem;
+  display: inline;
+}
+
+p.email {
+  font-size:1.1rem;
+  margin-top: 0;
+}
+
+@media screen and (min-width: 960px){
+
+  .left + figure,
+  .right + figure {
+    top: calc(3.4 * 4rem);
+  }
+
+  #juan {
+    margin-top: 4rem;
+  }
+
+  #cecare {
+    margin: -4rem auto 0;
+    z-index: 1;
+  }
+
+  #roberto {
+    margin: -4rem auto -4rem ;
+    z-index: 0;
+  }
+
+  #camilla {
+    margin: -4rem auto 0;
+    z-index: 1;
+  }
+
+  #camilla p {
+    padding-bottom: 4rem;
+  }
+
+  /* change the crop of the images */
+  #juan figure img,
+  #cecare figure img,
+  #roberto figure img {
+    transform: translateY(-10%);
+  }
+}
