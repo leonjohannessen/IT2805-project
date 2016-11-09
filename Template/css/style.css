@@ -62,7 +62,7 @@ html {
 }
 
 body {
-  background: fixed url('../img/webtek_paella.jpeg') no-repeat;
+  background: fixed url('../img/header-carousel/header-paella.jpg') no-repeat;
   background-size: cover;
   margin: 0;
 }
@@ -209,7 +209,6 @@ a.button::before {
   /* TODO: Add texture */
 }
 
-
 /* ------------------------------
    hack that makes use of one background
    image for both textured boxes
@@ -226,11 +225,9 @@ a.button::before {
   width: 100%;
   height: 100%;
   position: absolute;
-  background: url('../img/peru_pattern2.jpg');
+  background: url('../img/pattern.jpg');
   z-index: 1;
   opacity: .1;
-  -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
-  filter: grayscale(100%);
   left: 0;
   top: 0;
 }

@@ -16,100 +16,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i"rel="stylesheet">
 
     <!-- page specific styles for index.html -->
-    <style>
-
-      /* ---------------------------
-         Front page header carousel
-         --------------------------- */
-
-      /* make the carousel container take up the entire header */
-      #headerCarousel {
-        width: 100%;
-        height: 100%;
-        position: relative;
-        z-index: 1;
-        background: #000;
-      }
-
-      /* position every slide on top of each other, make them transparent */
-      .slide {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-        opacity: 0;
-        transition: .5s opacity;
-      }
-
-      /* make the active element visible */
-      .slide.active {
-        opacity: 1;
-      }
-
-      /* scale the image after its height (mobile) */
-      .slide img{
-        height: 100%;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        opacity: .6;
-      }
-
-      /* ---------------------------
-         Other front page specific styles
-         --------------------------- */
-
-      /* extra space between last paragraph and button on front page */
-      main .text-wrapper p + a.button {
-        margin-top: 2rem;
-      }
-
-      @media screen and (min-width: 960px){
-
-        /* scale the carousel image after its width (desktop) */
-        .slide img{
-          height: auto;
-          left: auto;
-          top: 50%;
-          width: 100%;
-          transform: translate(0, -50%);
-        }
-
-        /* vertical box layout and z-axis positioning */
-        #intro-catering {
-          margin-top: -8rem;
-          padding-bottom: 8rem
-        }
-
-        #intro-canteen {
-          margin-top: -12rem;
-          z-index: 2;
-        }
-
-        #intro-about {
-          margin-top: 16rem;
-          z-index: 4;
-        }
-
-        #intro-about + figure {
-          width: calc(6 * 4rem);
-          height: calc(10 * 4rem);
-          position: absolute;
-          right: 0;
-          top: -8rem;
-          overflow: hidden;
-          margin: 0;
-          z-index: 3;
-        }
-
-        /* change the crop of the image */
-        #intro-about + figure img {
-          transform: translateY(-10%);
-        }
-
-      }
-
-    </style>
+    <link rel="stylesheet" href="css/style-index.css">
 
   </head>
 
@@ -145,19 +52,19 @@
       <!-- header carousel on frontpage -->
       <div id="headerCarousel">
         <div class="slide">
-          <img src="img/header-carousel/webtek_paella.jpg" alt="Paella">
+          <img src="img/header-carousel/header-paella.jpg" alt="Paella">
         </div>
         <div class="slide">
-          <img src="img/header-carousel/webtek_chilli.jpg" alt="Chilli">
+          <img src="img/header-carousel/header-chilli.jpg" alt="Chilli">
         </div>
         <div class="slide">
-          <img src="img/header-carousel/webtek_klasetomat.jpg" alt="Tomatoes">
+          <img src="img/header-carousel/header-klasetomat.jpg" alt="Tomatoes">
         </div>
         <div class="slide">
-          <img src="img/header-carousel/webtek_paprika.jpg" alt="Peppers">
+          <img src="img/header-carousel/header-paprika.jpg" alt="Peppers">
         </div>
         <div class="slide">
-          <img src="img/header-carousel/webtek_tomat.jpg" alt="Tomatoes two">
+          <img src="img/header-carousel/header-tomat.jpg" alt="Tomatoes two">
         </div>
       </div>
 
