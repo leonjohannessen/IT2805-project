@@ -1,13 +1,3 @@
-/*
-FILE NAME: js/menu_panel.js
-
-WRITTEN BY: Linn Harbo Dahle
-
-WHEN: October 2016
-
-PURPOSE:
-*/
-
 /* ========================================
  *
  * File name: js/menu-panel.js
@@ -50,7 +40,8 @@ function openPanel(evt, specificTab){
   if (!tabPanelInitialized) {
     tabPanelInitialized = true;
   } else {
-    /*Scroll to current position*/
+    /* Scroll to current position
+    TODO: offset the scroll positoin from top, so the sticky menu does not hide it */
     evt.currentTarget.scrollIntoView();
   }
 }
