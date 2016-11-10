@@ -13,17 +13,12 @@
 
     <!-- include google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i"rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i" rel="stylesheet">
 
     <!-- page specific styles for kantine.html -->
     <link rel="stylesheet" href="css/style-kantine.css">
 
   </head>
-  <script>
-
-  document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
-
-  </script>
 
   <body>
 
@@ -31,7 +26,8 @@
     <header>
 
       <?php 
-        /* Require the header */
+        /* Require the header and set the active page */
+        $active = 'kantine';
         require 'parts/header.php';
       ?>
 
@@ -50,7 +46,6 @@
             </p>
             <p>
               Hver bedrift har sine ulike behov og vi i Da Carlo er opptatt av et aktivt samarbeid for å finne frem til gode løsninger og skreddersy et konsept som kan imøtekomme akkurat deres ønsker og preferanser. Ta kontakt for nærmere informasjon. Vi er en samarbeidspartner du kan stole på.
-
             </p>
           </div>
         </div>
@@ -69,7 +64,7 @@
                 Kåre Gundersen <br>
                 Nets AS
               </footer>
-              <img id= "nets-logo" src="img/netts.png" alt="" height="30px" /></br>
+              <img id= "nets-logo" src="img/netts.png" alt="" height="30" />
               <a href="#" class="button">Se vår cateringmeny</a>
             </div>
           </div>
@@ -107,19 +102,12 @@
 
     </main>
 
-    <!-- call to action -->
-    <section class="cta">
-      <div class="container">
-        <p>Ta kontakt for et uforpliktende tilbud.</p>
-        <h4>+47 973 27 322, post@dacarlo.no</h4>
-        <a href="#" class="button">Kontakt oss</a>
-      </div>
-    </section>
+    <?php 
+      /* Require the cta part and use fallback cta text */
+      require 'parts/cta.php';
 
-
-
-    <!-- include javascript files in end of body, so we don't have to care
-         about cross browser dom-ready crap -->
-    <script src="js/sticky-header.js"></script>
+      /* Require the footer (and global scripts) */
+      require 'parts/footer.php';
+    ?>
   </body>
 </html>

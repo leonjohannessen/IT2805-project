@@ -32,15 +32,14 @@ PURPOSE: provide information about Da Carlo, their chefs and waitors
 
   </head>
 
-  <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
-
   <body>
 
     <!-- page header and global navigation -->
     <header>
 
       <?php 
-        /* Require the header */
+        /* Require the header and set the active page */
+        $active = 'om';
         require 'parts/header.php';
       ?>
 
@@ -142,25 +141,13 @@ PURPOSE: provide information about Da Carlo, their chefs and waitors
       </section>
     </main>
 
-    <!-- call to action -->
-    <section class="cta">
-      <div class="container">
-        <p>Trenger du en dyktig og erfaren kokk med gode referanser til firmaets kantine, ta kontakt.</p>
-        <a href="kontakt.html" class="button right">Kontakt oss</a>
-            <p class="phone">+47 428 83 247</p>
-          <p class="email"><a href="mailto:juanpequeno@gmail.com">juanpequeno@gmail.com</a>
-          </p>
-      </div>
-    </section>
+    <?php 
+      /* Require the cta part and set cta text */
+      $cta_text = 'Trenger du en dyktig og erfaren kokk med gode referanser til firmaets kantine, ta kontakt.';
+      require 'parts/cta.php';
 
-    <!-- page footer -->
-    <footer>
-      <object name="footer" type="text/html" data="footer.inc"> </object>
-    </footer>
-
-    <!-- include javascript files in end of body, so we don't have to care
-         about cross browser dom-ready crap -->
-    <script src="js/sticky-header.js"></script>
-    <script src="js/mobile-menu-toggler.js"></script>
+      /* Require the footer (and global scripts) */
+      require 'parts/footer.php';
+    ?>
   </body>
 </html>

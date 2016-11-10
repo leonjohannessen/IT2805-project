@@ -20,19 +20,13 @@
 
   </head>
 
-  <script>
-
-  document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
-
-  </script>
-
   <body>
 
     <!-- page header and global navigation -->
     <header>
 
       <?php 
-        /* Require the header */
+        /* Require the header and set the active page */
         $active = 'index';
         require 'parts/header.php';
       ?>
@@ -88,18 +82,9 @@
                 Vi bruker kun råvarer av topp kvalitet og tilbereder
                 dem på beste måte med vår erfaring fra det latinske kjøkkenet.
               </p>
-              <a href="#" class="button">Se vår cateringmeny</a>
+              <a href="catering.php" class="button">Se vår cateringmeny</a>
             </div>
           </div>
-          <!--
-          <div id="catering-quote" class="box left tight dark">
-            <div class="text-wrapper">
-              <blockquote cite="http://nets.no">
-                <p>Da Carlo leverer ikke bare mat, men en opplevelse!</p>
-                <footer>Marie Nelsvik, i Nets strømmen</footer>
-              </blockquote>
-            </div>
-          </div>-->
         </div>
       </section>
 
@@ -117,7 +102,7 @@
                 Ta kontakt for nærmere informasjon. Vi er en samarbeidspartner
                 du kan stole på.
               </p>
-              <a href="#" class="button">Se vår kantinemeny</a>
+              <a href="kantine.php" class="button">Se vår kantinemeny</a>
             </div>
           </div>
         </div>
@@ -138,7 +123,7 @@
                 spanske og latinamerikanske kjøkkenet og ønsker å tilby spennende
                 og minneverdige smaksopplevelser tilpasset dere.
               </p>
-              <a href="#" class="button">Les mer om oss</a>
+              <a href="om.php" class="button">Les mer om oss</a>
             </div>
           </div>
           <figure>
@@ -149,36 +134,13 @@
 
     </main>
 
-    <!-- call to action -->
-    <section class="cta">
-      <div class="container">
-        <p>Ta kontakt for et uforpliktende tilbud.</p>
-        <h4>+47 973 27 322, post@dacarlo.no</h4>
-        <a href="#" class="button">Kontakt oss</a>
-      </div>
-    </section>
+    <?php 
+      /* Require the cta part */
+      require 'parts/cta.php';
 
-    <!-- page footer -->
-    <footer>
-      <div class="container">
-        <p> <i>
-        “If more of us valued food and cheer and song above hoarded gold, it would be a merrier world.”
-      </p></i>
-      <p>- J.R.R Tolkien </p>
-          <!-- navbar -->
-
-          <!-- logo -->
-
-          <!-- copyright -->
-          <p>2016 © Da Carlo Catering</p>
-
-
-      </div>
-    </footer>
-
-    <!-- include javascript files -->
-    <script src="js/sticky-header.js"></script>
-    <script src="js/mobile-menu-toggler.js"></script>
+      /* Require the footer (and global scripts) */
+      require 'parts/footer.php';
+    ?>
 
     <!-- include page specific javascript files -->
     <script src="js/header-carousel.js"></script>

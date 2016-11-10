@@ -32,15 +32,14 @@ PURPOSE: provide a channel of contact between potential customers and Da Carlo
 
   </head>
 
-  <!-- <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script> -->
-
   <body>
 
     <!-- page header and global navigation -->
     <header>
 
       <?php 
-        /* Require the header */
+        /* Require the header and set the active page */
+        $active = 'kontakt';
         require 'parts/header.php';
       ?>
 
@@ -178,17 +177,12 @@ PURPOSE: provide a channel of contact between potential customers and Da Carlo
       </section>
     </main>
 
-    <!-- page footer -->
-    <footer>
-      <footer>
-        <div class="container">
-          <img src="img/dacarlo_logo.png" alt="logo" class="smallLogo">
-          <p id="footerCopyright">2016 © Da Carlo Catering</p>
-        </div>
-    </footer>
+    <?php
+      /* Require the footer (and global scripts) */
+      require 'parts/footer.php';
+    ?>
 
-    <!-- include javascript files in end of body, so we don't have to care
-         about cross browser dom-ready crap -->
+    <!-- Page specific scripts -->
     <script src="js/menu-panel.js"></script>
     <script>
       var sendForm = document.getElementById('btnSubmit');
@@ -202,8 +196,5 @@ PURPOSE: provide a channel of contact between potential customers and Da Carlo
     }
 
     </script>
-
-    <script src="js/sticky-header.js"></script>
-    <script src="js/mobile-menu-toggler.js"></script>
   </body>
 </html>

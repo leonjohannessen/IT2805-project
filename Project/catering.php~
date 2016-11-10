@@ -25,8 +25,9 @@
     <header>
     
       <?php 
-        /* Require the header */
-        require 'parts/header.php'
+        /* Require the header and set the active page */
+        $active = 'catering';
+        require 'parts/header.php';
       ?>
 
     </header>
@@ -264,6 +265,7 @@
         </div>
       </div>
     </section>
+
     <section class="row lastRow">
       <div class="container cateringQuote">
         <div class="box left tight">
@@ -277,28 +279,14 @@
       </div>
     </section>
 
-    <!-- call to action -->
-    <section class="cta">
-      <div class="container">
-        <p>Ta kontakt for et uforpliktende tilbud. Vi vil i samarbeid og dialog finne den beste løsningen for ditt behov. </p>
-        <a href="kontakt.html" class="button" style="float: right; display=inline;">Kontakt oss</a>
-            <p style="font-size: 1.8rem; display=inline;">+47 428 83 247</p>
-          <p style="font-size=1rem;"><a href="mailto:epost@epost.no">epost</a>
-          </p>
-      </div>
-    </section>
+    <?php 
+      /* Require the cta part and set cta text */
+      $cta_text = 'Ta kontakt for et uforpliktende tilbud. Vi vil i samarbeid og dialog finne den beste løsningen for ditt behov.';
+      require 'parts/cta.php';
 
-    <!-- page footer -->
-    <footer>
-      <div class="container">
-        <img src="img/dacarlo_logo.png" alt="logo" class="smallLogo">
-        <p id="footerCopyright">2016 © Da Carlo Catering</p>
-      </div>
-    </footer>
-
-    <!-- include javascript files -->
-    <script src="js/sticky-header.js"></script>
-    <script src="js/mobile-menu-toggler.js"></script>
+      /* Require the footer (and global scripts) */
+      require 'parts/footer.php';
+    ?>
 
     <!-- include page specific javascript files -->
     <script src="js/menu-panel.js"></script>
