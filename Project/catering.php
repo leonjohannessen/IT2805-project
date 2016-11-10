@@ -56,108 +56,13 @@
       <div class="container">
         <div class="box full dark tight">
           <div class="text-wrapper">
-            <h3>Meny - Tapas</h3>
-
-            <!-- A tabbed panel showing the different tapas menus provided -->
-            <div>
-              <ul class="tabPanel">
-                <!-- A horizontal list for the Menu titles. The javascript:void(0) is added to tell the javascript to stay on the same page when the link is clicked -->
-                <li> <a href="javascript:void(0)" class="panelLinks" onclick="openPanel(event, 'menyTapas1')" id="defaultOpen"> Basic </a> </li>
-                <li> <a href="javascript:void(0)" class="panelLinks" onclick="openPanel(event, 'menyTapas2')" > Premium </a> </li>
-                <li> <a href="javascript:void(0)" class="panelLinks" onclick="openPanel(event, 'menyTapas3')"> Deluxe </a> </li>
-              </ul>
-            </div> <br>
-            <div id="menyTapas1" class="tabContent">
-              <h4> Kalde retter</h4>
-              <ul>
-                <li>Manchego <small> M, E</small></li>
-                <li>Serrano skinke</li>
-                <li>Marinerte oliven</li>
-                <li>Marinerte artisjokk</li>
-                <li>Aioli <small> E </small> </li>
-                <li>Salsa</li>
-              </ul>
-
-              <h4> Varme retter </h4>
-              <ul>
-                <li>Ovnsstekte poteter med rosmarin</li>
-                <li>Scampi al ajillo<small> M, SK</small></li>
-                <li>Albondigas i tomatsaus<small> E, S, HV</small> </li>
-                <li>Kylling a la cordobesa</li>
-                <li>Ciabatta med urter<small> HV </small></li>
-              </ul>
-            </div>
-
-            <div id="menyTapas2" class="tabContent">
-              <h4> Kalde retter </h4>
-              <ul>
-                <li>Crostini de verdura<br><small> Ristet brød med grillede marinerte grønnsaker. HV</small></li>
-                <li>Manchego<small> M, E</small></li>
-                <li>Serrano skinke</li>
-                <li>Marinerte oliven</li>
-                <li>Caprese <br><small> Tomater, mozarella, basilikum, olivenolje. M</small></li>
-                <li>Ensalada de Mediterraneo <br><small>Oliven, tomat, agurk, fetaost, salat og tzatziki. M</small></li>
-                <li>Focaccia med urter <small> HV </small></li>
-                <li>Aioli<small> E </small></li>
-                <li>Salsa</li>
-              </ul>
-
-              <h4> Varme retter </h4>
-              <ul>
-                <li>Ovnsstekte poteter med rosmarin</li>
-                <li>Scampi med hummersaus<small> M, SK</small></li>
-                <li>Albondigas i rødvinsaus<small> E, S, HV</small></li>
-                <li>Kylling a la cordobesa</li>
-                <li>Paella<small> F SK </small></li>
-                <li>Spansk omelett<small> E</small></li>
-              </ul>
-            </div>
-
-            <div id="menyTapas3" class="tabContent">
-              <h4> Kalde retter </h4>
-              <ul>
-                <li>Manchego<small> M,E </small></li>
-                <li>Serrano skinke</li>
-                <li>Asorterte oliven med hvitløk og oregano</li>
-                <li>Marinerte artisjokk</li>
-                <li>Aioli<small>E </small></li>
-                <li>Pebre <br><small> Tomatsalsa fra Chile med hvitløk, chili, koriander, løk og lime</small></li>
-                <li>Bruchetta med tomat og pesto <small> HV, P, M</small></li>
-                <li>Caprese <br><small> Tomater, mozarella, basilikum, olivenolje. M </small></li>
-                <li>Ensalada de pollo<small> M</small></li>
-                <li>Ciabatta med urter<small> HV</small></li>
-              </ul>
-
-              <h4> Varme retter </h4>
-              <ul>
-                <li>Chorizos</li>
-                <li>Pannestekte kamskjell med hvitløk og timian</li>
-                <li>Ovnsstekte poteter med rosmarin</li>
-                <li>Scampi med hummersaus<small> M, SK </small></li>
-                <li>Albondigas i rødvinsaus<small> E, S, HV </small></li>
-                <li>Kylling a la cordobesa</li>
-                <li>Paella <small>F SK </small></li>
-                <li>Chilenske empanadas med kjøttdeig eller ost <small> M, E, HV </small></li>
-              </ul>
-            </div>
-          <h5> ALLERGIER: </h5>
-          <p> <small> HV: hvete. SK: skalldyr. F: fisk. M: melk og laktose. Bl: bløtdyr. <br> SO: soya. P: peanøtter. E: egg. SF: sesamfrø. SE: sennep. MA: mandler. </small></p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="row menu">
-      <div class="container">
-        <div class="box full tight">
-          <div class="text-wrapper">
             <h3>Meny - treretters </h3>
 
             <!-- A tabbed panel showing the different three course dinners provided -->
             <div>
               <ul class="tabPanel">
                 <!-- A horizontal list for the Menu titles. The javascript:void(0) is added to tell the javascript to stay on the same page when the link is clicked -->
-                <li> <a href="javascript:void(0)" class="panelLinks" onclick="openPanel(event, 'meny1')"> Meny 1 </a> </li>
+                <li> <a href="javascript:void(0)" class="panelLinks" onclick="openPanel(event, 'meny1')" id="defaultOpen"> Meny 1 </a> </li>
                 <li> <a href="javascript:void(0)" class="panelLinks" onclick="openPanel(event, 'meny2')" > Meny 2 </a> </li>
                 <li> <a href="javascript:void(0)" class="panelLinks" onclick="openPanel(event, 'meny3')"> Meny 3 </a> </li>
               </ul>
@@ -231,11 +136,11 @@
 
     <section class="row">
       <div class="container">
-        <div class="box full dark tight">
+        <div class="box full tight">
           <div class="text-wrapper">
             <h4> Nedlastbar meny </h4>
             <p id="download"> Hvis du ønsker å printe menyene, kan du laste dem ned her: </p>
-            <a href="#" class="button" id="buttonDownload">
+            <a href="files/dacarlo-menu.pdf" target="_blank" class="button" id="buttonDownload">
               <!-- An svg icon inside the button-->
               <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
                   <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>

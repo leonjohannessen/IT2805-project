@@ -62,7 +62,7 @@ html {
 }
 
 body {
-  background: fixed url('../img/header-carousel/header-paella.jpg') no-repeat;
+  background: fixed url('../img/header-carousel/header-paella.jpg') 50% no-repeat;
   background-size: cover;
   margin: 0;
 }
@@ -410,7 +410,6 @@ figure img {
 
 .cta .phone {
   font-size: 1.8rem;
-  display: inline;
 }
 
 .cta .email {
@@ -612,6 +611,10 @@ body > footer {
 
   figure img {
     width: 100%;
+  }
+
+  .cta .phone {
+    display: inline;
   }
 
   /* ---------------------------
