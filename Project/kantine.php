@@ -46,6 +46,7 @@
             </p>
             <p>
               Hver bedrift har sine ulike behov og vi i Da Carlo er opptatt av et aktivt samarbeid for å finne frem til gode løsninger og skreddersy et konsept som kan imøtekomme akkurat deres ønsker og preferanser. Ta kontakt for nærmere informasjon. Vi er en samarbeidspartner du kan stole på.
+
             </p>
           </div>
         </div>
@@ -54,53 +55,38 @@
 
       <section class="row">
         <div class="container">
-          <div class="box left">
+          <div id="recommendation-nets-skoyen" class="box left">
             <div class="text-wrapper">
-              <h3>Kantinedrift for Nets AS</h3>
-              <p>Jeg har vært så heldig å nyte godt av din matlaging gjennom mange år i jobbsammenheng, og det jeg savner mest ved å bytte arbeidssted er din "signatur" på maten.
-              Du holder høy standard, Carlos! Takk skal du ha.
-              </p>
-              <footer><br>
-                Kåre Gundersen <br>
-                Nets AS
-              </footer>
-              <img id= "nets-logo" src="img/netts.png" alt="" height="30" />
-              <a href="#" class="button">Se vår cateringmeny</a>
+              <h3>Kantinedrift Nets Skøyen</h3>
+              <p>"Jeg har vært så heldig å nyte godt av din matlaging gjennom mange år i jobbsammenheng, og det jeg savner mest ved å bytte arbeidssted er din "signatur" på maten. Du holder høy standard, Carlos! Takk skal du ha."</p>
+              <footer>Kåre Gundersen <br>Tidligere ansatt i Nets</footer>
+              <img class="nets-logo" src="img/netts.png" alt="nets logo" height="40" />
             </div>
           </div>
           <figure>
-            <img src="img/lmh-kokker11.jpg" alt="" />
+            <img src="img/kantine1_skoyen.jpg" alt="" />
           </figure>
-          <div class="box right tight blue">
-            <div class="text-wrapper">
-              <blockquote cite="http://nets.no">
-                <p>Da Carlo leverer ikke bare mat, men en opplevelse!</p>
-                <footer>Marie Nelsvik, i Nets strømmen</footer>
-              </blockquote>
-            </div>
-          </div>
         </div>
       </section>
 
       <section class="row">
         <div class="container">
-          <div class="box left dark">
+          <div id="recommendation-nets-rommen" class="box right dark">
             <div class="text-wrapper">
-              <h3>Kantinedrift for HVEM????</h3>
-              <p>Jeg kan trygt anbefale Carlos som kokk til både lunsj i kantina, julebord på jobben, til og med på en så stor dag som bryllup kan Carlos imponere og tilfredsstille dine krav og ønsker.
-                Du blir alltid møtt med et smil av en kokk med en inderlig arbeidsmoral og ønske å om gi kundene den beste opplevelsen. </p><br>
-                <footer>Eline Andresen</footer><br>
-
-              <a href="#" class="button">Se vår kantinemeny</a>
+              <h3>Kantinedrift Nets Rommen</h3>
+              <p>"Jeg kan trygt anbefale Carlos som kokk til både lunsj i kantina, julebord på jobben, til og med på en så stor dag som bryllup kan Carlos imponere og tilfredsstille dine krav og ønsker. Du blir alltid møtt med et smil av en kokk med en inderlig arbeidsmoral og ønske å om gi kundene den beste opplevelsen." </p>
+              <footer>Eline Andresen <br> Ansatt i Nets </footer><br>
+              <img class="nets-logo" src="img/netts.png" alt="nets logo" height="40" />
             </div>
           </div>
           <figure>
-            <img src="img/lmh-kokker12.jpg" alt="" />
+            <img src="img/kantine2_rommen.jpg" alt="" />
           </figure>
         </div>
       </section>
 
     </main>
+
 
     <?php 
       /* Require the cta part and use fallback cta text */
