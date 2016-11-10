@@ -41,8 +41,8 @@ function openPanel(evt, specificTab){
     tabPanelInitialized = true;
   } else {
     /* Scroll to current position
-    TODO: offset the scroll positoin from top, so the sticky menu does not hide it */
-    evt.currentTarget.scrollIntoView();
+    TODO: offset the scroll positoin from top, so the sticky menu does not hide it 
+    evt.currentTarget.scrollIntoView(); did not need this after all, keeping the code just in case */
   }
 }
 

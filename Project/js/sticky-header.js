@@ -81,6 +81,7 @@ const initializeStickyHeaderIntervalID = setInterval(function (){
   // Initialize sticky header code if the user is a desktop user,
   // and stop the interval
   if (isDesktopUser) {
+    updateNavbarState();
     initializeStickyHeader();
     window.clearInterval(initializeStickyHeaderIntervalID);
   }
