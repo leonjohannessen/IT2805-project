@@ -69,10 +69,10 @@ PURPOSE: give a general introduction of the diffrent services da carlo provides
         <div class="container">
           <h2>Velkommen</h2>
           <p>
-            Da Carlo består av Juan Carlos, Cesare og Roberto, tre erfarne kokker
+            Bak Da Carlo står Juan Carlos, Cesare og Roberto, tre erfarne kokker
             som tilsammen representerer matkultur fra det italienske, det spanske
             og det latinamerikanske kjøkkenet. Dette betyr at vi kan tilby rike
-            smaksopplevelser tilberedt med de ypperste råvarer og med latinsk temperament.
+            smaksopplevelser tilberedt med de beste råvarer og med latinsk temperament.
           </p>
         </div>
       </section>

@@ -86,7 +86,7 @@ PURPOSE: Information about the menus provided to catering service is provided
 
               <h4> Hovedrett </h4>
               <p> Lomo de cordero al horno </p>
-              <p class="menuNorskForklaring"> Lammecarret med rødvinssaus, glaserte grønnsaker og fløtegratinerte poteter </p>
+              <p class="menuNorskForklaring"> Lammecarre med rødvinssaus, glaserte grønnsaker og fløtegratinerte poteter </p>
               <p><small> Inneholder melk og laktose</small> </p>
 
               <h4> Dessert </h4>

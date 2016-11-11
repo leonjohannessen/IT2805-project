@@ -58,7 +58,7 @@ PURPOSE: provide a channel of contact between potential customers and Da Carlo
               <p id="introtext">
                 Ikke nøl med å ta kontakt for en uforpliktende samtale der vi ser
                 om vi kan imøtekomme dine behov og preferanser. Vårt mål er å
-                gjøre din sammenkomst til en minneverdig, og genuin smaksopplevelse
+                gjøre din sammenkomst til en minneverdig og genuin smaksopplevelse
                 med en latinsk signatur! Trenger du en dyktig og erfaren kokk med
                 gode referanser til firmaets kantine, ta kontakt.
               </p>
