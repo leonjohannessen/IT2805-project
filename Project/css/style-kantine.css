@@ -1,8 +1,14 @@
+/* ==========================================================================
+ *
+ *   Page specific style sheet for kantine.html
+ *
+ * ========================================================================== */
+
 /* Background image */
 body {
   background-image: url('../img/header-images/header-kantine.jpg');
 }
-  
+
 .container footer {
   font-family: 'Lato', sans-serif;
   font-size: .8rem;
