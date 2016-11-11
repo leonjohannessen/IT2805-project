@@ -96,13 +96,13 @@ PURPOSE: provide a channel of contact between potential customers and Da Carlo
                 <p>Da Carlo kan levere cateringtjenester til alle typer arrangementer. </p>
 
                 <form>
-                  <input id="date" class="right" type="date" name="dato" placeholder="Dato"/>
+                  <input id="date" class="right" type="date" name="dato" placeholder="Dato" required/>
                   <label for="dato">Dato</label>
 
-                  <input id="place" type="text" name="adresse" placeholder="Adresse"/>
+                  <input id="place" type="text" name="adresse" placeholder="Adresse" required/>
                   <label for="adresse">Adresse</label>
 
-                  <input id="guestNo" type="text" name="antallGjester" placeholder="Antall gjester"/>
+                  <input id="guestNo" type="text" name="antallGjester" placeholder="Antall gjester" required/>
                   <label for="antallGjester">Antall Gjester</label>
 
                   <div class="styledSelect">
@@ -119,10 +119,10 @@ PURPOSE: provide a channel of contact between potential customers and Da Carlo
 
                   <h3>Om deg</h3>
                   <p>Legg igjen din kontaktinformasjon, så tar vi kontakt så snart som mulig.</p>
-                  <input type="text" id="name" name="navn" placeholder="Ditt navn" />
+                  <input type="text" id="name" name="navn" placeholder="Ditt navn" required/>
                   <label for="name">Ditt navn</label>
 
-                  <input type="tel" id="number" name="telefonnummer" placeholder="Ditt telefonnummer"/>
+                  <input type="tel" id="number" name="telefonnummer" placeholder="Ditt telefonnummer" required/>
                   <label for="number">Ditt telefonnummer</label>
 
                   <input type="email" id="email" name="epost" placeholder="Din e-postadresse" />
@@ -141,13 +141,13 @@ PURPOSE: provide a channel of contact between potential customers and Da Carlo
                 <h3>Om bedriften</h3>
                 <p>Da Carlo har mange års erfaring med kantinedrift. Fortell oss litt mer om din bedrift og hva du ønsker hjelp til.</p>
                 <form>
-                  <input id="companyName" type="text" name="bedriftsNavn" placeholder="Bedriftens navn" />
+                  <input id="companyName" type="text" name="bedriftsNavn" placeholder="Bedriftens navn" required/>
                   <label for="bedriftsNavn">Bedriftens navn</label>
 
                   <input id="companyPlace" class="left" type="text" name="bedriftsAdresse" placeholder="Adresse" />
                   <label for="bedriftsAdresse">Adresse</label>
 
-                  <input id="emplNo" class="right" type="text" name="antallAnsatte" placeholder="Antall ansatte" />
+                  <input id="emplNo" class="right" type="text" name="antallAnsatte" placeholder="Antall ansatte" required/>
                   <label for="antallAnsatte">Antall ansatte</label>
 
                   <textarea id="canteenInfo" name="ekstraInfo" placeholder="Hva slags kantinedrift ønsker dere?"></textarea>
@@ -155,13 +155,13 @@ PURPOSE: provide a channel of contact between potential customers and Da Carlo
                   <!-- TODO: remove duplicate person info code -->
                   <h3>Om deg</h3>
                   <p>Legg igjen din kontaktinformasjon, så tar vi kontakt så snart som mulig.</p>
-                  <input type="text" id="name" name="navn" placeholder="Ditt navn" />
+                  <input type="text" id="name" name="navn" placeholder="Ditt navn" required/>
                   <label for="name">Ditt navn</label>
 
-                  <input type="tel" id="number" name="telefonnummer" placeholder="Ditt telefonnummer"/>
+                  <input type="tel" id="number" name="telefonnummer" placeholder="Ditt telefonnummer" required/>
                   <label for="number">Ditt telefonnummer</label>
 
-                  <input type="email" id="email" name="epost" placeholder="Din e-postadresse" />
+                  <input type="email" id="email" name="epost" placeholder="Din e-postadresse" required/>
                   <label for="email">Din e-postadresse</label>
 
                   <!-- SUBMIT - BUTTON -->
