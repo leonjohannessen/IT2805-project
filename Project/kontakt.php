@@ -41,12 +41,10 @@ PURPOSE: provide a channel of contact between potential customers and Da Carlo
       <?php
         /* Require the header and set the active page */
         $active = 'kontakt';
-        require 'parts/header.php';
+        require 'parts/navbar.php';
       ?>
 
     </header>
-
-
 
     <!-- page content -->
     <main>
@@ -128,7 +126,7 @@ PURPOSE: provide a channel of contact between potential customers and Da Carlo
 
                   <!-- SUBMIT Catering form - BUTTON -->
                   <input type= "submit" name="submit" id="btnSubmitCatering" class="submitButtons" value ="Send prisforespørsel" />
-                  <p id = 'feedbackCatering' hidden> <br>Din forespørsel er sendt, takk for din interesse!<br> </p>
+                  <p id='feedbackCatering' hidden> <br>Din forespørsel er sendt, takk for din interesse!<br> </p>
 
                 </form>
               </div>
@@ -163,7 +161,7 @@ PURPOSE: provide a channel of contact between potential customers and Da Carlo
 
                   <!-- SUBMIT Canteen form - BUTTON -->
                   <input type= "submit" name="submit" id="btnSubmitCanteen" class="submitButtons" value ="Send prisforespørsel" />
-                  <p id = 'feedbackCanteen' hidden> <br>Din forespørsel er sendt, takk for din interesse!<br> </p>
+                  <p id='feedbackCanteen' hidden> <br>Din forespørsel er sendt, takk for din interesse!<br> </p>
                 </form>
               </div>
 

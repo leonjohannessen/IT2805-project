@@ -38,7 +38,7 @@ PURPOSE: Information about the menus provided to catering service is provided
       <?php
         /* Require the header and set the active page */
         $active = 'catering';
-        require 'parts/header.php';
+        require 'parts/navbar.php';
       ?>
 
     </header>
@@ -123,7 +123,7 @@ PURPOSE: Information about the menus provided to catering service is provided
             <div id="meny3" class="tabContent">
               <h4> Forrett </h4>
               <p> Gambas al ajillo </p>
-              <p class="menuNorskForklaringForklaring"> Scampi med hvitløk, persille og chili servert med godt brød </p>
+              <p class="menuNorskForklaring"> Scampi med hvitløk, persille og chili servert med godt brød </p>
               <p><small> Inneholder skalldyr </small> </p>
 
               <h4> Hovedrett </h4>

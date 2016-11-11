@@ -41,7 +41,7 @@ PURPOSE: provide information about Da Carlo, their chefs and waitors
       <?php
         /* Require the header and set the active page */
         $active = 'om';
-        require 'parts/header.php';
+        require 'parts/navbar.php';
       ?>
 
     </header>

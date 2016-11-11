@@ -39,7 +39,7 @@ PURPOSE: give a general introduction of the diffrent services da carlo provides
       <?php
         /* Require the header and set the active page */
         $active = 'index';
-        require 'parts/header.php';
+        require 'parts/navbar.php';
       ?>
 
       <!-- header carousel on frontpage -->

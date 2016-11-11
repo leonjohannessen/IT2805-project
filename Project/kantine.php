@@ -39,7 +39,7 @@ PURPOSE: provide information about the possibility to order da carlo as a cantee
       <?php
         /* Require the header and set the active page */
         $active = 'kantine';
-        require 'parts/header.php';
+        require 'parts/navbar.php';
       ?>
 
     </header>
