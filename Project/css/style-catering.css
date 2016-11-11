@@ -152,4 +152,7 @@ ul.tabPanel li a:focus::after {
   .lastRow {
     margin-bottom: 4rem;
   }
+  a#buttonDownload {
+    float: right;
+  }
 }

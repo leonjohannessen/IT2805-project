@@ -151,7 +151,7 @@ PURPOSE: Information about the menus provided to catering service is provided
           <div class="text-wrapper">
             <h4> Nedlastbar meny </h4>
             <p id="download"> Hvis du ønsker å printe menyene, kan du laste dem ned her: </p>
-            <a href="files/dacarlo-menu.pdf" target="_blank" class="button">
+            <a href="files/dacarlo-menu.pdf" target="_blank" class="button" id="buttonDownload">
               <!-- An svg icon inside the button-->
               <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
                   <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
