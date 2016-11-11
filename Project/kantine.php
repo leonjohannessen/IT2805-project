@@ -75,7 +75,7 @@ PURPOSE: provide information about the possibility to order da carlo as a cantee
             </div>
           </div>
           <figure>
-            <img src="img/kantine1_skoyen.jpg" alt="" />
+            <img src="img/kantine1_skoyen.jpg" alt="Kantine med bord og stoler" />
           </figure>
         </div>
       </section>
@@ -91,7 +91,7 @@ PURPOSE: provide information about the possibility to order da carlo as a cantee
             </div>
           </div>
           <figure>
-            <img src="img/kantine2_rommen.jpg" alt="" />
+            <img src="img/kantine2_rommen.jpg" alt="Mat på en kantine" />
           </figure>
         </div>
       </section>

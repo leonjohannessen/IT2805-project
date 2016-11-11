@@ -71,7 +71,7 @@ PURPOSE: provide a channel of contact between potential customers and Da Carlo
             </div>
             <div id="signature-wrapper">
               <p>Hilsen Juan Carlos Pequeno</p>
-              <img id="signature" src="img/signature_carlos2.png" alt="">
+              <img id="signature" src="img/signature_carlos2.png" alt="Signaturen til Carlos">
             </div>
         </div>
       </section>

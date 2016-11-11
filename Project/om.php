@@ -73,7 +73,7 @@ PURPOSE: provide information about Da Carlo, their chefs and waitors
             </div>
           </div>
           <figure>
-            <img src="img/lmh-kokker11.jpg" alt="" />
+            <img src="img/lmh-kokker11.jpg" alt="Juan Carlos profilbilde" />
           </figure>
         </div>
       </section>
@@ -95,7 +95,7 @@ PURPOSE: provide information about Da Carlo, their chefs and waitors
             </div>
           </div>
           <figure>
-            <img src="img/lmh-kokker12.jpg" alt="" />
+            <img src="img/lmh-kokker12.jpg" alt="Cesare profilbilde" />
           </figure>
         </div>
       </section>
@@ -118,7 +118,7 @@ PURPOSE: provide information about Da Carlo, their chefs and waitors
             </div>
           </div>
           <figure>
-            <img src="img/lmh-kokker13.jpg" alt="" />
+            <img src="img/lmh-kokker13.jpg" alt="Roberto profilbilde" />
           </figure>
         </div>
       </section>
@@ -129,14 +129,14 @@ PURPOSE: provide information about Da Carlo, their chefs and waitors
             <div class="text-wrapper">
               <h3>Camilla</h3>
               <p>
-                Camilla er faglært servitør og sommelier, og har jobbet 10 år i restaurantbransjen i København og Oslo!
-                Hun og hennes kollegaer vil ivareta alle gjestene på en utmerket måte!
-                Interesse for mat og vin har camilla arvet fra sine besteforeldre i Chile og hun bidrar gjerne med valg av vin til maten ved behov!
+                Camilla er faglært servitør og sommelier, og har jobbet 10 år i restaurantbransjen i København og Oslo.
+                Hun og hennes kollegaer vil ivareta alle gjestene på en utmerket måte.
+                Interesse for mat og vin har camilla arvet fra sine besteforeldre i Chile og hun bidrar gjerne med valg av vin til maten ved behov.
               </p>
             </div>
           </div>
           <figure>
-            <img src="img/lmh-servitor.jpg" alt="" />
+            <img src="img/lmh-servitor.jpg" alt="Servitør profilbilde" />
           </figure>
         </div>
       </section>
