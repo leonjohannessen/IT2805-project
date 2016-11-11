@@ -7,6 +7,8 @@
  * The javascript for the tabbed menu panel in the catering page and
  * the tabbed panel in the contact page
  *
+ * Made with inspiration from the Tabs at w3schools: http://www.w3schools.com/howto/howto_js_tabs.asp
+ *
  * ======================================== */
 
 // Boolean used to prevent scrolling to the tabbed panel on page load
@@ -41,7 +43,7 @@ function openPanel(evt, specificTab){
     tabPanelInitialized = true;
   } else {
     /* Scroll to current position
-    TODO: offset the scroll positoin from top, so the sticky menu does not hide it 
+    TODO: offset the scroll positoin from top, so the sticky menu does not hide it
     evt.currentTarget.scrollIntoView(); did not need this after all, keeping the code just in case */
   }
 }
