@@ -228,7 +228,7 @@ a.button::before {
   width: 100%;
   height: 100%;
   position: absolute;
-  background: url('../img/pattern.png');
+  background: url('../img/pattern.jpg');
   z-index: 1;
   opacity: .1;
   left: 0;
