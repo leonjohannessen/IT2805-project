@@ -8,27 +8,19 @@ PURPOSE: give a general introduction of the diffrent services da carlo provides
 
 -->
 <!DOCTYPE html>
-<html>
+<html lang="nb">
   <head>
     <meta charset="utf-8">
     <title>Da Carlo Catering</title>
 
-    <!-- define viewport to ensure no horizontal scroll -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- include stylesheets -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-
-    <!-- include google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i"rel="stylesheet">
+    <?php
+      /* Require the common head elements */
+      require 'parts/head.php';
+    ?>
 
     <!-- page specific styles for index.html -->
     <link rel="stylesheet" href="css/style-index.css">
 
-    <!--Adding favicon -->
-    <link rel="icon" type="image/png" href="img/favicon.png">
   </head>
 
   <body>

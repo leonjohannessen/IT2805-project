@@ -14,22 +14,13 @@ PURPOSE: provide a channel of contact between potential customers and Da Carlo
     <meta charset="utf-8">
     <title>Da Carlo Catering - Kontakt oss</title>
 
-    <!-- define viewport to ensure no horizontal scroll -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- include stylesheets -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-
-    <!-- include google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i"rel="stylesheet">
+    <?php
+      /* Require the common head elements */
+      require 'parts/head.php';
+    ?>
 
     <!-- page specific styles for kontakt.html -->
     <link rel="stylesheet" href="css/style-kontakt.css">
-
-    <!--Adding favicon -->
-    <link rel="icon" type="image/png" href="img/favicon.png">
 
   </head>
 

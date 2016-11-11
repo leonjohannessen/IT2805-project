@@ -1,6 +1,6 @@
 <?php 
 /* 
- * File name: parts/header.php
+ * File name: parts/navbar.php
  * Author: Leon Johannessen
  * Date: November 2016
  *
