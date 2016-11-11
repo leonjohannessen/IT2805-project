@@ -1,7 +1,5 @@
 <!--
 
-FILE NAME: om.html
-
 WRITTEN BY: Maia Elisabeth Sirnes
 
 WHEN: November 2016
@@ -30,6 +28,9 @@ PURPOSE: provide information about Da Carlo, their chefs and waitors
     <!-- page specific styles for om.html -->
     <link rel="stylesheet" href="css/style-om.css">
 
+    <!--Adding favicon -->
+    <link rel="icon" type="image/png" href="img/favicon.png">
+
   </head>
 
   <body>
@@ -37,7 +38,7 @@ PURPOSE: provide information about Da Carlo, their chefs and waitors
     <!-- page header and global navigation -->
     <header>
 
-      <?php 
+      <?php
         /* Require the header and set the active page */
         $active = 'om';
         require 'parts/header.php';
@@ -65,9 +66,9 @@ PURPOSE: provide information about Da Carlo, their chefs and waitors
               <h3>Juan Carlos</h3>
               <p> Fra min oppvekst ved Chiles langstrakte kyst har jeg lært meg å verdsette havets mangfoldige variasjon av delikatesser. Da jeg var liten opplevde jeg hvordan min mor tryllet frem de herligste smaker fra enkle basis råvarer i det chilenske kjøkkenet. Dette har jeg brakt med meg til Norge hvor jeg har jobbet mange år i restaurantbransjen og nå de siste 10 årene med drift av Nets, Teller og Visa sine kantiner i Oslo.</p>
               <div>
-                <!--<blockquote>
-                  <p>Sitat om ditt og datt Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                </blockquote>-->
+                <blockquote>
+                  <p>Vi gleder oss til å servere dere et smaksfullt måltid basert på de beste råvarer, vår kulturbakgrunn, deres ønsker, og med all vår kunnskap og erfaring! Buen provecho! </p>
+                </blockquote>
               </div>
             </div>
           </div>
@@ -81,15 +82,14 @@ PURPOSE: provide information about Da Carlo, their chefs and waitors
         <div class="container" id="cecare">
           <div class="box right dark">
             <div class="text-wrapper">
-              <h3>Cecare</h3>
+              <h3>Cesare</h3>
               <p>
-                Jeg vokste opp i en liten landsby ved Toscanas kyst med foreldre som kommer opprinnelig fra Sardinia. På den måten har jeg tilegnet meg matkultur fra to viktige tradisjoner innen det italienske kjøkkenet. I flere generasjoner har familien min drevet med jordbruk, husdyrhold og produksjon av meiriprodukter.
-                Fra disse erfaringene kommer kunnskapen jeg har om gode råvarer og foredlingen av disse.
-                Etter at jeg kom til Norge i 2002, har jeg i mange år jobbet på kjøkkenet hos San Lorenzo i Vika, en italiensk restaurant og pizzeria og der utvidet jeg min kunnskap om tradisjonelle matretter fra flere regioner i Italia.
+                I 20 år har jeg reist gjennom Spania både gastronomisk og geografisk. På min reise har jeg blitt kjent med de ulike regionene som er bærere av stolte mattradisjoner, fra Valencia med sin paella til Baskerland med sine berømte fiskeretter.
+                Jeg har vært heldig og blitt innviet i kulinariske hemmeligheter på min veg! I 2008 kom jeg til Oslo og jobbet som kokk på en av Oslos største tapasrestauranter og var med å sette standard for god iberisk mat i hovedstaden.
               </p>
               <div>
                 <blockquote>
-                  <p>Det er det jeg elsker å gjøre: lage ekte italiensk mat med tradisjoner tilbake til antikkens Roma!</p>
+                  <p>Med min kunnskap og erfaringer vil jeg bidra til at Da Carlo leverer mat av ypperste klasse</p>
                 </blockquote>
               </div>
             </div>
@@ -106,12 +106,13 @@ PURPOSE: provide information about Da Carlo, their chefs and waitors
             <div class="text-wrapper">
               <h3>Roberto</h3>
               <p>
-                I 20 år har jeg reist gjennom Spania både gastronomisk og geografisk. På min reise har jeg blitt kjent med de ulike regionene som er bærere av stolte mattradisjoner, fra Valencia med sin paella til Baskerland med sine berømte fiskeretter.
-                Jeg har vært heldig og blitt innviet i kulinariske hemmeligheter på min veg! I 2008 kom jeg til Oslo og jobbet som kokk på en av Oslos største tapasrestauranter og var med å sette standard for god iberisk mat i hovedstaden.
+                Jeg vokste opp i en liten landsby ved Toscanas kyst med foreldre som kommer opprinnelig fra Sardinia. På den måten har jeg tilegnet meg matkultur fra to viktige tradisjoner innen det italienske kjøkkenet. I flere generasjoner har familien min drevet med jordbruk, husdyrhold og produksjon av meiriprodukter.
+                Fra disse erfaringene kommer kunnskapen jeg har om gode råvarer og foredlingen av disse.
+                Etter at jeg kom til Norge i 2002, har jeg i mange år jobbet på kjøkkenet hos San Lorenzo i Vika, en italiensk restaurant og pizzeria og der utvidet jeg min kunnskap om tradisjonelle matretter fra flere regioner i Italia.
               </p>
                 <div>
                 <blockquote>
-                  <p>Med min kunnskap og erfaringer vil jeg bidra til at Da Carlo leverer mat av ypperste klasse</p>
+                  <p>Det er det jeg elsker å gjøre: lage ekte italiensk mat med tradisjoner tilbake til antikkens Roma! </p>
                 </blockquote>
               </div>
             </div>
@@ -141,7 +142,7 @@ PURPOSE: provide information about Da Carlo, their chefs and waitors
       </section>
     </main>
 
-    <?php 
+    <?php
       /* Require the cta part and set cta text */
       $cta_text = 'Trenger du en dyktig og erfaren kokk med gode referanser til firmaets kantine, ta kontakt.';
       require 'parts/cta.php';

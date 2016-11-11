@@ -1,3 +1,12 @@
+<!--
+
+WRITTEN BY: Linn Harbo Dahle
+
+WHEN: October 2016
+
+PURPOSE: Information about the menus provided to catering service is provided
+
+-->
 <!DOCTYPE html>
 <html>
   <head>
@@ -18,13 +27,15 @@
     <!-- page specific styles for catering.html -->
     <link rel="stylesheet" href="css/style-catering.css">
 
+    <!--Adding favicon -->
+    <link rel="icon" type="image/png" href="img/favicon.png">
   </head>
 
   <body>
     <!-- page header and global navigation -->
     <header>
-    
-      <?php 
+
+      <?php
         /* Require the header and set the active page */
         $active = 'catering';
         require 'parts/header.php';
@@ -184,7 +195,7 @@
       </div>
     </section>
 
-    <?php 
+    <?php
       /* Require the cta part and set cta text */
       $cta_text = 'Ta kontakt for et uforpliktende tilbud. Vi vil i samarbeid og dialog finne den beste løsningen for ditt behov.';
       require 'parts/cta.php';

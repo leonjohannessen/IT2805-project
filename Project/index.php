@@ -1,3 +1,12 @@
+<!--
+
+WRITTEN BY: Kristine Rise Fry
+
+WHEN: November 2016
+
+PURPOSE: give a general introduction of the diffrent services da carlo provides
+
+-->
 <!DOCTYPE html>
 <html>
   <head>
@@ -18,6 +27,8 @@
     <!-- page specific styles for index.html -->
     <link rel="stylesheet" href="css/style-index.css">
 
+    <!--Adding favicon -->
+    <link rel="icon" type="image/png" href="img/favicon.png">
   </head>
 
   <body>
@@ -25,7 +36,7 @@
     <!-- page header and global navigation -->
     <header>
 
-      <?php 
+      <?php
         /* Require the header and set the active page */
         $active = 'index';
         require 'parts/header.php';
@@ -134,7 +145,7 @@
 
     </main>
 
-    <?php 
+    <?php
       /* Require the cta part */
       require 'parts/cta.php';
 

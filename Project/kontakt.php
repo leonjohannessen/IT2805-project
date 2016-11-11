@@ -1,7 +1,5 @@
 <!--
 
-FILE NAME: kontakt.html
-
 WRITTEN BY: Maia Elisabeth Sirnes
 
 WHEN: November 2016
@@ -30,6 +28,9 @@ PURPOSE: provide a channel of contact between potential customers and Da Carlo
     <!-- page specific styles for kontakt.html -->
     <link rel="stylesheet" href="css/style-kontakt.css">
 
+    <!--Adding favicon -->
+    <link rel="icon" type="image/png" href="img/favicon.png">
+
   </head>
 
   <body>
@@ -37,7 +38,7 @@ PURPOSE: provide a channel of contact between potential customers and Da Carlo
     <!-- page header and global navigation -->
     <header>
 
-      <?php 
+      <?php
         /* Require the header and set the active page */
         $active = 'kontakt';
         require 'parts/header.php';

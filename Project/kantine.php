@@ -1,3 +1,12 @@
+<!--
+
+WRITTEN BY: Kristine Rise Fry
+
+WHEN: November 2016
+
+PURPOSE: provide information about the possibility to order da carlo as a canteen service
+
+-->
 <!DOCTYPE html>
 <html>
   <head>
@@ -18,6 +27,8 @@
     <!-- page specific styles for kantine.html -->
     <link rel="stylesheet" href="css/style-kantine.css">
 
+    <!--Adding favicon -->
+    <link rel="icon" type="image/png" href="img/favicon.png">
   </head>
 
   <body>
@@ -25,7 +36,7 @@
     <!-- page header and global navigation -->
     <header>
 
-      <?php 
+      <?php
         /* Require the header and set the active page */
         $active = 'kantine';
         require 'parts/header.php';
@@ -88,7 +99,7 @@
     </main>
 
 
-    <?php 
+    <?php
       /* Require the cta part and use fallback cta text */
       require 'parts/cta.php';
 
