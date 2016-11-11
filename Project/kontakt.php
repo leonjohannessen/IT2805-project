@@ -166,8 +166,8 @@ PURPOSE: provide a channel of contact between potential customers and Da Carlo
 
                   <!-- SUBMIT - BUTTON -->
                   <div class="btn-wrapper">
-                    <!-- <input id="btnSubmit" type="submit" name="submit" value="Send prisforespørsel" onclick="submitInfo()" /> -->
                     <a id="btnSubmit" href="#" name="submit" class="button" onclick="submitInfo()">Send prisforespørsel</a>
+                    <p id= 'feedback' hidden> <br>Din forespørsel er sendt, takk for din interesse!<br> </p>
                   </div>
                 </form>
               </div>
