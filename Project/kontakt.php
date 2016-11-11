@@ -185,6 +185,6 @@ PURPOSE: provide a channel of contact between potential customers and Da Carlo
 
     <!-- Page specific scripts -->
     <script src="js/menu-panel.js"></script>
-    <script src="submitInfo.js"></script>
+    <script src="js/submitInfo.js"></script>
   </body>
 </html>
