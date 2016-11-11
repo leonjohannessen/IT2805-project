@@ -48,9 +48,6 @@ p#download {
   width:50%;
   margin: 0;
 }
-a#buttonDownload {
-  float:right
-}
 
 a.button svg {
   fill: #099;
@@ -154,5 +151,8 @@ ul.tabPanel li a:focus::after {
   }
   .lastRow {
     margin-bottom: 4rem;
+  }
+  a#buttonDownload {
+    float:right
   }
 }

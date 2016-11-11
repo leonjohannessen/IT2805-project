@@ -56,14 +56,12 @@ PURPOSE: provide a channel of contact between potential customers and Da Carlo
             <h2>Kontakt</h2>
 
               <p id="introtext">
-                Ikke nøl med å ta kontakt for en uforpliktende samtale der vi ser
-                om vi kan imøtekomme dine behov og preferanser. Vårt mål er å
-                gjøre din sammenkomst til en minneverdig og genuin smaksopplevelse
-                med en latinsk signatur! Trenger du en dyktig og erfaren kokk med
-                gode referanser til firmaets kantine, ta kontakt.
+                Ikke nøl med å ta kontakt for en uforpliktende samtale der vi ser om vi kan imøtekomme dine behov og preferanser.
+                Vårt mål er å gjøre din sammenkomst til en minneverdig og genuin smaksopplevelse med en latinsk signatur.
+                Trenger du en dyktig og erfaren kokk med gode referanser til firmaets kantine, ta kontakt!
               </p>
               <div class="right">
-                <p class="phone">+47 428 83 247</p>
+                <p class="phone">+47 472 84 866</p>
                 <p class="mailto">
                   <a href="mailto:juanpequeno@gmail.com">juanpequeno@gmail.com</a>
                 </p>

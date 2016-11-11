@@ -84,10 +84,8 @@ PURPOSE: give a general introduction of the diffrent services da carlo provides
               <h3>Catering</h3>
               <p>
                 Vårt varemerke er personlig service og individuell tilpasning.
-                Kokkene som gjør avtale med deg, er også de som lager maten og
-                følger den helt frem til lokalet der maten presenteres for gjestene.
-                På denne måten sikrer vi at dine ønsker og preferanser ivaretas på
-                en god måte.
+                Kokkene som gjør avtale med deg, er også de som gjør innkjøp av råvarene, lager maten og følger den helt frem til lokalet der maten presenteres for gjestene.
+                På denne måten sikrer vi at dine ønsker og preferanser ivaretas på en god måte.
               </p>
               <p>
                 Vi bruker kun råvarer av topp kvalitet og tilbereder
@@ -110,8 +108,7 @@ PURPOSE: give a general introduction of the diffrent services da carlo provides
                 et konsept som kan imøtekomme akkurat deres ønsker og preferanser.
               </p>
               <p>
-                Ta kontakt for nærmere informasjon. Vi er en samarbeidspartner
-                du kan stole på.
+                Ta kontakt for nærmere informasjon. Vi er en samarbeidspartner du kan stole på!
               </p>
               <a href="kantine.php" class="button">Se vår kantinemeny</a>
             </div>
