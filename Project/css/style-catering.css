@@ -153,6 +153,7 @@ ul.tabPanel li a:focus::after {
     margin-bottom: 4rem;
   }
   a#buttonDownload {
-    float:right
+    float: right;
+    color: red;
   }
 }
