@@ -296,7 +296,6 @@ body > header > h1 {
 }
 
 /* Styling of the linked text in the main navigation */
-/* TO DO X: burde alle disse stylene (ned til "toggler") puttes utenfor mobil css? Ble ganske forvirrende ?*/
 #main-nav a {
   display: inline-block;
   text-transform: uppercase;
