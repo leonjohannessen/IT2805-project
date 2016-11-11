@@ -130,8 +130,8 @@ PURPOSE: provide a channel of contact between potential customers and Da Carlo
 
                   <!-- SUBMIT - BUTTON -->
                   <div class="btn-wrapper">
-                    <!-- <input id="btnSubmit" type="submit" name="submit" value="Send prisforespørsel" onclick="submitInfo()" /> -->
                     <a id="btnSubmit" href="#" name="submit" class="button" onclick="submitInfo()">Send prisforespørsel</a>
+                    <p id= 'feedback' hidden> <br>Din forespørsel er sendt, takk for din interesse!<br> </p>
                   </div>
                 </form>
               </div>
@@ -185,17 +185,6 @@ PURPOSE: provide a channel of contact between potential customers and Da Carlo
 
     <!-- Page specific scripts -->
     <script src="js/menu-panel.js"></script>
-    <script>
-      var sendForm = document.getElementById('btnSubmit');
-      // document.getElementById("btnSubmit").addEventListener("click", submitInfo());
-      function submitInfo(){
-        event.preventDefault();
-        //sendForm.innerHTML = "Info sendt";
-
-        const mainNav = document.getElementById('main-nav');
-        mainNav.classList.add('kristine-tar-denne-bort');
-    }
-
-    </script>
+    <script src="submitInfo.js"></script>
   </body>
 </html>
