@@ -93,18 +93,18 @@ PURPOSE: provide a channel of contact between potential customers and Da Carlo
                 <h3>Om arrangementet</h3>
                 <p>Da Carlo kan levere cateringtjenester til alle typer arrangementer. </p>
 
-                <form>
+                <form name="catering" onsubmit="return submitInfoCatering(event)">
                   <input id="date" class="right" type="date" name="dato" placeholder="Dato" required/>
                   <label for="dato">Dato</label>
 
-                  <input id="place" type="text" name="adresse" placeholder="Adresse" required/>
+                  <input id="place" type="text" name="adresse" placeholder="Adresse" />
                   <label for="adresse">Adresse</label>
 
                   <input id="guestNo" type="text" name="antallGjester" placeholder="Antall gjester" required/>
                   <label for="antallGjester">Antall Gjester</label>
 
                   <div class="styledSelect">
-                    <select  id="meny" name="meny" value="Ønsket meny" >
+                    <select  id="meny" name="meny" value="Ønsket meny" required>
                       <!--Drop down menu-->
                       <option value="" disabled selected>Velg din meny</option>
                       <option value="meny1">Meny 1</option>
@@ -123,14 +123,13 @@ PURPOSE: provide a channel of contact between potential customers and Da Carlo
                   <input type="tel" id="number" name="telefonnummer" placeholder="Ditt telefonnummer" required/>
                   <label for="number">Ditt telefonnummer</label>
 
-                  <input type="email" id="email" name="epost" placeholder="Din e-postadresse" />
+                  <input type="email" id="email" name="epost" placeholder="Din e-postadresse" required/>
                   <label for="email">Din e-postadresse</label>
 
-                  <!-- SUBMIT - BUTTON -->
-                  <div class="btn-wrapper">
-                    <a id="btnSubmit" href="#" name="submit" class="button" onclick="submitInfo()">Send prisforespørsel</a>
-                    <p id= 'feedback' hidden> <br>Din forespørsel er sendt, takk for din interesse!<br> </p>
-                  </div>
+                  <!-- SUBMIT Catering form - BUTTON -->
+                  <input type= "submit" name="submit" id="btnSubmitCatering" class="submitButtons" value ="Send prisforespørsel" />
+                  <p id = 'feedbackCatering' hidden> <br>Din forespørsel er sendt, takk for din interesse!<br> </p>
+
                 </form>
               </div>
 
@@ -138,7 +137,7 @@ PURPOSE: provide a channel of contact between potential customers and Da Carlo
               <div id="canteen" class="tabContent">
                 <h3>Om bedriften</h3>
                 <p>Da Carlo har mange års erfaring med kantinedrift. Fortell oss litt mer om din bedrift og hva du ønsker hjelp til.</p>
-                <form>
+                <form name="canteen" onsubmit="return submitInfoCanteen(event)">
                   <input id="companyName" type="text" name="bedriftsNavn" placeholder="Bedriftens navn" required/>
                   <label for="bedriftsNavn">Bedriftens navn</label>
 
@@ -162,11 +161,9 @@ PURPOSE: provide a channel of contact between potential customers and Da Carlo
                   <input type="email" id="email" name="epost" placeholder="Din e-postadresse" required/>
                   <label for="email">Din e-postadresse</label>
 
-                  <!-- SUBMIT - BUTTON -->
-                  <div class="btn-wrapper">
-                    <a id="btnSubmit" href="#" name="submit" class="button" onclick="submitInfo()">Send prisforespørsel</a>
-                    <p id= 'feedback' hidden> <br>Din forespørsel er sendt, takk for din interesse!<br> </p>
-                  </div>
+                  <!-- SUBMIT Canteen form - BUTTON -->
+                  <input type= "submit" name="submit" id="btnSubmitCanteen" class="submitButtons" value ="Send prisforespørsel" />
+                  <p id = 'feedbackCanteen' hidden> <br>Din forespørsel er sendt, takk for din interesse!<br> </p>
                 </form>
               </div>
 
@@ -184,5 +181,28 @@ PURPOSE: provide a channel of contact between potential customers and Da Carlo
     <!-- Page specific scripts -->
     <script src="js/menu-panel.js"></script>
     <script src="js/submitInfo.js"></script>
+    <script>
+
+    // Onclick function for submit-button: Gives the user feedback on that the form has been sent
+      function submitInfoCatering(event){
+        //prevents the view to jump up
+        event.preventDefault();
+        //Displays a feedback message
+        document.getElementById('feedbackCatering').style.visibility = "display";
+        document.getElementById('feedbackCatering').style.display = "block";
+        document.getElementById('btnSubmitCatering').style.display = "none";
+        return false;
+      }
+
+      function submitInfoCanteen(event){
+        event.preventDefault();
+        //Displays a feedback message
+        document.getElementById('feedbackCanteen').style.visibility = "display";
+        document.getElementById('feedbackCanteen').style.display = "block";
+        document.getElementById('btnSubmitCanteen').style.display = "none";
+        return false;
+      }
+
+    </script>
   </body>
 </html>

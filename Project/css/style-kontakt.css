@@ -86,17 +86,6 @@ a.button::before {
   content: none;
 }
 
-/*If the option is active*/
-/*.box a.isActive, .box a:active{
-  background: white;
-
-}
-/*
-Ikke fokus
-.box a.button:focus {
-  background: #3cc;
-
-}*/
 
 .box a.button.isActive{
     background: #3cc;
@@ -184,11 +173,28 @@ textarea {
   overflow: auto;
 }
 
-#btnSubmit {
-  margin: 4rem auto;
-  font-size: 20;
-  padding: 0;
+
+/*Submit form buttons*/
+#btnSubmitCatering:hover, #btnSubmitCanteen:hover{
+  background: #3cc;
+  color: white;
 }
+
+#btnSubmitCatering, #btnSubmitCanteen {
+  position: relative;
+  margin: 2rem auto;
+  display: inline-block;
+  height: 4rem;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  line-height: 4rem;
+  font-size: 1rem;
+  color: #2d2b2b;
+  background: white;
+  transition: .1s background;
+  }
+
 
 /*place kontakt and catering buttons side by side for screens larger than 598px*/
 @media screen and (min-width: 598px){
