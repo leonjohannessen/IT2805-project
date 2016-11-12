@@ -252,9 +252,8 @@ textarea {
     float: right;
   }
 
-  /*submit button centering
-  TODO: fix centering. Make sure we don't want a <button> form element instead*/
-  #btnSubmit {
-    margin: 4rem 160px;
+  /*submit button centering */
+  #btnSubmitCatering, #btnSubmitCanteen{
+    margin-left: 8rem;
   }
 }
