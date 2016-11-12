@@ -35,6 +35,11 @@ PURPOSE: Information about the menus provided to catering service is provided
 
     </header>
 
+    <!-- background image -->
+    <div id="background-image">
+      <img src="img/header-images/header-catering.jpg" alt="catering">
+    </div>
+
     <main>
       <section class="intro">
         <div class="container">

@@ -55,6 +55,11 @@ PURPOSE: give a general introduction of the diffrent services da carlo provides
 
     </header>
 
+    <!-- background image -->
+    <div id="background-image">
+      <img src="img/header-carousel/header-paella.jpg" alt="Paella">
+    </div>
+
     <!-- page content -->
     <main>
       <section class="intro">

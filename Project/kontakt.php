@@ -37,6 +37,11 @@ PURPOSE: provide a channel of contact between potential customers and Da Carlo
 
     </header>
 
+    <!-- background image -->
+    <div id="background-image">
+      <img src="img/header-images/header-kontakt.jpg" alt="kontakt oss">
+    </div>
+
     <!-- page content -->
     <main>
       <section class="intro">

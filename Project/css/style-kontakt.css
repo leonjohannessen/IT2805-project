@@ -4,11 +4,6 @@
  *
  * ========================================================================== */
 
-/* Background image */
-body {
-  background-image: url('../img/header-images/header-kontakt.jpg');
-}
-
 /*general styles*/
 .left {
   float:left;

@@ -36,6 +36,11 @@ PURPOSE: provide information about the possibility to order da carlo as a cantee
 
     </header>
 
+    <!-- background image -->
+    <div id="background-image">
+      <img src="img/header-images/header-kantine.jpg" alt="kantine">
+    </div>
+
     <!-- page content -->
     <main>
       <section class="intro">

@@ -4,11 +4,6 @@
  *
  * ========================================================================== */
 
-/* Background image */
-body {
-  background-image: url('../img/header-images/header-catering.jpg');
-}
-
 /*Styling h3 and all the text inside menu-class */
 h3, .menu {
   text-align: center;

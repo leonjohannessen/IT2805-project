@@ -37,6 +37,11 @@ PURPOSE: provide information about Da Carlo, their chefs and waitors
 
     </header>
 
+    <!-- background image -->
+    <div id="background-image">
+      <img src="img/header-images/header-om.jpg" alt="om oss">
+    </div>
+
     <!-- page content -->
     <main>
       <section class="intro">

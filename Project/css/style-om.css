@@ -4,11 +4,6 @@
  *
  * ========================================================================== */
 
-/* Background image */
-body {
-  background-image: url('../img/header-images/header-om.jpg');
-}
-
 .cta {
   margin-top: 12rem;
 }
