@@ -53,6 +53,20 @@ figure {
   margin: 0;
 }
 
+dl {
+    float: left;
+}
+
+dt {
+    width: 40%;
+    float: left;
+}
+dd {
+    width: 60%;
+    float: left;
+    margin: 0;
+}
+
 #sitat{
   max-width: 25%;
   float: right;
