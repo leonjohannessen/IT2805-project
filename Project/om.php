@@ -111,7 +111,7 @@ PURPOSE: provide information about Da Carlo, their chefs and waitors
               </p>
                 <div>
                 <blockquote>
-                  <p>Med min kunnskap og erfaringer vil jeg bidra til at Da Carlo leverer mat av ypperste klasse </p>
+                  <p>Med min kunnskap og erfaringer vil jeg bidra til at Da Carlo leverer mat av ypperste klasse!</p>
                 </blockquote>
               </div>
             </div>

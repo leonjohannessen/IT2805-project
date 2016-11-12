@@ -66,7 +66,7 @@ PURPOSE: give a general introduction of the diffrent services da carlo provides
         <div class="container">
           <h2>Velkommen</h2>
           <p>
-            Bak Da Carlo står Juan Carlos, Cesare og Roberto, tre erfarne kokker
+            Bak Da Carlo Catering står Juan Carlos, Cesare og Roberto, tre erfarne kokker
             som tilsammen representerer matkultur fra det italienske, det spanske
             og det latinamerikanske kjøkkenet. Dette betyr at vi kan tilby rike
             smaksopplevelser tilberedt med de beste råvarer og med latinsk temperament.
@@ -100,7 +100,7 @@ PURPOSE: give a general introduction of the diffrent services da carlo provides
             <div class="text-wrapper">
               <h3>Kantine</h3>
               <p>
-                Hver bedrift har sine ulike behov og vi i Da Carlo er opptatt av
+                Hver bedrift har sine ulike behov. Vi i Da Carlo er opptatt av
                 et aktivt samarbeid for å finne frem til gode løsninger og skreddersy
                 et konsept som kan imøtekomme akkurat deres ønsker og preferanser.
               </p>

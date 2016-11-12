@@ -48,13 +48,13 @@ PURPOSE: provide information about the possibility to order da carlo as a cantee
           <div id="text-wrapper">
             <h2>Kantine</h2>
             <p id= "introtext">Hva har du lyst på til lunsj idag? Våre kokker har lang erfaring innen kantinedrift, matservering til møter og matservering ved ulike arrangement.
-              Vår målsetning er å servere variert, sunn og delikat mat basert på gode råvarer.
+              Vår målsetting er å servere variert, sunn og delikat mat basert på gode råvarer.
               Vi ønsker i tillegg at den latinske matkulturen vi bærer med oss, kan sette preg på maten som serveres. Vi har evnen til å improvisere og kan tilby et vidt spekter av retter.
             </p>
             <p>
               Variasjon i mattilbudet preger også våre planlagte konsepter.
               I kantina skal gjestene innta et godt måltid og oppleve at vi tilstreber å dekke flest mulig smaksretninger og behov.
-              Gode råvarer, fokus på ernæring og respekt for årstidens variasjon er i den sammenheng viktig. De bærende elementene i kantinedriften kan feks være salatbuffet, varmmat, brødbuffet, påsmurt mat og i tillegg temadager.
+              Gode råvarer, fokus på ernæring og respekt for årstidens variasjon er i den sammenheng viktig. De bærende elementene i kantinedriften kan for eksempel være salatbuffet, varmmat, brødbuffet, påsmurt mat og i tillegg temadager.
             </p>
             <p>
               Hver bedrift har sine ulike behov, og vi i Da Carlo er opptatt av et aktivt samarbeid for å finne frem til gode løsninger og skreddersy et konsept som kan imøtekomme akkurat deres ønsker og preferanser. Ta kontakt for nærmere informasjon. Vi er en samarbeidspartner du kan stole på.
