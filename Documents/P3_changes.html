@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>P3 Changes</title>
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <img id="header-background-img" src="img/chili.jpg" alt="Chili and schrimp stew">
+      <h1>Webtek: P3 Changes</h1>
+      <h2>Aurora, Linn, Kristine, Maia &amp; Leon</h2>
+      <time datetime="2016-09-23 23:59">September 23th, 2016</time>
+    </header>
+    <main>
+      <section id="client">
+        <h2>Administrative Details</h2>
+        <div>
+          <p>
+			<strong>Client Name: </strong>Da Carlo Catering <br>
+			<strong>Website Name:</strong> Da Carlo <br>
+			<strong>Domain Name:</strong> dacarlo.no <br>
+			<strong>Contact person: </strong>Lene Harbo <br>
+		  </p>
+    </section>
+      <section id="brand">
+        <h2>Arbeidsfordeling</h2>
+        <div>
+          <h3>Linn</h3>
+          <p>Linn har hatt jevnlig kontakt med klient Lene Harbo for å få tak i tekst og bilder til alle sidene. Linn har skrevet html og css til catering.html og footer.html. Hun har også skrevet JavaScript funksjonen “tabbed panels” slik at en kan klikke gjennom en meny mens ikke relevant innhold skjules, denne brukes på catering.html og contact.html  </p>
+          <h3>Kristine</h3>
+          <p>Kristine har skrevet index.html, kantine.html i tillegg til å ha jobbet med formsene under kontakt.html. Her har Kristine også endret på CSS til spesifikke elementer som Submit-knappene på kontakt.html. Kristine har også skrevet JavaScript til Submit-knappene slik at det skjer en event når man submitter, men det er viktig å legge til at informasjonen til formsene ikke blir sendt noen steder i denne versjonen, ettersom dette, ifg undass, var utenfor scopet til dette faget.</p>
+          <h3>Leon</h3>
+          <p>Leon har sammen med Aurora skrevet template.html og style.css, som inneholder alle felles stiler og html-struktur, har blitt brukt på tvers av alle de forskjellige sidene. Leon har også skrevet css for navigasjonen, og skrevet javascriptet som gjør denne sticky. I tillegg har Leon skrevet om deler av style.css, slik at det ble ‘mobile first’, tilpasset layouten til å passe mobil, og skrevet et kort javascript for å toggle av og på navigasjonen på mobil. Leon har også trukket ut det som er felles for de forskjellige sidene til “parts”, og inkludert disse vha. PHP på serversiden.</p>
+          <h3>Aurora</h3>
+          <p>Aurora har sammen med Leon skrevet template.html og style.css, som inneholder alle felles stiler og html-struktur, har blitt brukt på tvers av alle de forskjellige sidene. Aurora har skrevet JavaScript og tilhørende html og css til bildekarusellen på Hjem-siden. </p>
+          <h3>Maia</h3>
+          <p>Maia har skrevet html på Om.html og det meste av kontakt.html, i tillegg til kontakt-style.css, som inneholder all spesifikk styling til kontaktskjemaet. Hun har også endret tabbed-panel.js til også å kunne fungere for tabbed panels i kontaktsiden, slik at man kan velge mellom kontaktskjema for catering- eller kantinetjenester. </p>
+        </div>
+      </section>
+
+      <section>
+
+  		  <h2>Filer &amp; endringer </h2>
+  		      <table>
+              <tr>
+                <th>Filename</th>
+                <th>Description</th>
+                <th>Changes</th>
+  			        <th>Who did it</th>
+              </tr>
+              <tr>
+                <td>template.html</td>
+                <td>A template for the html documents</td>
+  			        <td>Template html ble kodet opp, sammen med style.css, slik at den tok høyde for de fleste layoutposisjonene som ville være nødvendig for å bygge det som er generelt for alle de andre sidene.</td>
+                <td>Aurora and Leon</td>
+              </tr>
+              <tr>
+                <td>style.css</td>
+                <td>Styling for all the pages</td>
+  			        <td>Etter tilbakemelding fra kunden ble mønsteret endret til et mer latin-inspirert mønster.</td>
+                <td>Aurora and Leon lagte strukturen for hele cssen som en template å jobbe ut fra. Alle la inn relevant kode underveis. </td>
+              </tr>
+  			      <tr>
+                <td>index.html</td>
+                <td>The homepage. Info about catering, canteen and who they are</td>
+                <td>Siden er kodet i stor grad utifra slik designet på mockupen ser er. Overskriften på to av boksene har blitt endret. “Catering - meny” er endret til “Catering” og “Kantinedrift” er endret til “Kantine”. Dette ble gjort for å gjøre koblingen mellom disse infoboksene og undersidene tydelige. </td>
+                <td>Kristine</td>
+              </tr>
+  			      <tr>
+                <td>catering.html</td>
+                <td>Short text about what catering services they provide </br> The menus</td>
+                <td>Klienten ønsket to forskjellige typer menyer, en for tapas og en for treretters. Det er laget to deler, en del med 3 forskjellige tapasmenyer og en del med 3 forskjellige treretters. Tapasmenyen er ny og inkluderer spesifikke allergener. Teksten som introduserer hver meny er tatt bort fordi kunden ønsket dette. Det er også lagt til to sitater, basert på kundes ønsker. </td>
+                <td>Linn</td>
+              </tr>
+  			      <tr>
+                <td>kantine.html</td>
+                <td>Short texts about how they can provide canteen services </br>References from earlier canteen services</td>
+                <td>Har byttet ut bilder med tilsendte bilder fra Da Carlo. Har fjernet listen som er i wireframes’en ettersom teksten vi fikk ikke inneholdt en liste. I wireframesen er det også to bokser som handler om kantinedrift og en som er et quote, men teksten vi mottok fra klienten var to quotes, så jeg fjernet den minste boksen</td>
+                <td>Kristine</td>
+              </tr>
+  			      <tr>
+                <td>om.html</td>
+                <td>Intro about the business </br>Information about the chefs, including picture and quote</td>
+                <td>Her ble det lagt til enda en person, med bilde og tekst, basert på ønsker fra kunde. Denne personen fikk annen farge på sin boks, da hun innehar en annen rolle enn de tre andre i Da Carlo-teamet. </td>
+                <td>Maia</td>
+              </tr>
+              <tr>
+                <td>kontakt.html</td>
+                <td>Contact information</br>Forms for contacting about canteen and catering</td>
+                <td>I de to ulike skjemaene “kantinedrift” og “cateringtjenester” har vi lagt inn form validation for at kundene skal bli guidet til å levere nok informasjon slik at Da Carlo kan gi en prisantydning. Det er ikke alle feltene som er required, men kun de som er av betydning for prisgivning og at Da Carlo skal vite hvem som har tatt kontakt.</td>
+                <td>Maia og Kristine</td>
+              </tr>
+              <tr>
+                <td>navbar.html <br> (navbar.php)</td>
+                <td>The navigation menu </br>It is on its own html so that it easily can be included in all the sites</td>
+                <td>Fila inkluderer også logoen. Hver side setter en global variabel som bestemmer hvilket menypunkt som er aktivt. Koden kunne ikke inkludere hele header-taggen siden slideshowet-på forsiden må ligge inni header. For å gjøre det enda tydeligere hvilken side som er aktiv har teksten fått samme farge som streken som dukker opp under teksten. </td>
+                <td>Leon</td>
+              </tr>
+              <tr>
+                <td>footer.html <br> (footer.php)</td>
+                <td>The footer</br>It is on its own html so that it easily can be included in all the sites</td>
+                <td>Siden navigasjonen er sticky kom vi fram til at det ikke var behov for å gjenta den i footeren.</td>
+                <td>Linn skrev html og css til footeren slik at den passer både desktop og mobil, og Leon separerte ut koden som en inkluderbar php-fil. </td>
+              </tr>
+              <tr>
+                <td>cta.php</td>
+                <td>Inkluderer call to action-modulen på fire av sidene</td>
+                <td>Siden call-to-action-innholdet ble brukt på fire sider (med litt varierende tekst) ble dette trukket ut som en egen del.</td>
+                <td>Leon</td>
+              </tr>
+              <tr>
+                <td>style-kontakt.css</td>
+                <td>Styling for kontakt-siden</td>
+                <td>For å skille tabbene “Cateringtjenester” og “Kantinedrift” endret vi tabbene slik at ikke lenger hvit representerte aktiv (slik det var i wireframen), men hvit for passiv og turkis for aktiv, for å korrespondere bedre med andre knapper på siden, og gjøre det klarere for brukere hvilken tab som var valgt.</td>
+                <td>Maia har skrevet css. Kristine har lagt til css for submit-buttons</td>
+              </tr>
+              <tr>
+                <td>sticky_navbar.js</td>
+                <td>Sticky header when scrolling</td>
+                <td>Koden tar høyde for at brukeren kan bytte mellom mobilvisning og pc-visning uten å reloade nettleseren.</td>
+                <td>Leon</td>
+              </tr>
+              <tr>
+                <td>mobile-menu-<br>toggler.js</td>
+                <td>Toggler menyen i mobilvisningen</td>
+                <td>Vi hadde behov for en annen visning av navigasjonen i mobilvisnignen, og trengte å kunne skru av og på en fullskjermvisning av menyen</td>
+                <td>Leon</td>
+              </tr>
+              <tr>
+                <td>submitInfo.js</td>
+                <td>Contact form with validation on input for both canteen and catering</td>
+                <td>Denne funksjonen gjør at brukeren får en feedback om at informasjonen er sendt inn til Da Carlo. Informajonen blir derimot ikke håndtert slik formet er kodet i dag da dette er utenfor scopet i dette faget.</td>
+                <td>Kristine</td>
+              </tr>
+              <tr>
+                <td>menu_panel.js</td>
+                <td>A tabbed panel for different catering menus</td>
+                <td>“Tabbed panel” ble skrevet generelt fordi vi så at vi kunne bruke det på kontakt.html-siden også </td>
+                <td>Linn skrev filen opprinnelig og Maia endret den til å også fungere for tabbed panel på Kontakt-siden.</td>
+              </tr>
+              <tr>
+                <td>header_image_<br>carousel.js</td>
+                <td>A carousel for the homepage showing background images in random order</td>
+                <td>Karusellen viser ikke bilder i tilfeldig rekkefølge, men heller i en bestemt rekkefølge basert på hvordan de ligger i HTML-filen “index.html”</td>
+                <td>Aurora skrev JavaScript og tilhørende CSS og HTML. Leon har gått over koden, og endret den litt slik at den bruker css-klasser og fungerer på mobil.</td>
+              </tr>
+              <tr>
+                <td>Final control</td>
+                <td>Checking the code</td>
+                <td></td>
+                <td>Leon har gått over prosjektet og tatt bort overflødige filer, rettet opp i småfeil i presentasjon på mobil, ryddet opp i formatering av kode, samt komprimert bilder. Alle har gått over prosjektet til slutt, og rettet opp i skrivefeil etc.</td>
+              </tr>
+            </table>
+  		</section>
+
+      <section id="audience" class="alt">
+        <h2>Modularitet</h2>
+        <div>
+          <p>
+            Vi har brukt PHP til å inkludere felleselementer som gjentas på tvers av sidene. HTML for disse elementene er trukket ut, og lagt i egne filer i parts-mappen. Noen av disse må endres litt fra side til side, som for eksempel i navbar.php der hvilket menypunkt som er aktivt forandrer seg fra side til side. Dette er løst ved at hver enkelt side setter en global variabel, som brukes av den enkelte delen. Vi valgte å bruke PHP på serversiden til å implementere modularitet, slik at siden ikke er avhengig av JavaScript for å presentere grunnleggende innhold som navigasjon om kontaktinformasjon. Implementasjonen er gjort av Leon.
+          </p>
+          <p>
+            Vi har også forsøkt å tenke modulært i design av html og css, i den forstand at vi har bygd opp en fast struktur på html-elementene, og ved å bruke flere generelle klasser sammen på enkeltelementer for å gi det resultatet vi vil ha. På denne måten kan vi ha en felles klasse for mørke bokser, mens en annen klasse for posisjonen til boksen. Hver enkelt side har spesifikke stiler som ikke er relevante for de andre sidene i egne stilark.
+          </p>
+
+        </div>
+      </section>
+      <section id="content">
+        <h2>Andre endringer &amp; Erkjennelser</h2>
+        <div>
+          <p>
+            Vi har valgt å ikke inkludere noen video eller annet media-innhold på siden vår, da dette ikke var hensiktsmessig eller noe ønske fra kunden. Med unntak av bildene i bildekarusellen og noen av bakgrunnsbildene, som er gratis stockphotos, er alt innhold på siden generert for og av kunden. Det virket dermed for oss som heller noe forringende enn forbedrende å inkludere en video som ikke hadde noe med Da Carlo Catering å gjøre, og som potensielt kunne trekke brukers oppmerksomhet bort fra annet innhold på siden.
+          </p>
+          <p>
+            Vi har ikke, som vi egentlig sa vi skulle, brukt JavaScript for å validere forms, men det har blitt brukt noe JS for å gi brukeren respons på at prisforespørsel har blitt sendt, jf. filen submitInfo.js. Vi har heller ikke ordet det slik at informasjonen skrevet inn i formet forsvinner når man har send det. Dette er noe vi i etterkant ser at hadde vært hensiktsmessig for brukervennligheten. Vi har heller ikke lagt inn noen begrensnigner på hvilken dato man kan velge i formet, her burde det i hvert fall ikke vært mulig å velge datoer før “i dag”.
+          </p>
+      </section>
+      <section>
+          <h3>Måloppnåelse</h3>
+          <p>
+            Vi har her vurdert vår måloppnåelse for målene vi satt for innholdet på siden:
+          </p>
+          <table>
+            <tr>
+              <th>Mål - The website must:</th>
+              <th>Evaluering</th>
+            </tr>
+            <tr>
+              <td>Provide clear and easily accessible information about Da Carlo as a company, the services they offer and how to contact them</td>
+              <td>Vi mener vi har oppnådd dette målet på en god måte. Alle brukere som testet siden uttrykte et godt inntrykk av Da Carlo og syntes siden var enkel å navigere.</td>
+            </tr>
+            <tr>
+              <td>Be written in Norwegian</td>
+              <td>All informasjon som ligger på nettstedet er skrevet på norsk.</td>
+            </tr>
+            <tr>
+              <td>Make use of the original logo</td>
+              <td>Den originale logoen finnes både i header-elementet og footer-elementet på nettsiden. </td>
+            </tr>
+
+            <tr>
+              <th>Mål - The website should:</th>
+              <th>Evaluering</th>
+            </tr>
+            <tr>
+              <td>Assure potential customers that Da Carlo delivers not only great food, but full wow-factor food experiences</td>
+              <td>Vi mener vi oppnådde dette målet både med spesifikt tekstinnhold og ved å bruke gode bilder og et helhetlig estetisk uttrykk.</td>
+            </tr>
+            <tr>
+              <td>Be visually appealing to a broad range of users</td>
+              <td>Vi mener at dette målet er nådd da alle brukere som testet siden, fra 23 år til 47 år, både kvinner og menn, likte det estetiske uttrykket til nettsiden. </td>
+            </tr>
+            <tr>
+              <td>Communicate Da Carlos personality and core values</td>
+              <td>Ved å inkludere en side om de som driver Da Carlo mener vi at vi har nådd målet ved å skape en nærhet til teamet. </td>
+            </tr>
+
+            <tr>
+              <th>Mål - The website could:</th>
+              <th>Evaluering</th>
+            </tr>
+            <tr>
+              <td>Offer an effective channel of communication between customers and Da Carlo, i.e a contact form</td>
+              <td>Ved å legge inn kontaktskjemaet mener vi at vi har nådd dette målet. Også ved å inkludere CTA på alle sidene. Det var allikevel ikke godt nok, da brukerene slet med å finne kontaktskjemaet. </td>
+            </tr>
+            <tr>
+              <td>Be available in English</td>
+              <td>Dette målet ble ikke nådd. </td>
+            </tr>
+
+          </table>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>
+        Aurora, Kristine, Linn, Maia and Leon.
+      </p>
+    </footer>
+  </body>
+</html>

@@ -53,6 +53,17 @@ figure {
   margin: 0;
 }
 
+#sitat{
+  max-width: 25%;
+  float: right;
+  margin-top: -30%;
+  margin-left: 10%;
+}
+
+.testpersons{
+  max-width: 60%;
+}
+
 /* position the figure in full width */
 figure.full {
   position: relative;
@@ -134,7 +145,7 @@ body {
   color: #395858;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
   font-family: 'Montserrat', sans-serif;
   color: #e1223d;
 }
@@ -159,6 +170,10 @@ h3 {
 
 h4 {
   color: #395858;
+}
+
+h5{
+  font-size: 2rem;
 }
 
 table {
@@ -224,6 +239,14 @@ body > header time {
   #header-background-img {
     width: auto;
     height: 100%;
+  }
+
+  #sitat {
+    display: none;
+  }
+
+  .testpersons {
+    max-width: 100%;
   }
 
   section > h2,
