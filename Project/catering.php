@@ -99,11 +99,11 @@ PURPOSE: Information about the menus provided to catering service is provided
             <div id="meny2" class="tabContent">
               <h4> Forrett </h4>
               <p> Carpaccio </p>
-              <p class="menuNorskForklaring"> Ytrefilet servert med parmasan, ruccolasalat, olivenolje og sitron</p>
+              <p class="menuNorskForklaring"> Ytrefilet servert med parmesan, ruccolasalat, olivenolje og sitron</p>
               <p><small> Inneholder melk og laktose</small></p>
 
               <h4> Hovedrett </h4>
-              <p> Baccalao en salsa verde y papas panaderas </p>
+              <p> Bacalao en salsa verde y papas panaderas </p>
               <p class="menuNorskForklaring"> Baccalao med grønn saus og poteter stekt med løk, hvitløk, olivenolje og hvitvin </p>
               <p><small> Inneholder fisk</small></p>
 
@@ -125,7 +125,7 @@ PURPOSE: Information about the menus provided to catering service is provided
 
               <h4> Hovedrett </h4>
               <p> Filete de ternera con salsa vino de porto </p>
-              <p class="menuNorskForklaring"> Kalvefilet med portvinsaus, glaserte grønnsaker og ovnsstekte poteter </p>
+              <p class="menuNorskForklaring"> Kalvefilet med portvinsaus, glaserte grønnsaker og ovnstekte poteter </p>
 
               <h4> Dessert </h4>
               <h5> Velg blant en av disse: </h5>

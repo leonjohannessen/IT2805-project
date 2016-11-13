@@ -61,7 +61,7 @@ PURPOSE: provide information about Da Carlo, their chefs and waitors
           <div class="box left">
             <div class="text-wrapper">
               <h3>Juan Carlos</h3>
-              <p> Fra min oppvekst ved Chiles langstrakte kyst har jeg lært meg å verdsette havets mangfoldige variasjon av delikatesser. Da jeg var liten opplevde jeg hvordan min mor tryllet frem de herligste smaker fra enkle basisråvarer i det chilenske kjøkkenet.
+              <p> Fra min oppvekst ved Chiles langstrakte kyst har jeg lært meg å verdsette havets mangfoldige variasjon av delikatesser. Da jeg var liten, opplevde jeg hvordan min mor tryllet frem de herligste smaker fra enkle basisråvarer i det chilenske kjøkkenet.
                   Dette har jeg brakt med meg til Norge, hvor jeg har jobbet mange år i restaurantbransjen og nå de siste 10 årene med drift av Nets, Teller og Visa sine kantiner i Oslo.
               </p>
               <div>
@@ -83,7 +83,7 @@ PURPOSE: provide information about Da Carlo, their chefs and waitors
             <div class="text-wrapper">
               <h3>Cesare</h3>
               <p>
-                Jeg vokste opp i en liten landsby ved Toscanas kyst med foreldre som opprinnelig kommer fra Sardinia. På den måten har jeg tilegnet meg matkultur fra to viktige tradisjoner innen det italienske kjøkkenet. I flere generasjoner har familien min drevet med jordbruk, husdyrhold og produksjon av meiriprodukter.
+                Jeg vokste opp i en liten landsby ved Toscanas kyst med foreldre som opprinnelig kommer fra Sardinia. På den måten har jeg tilegnet meg matkultur fra to viktige tradisjoner innen det italienske kjøkkenet. I flere generasjoner har familien min drevet med jordbruk, husdyrhold og produksjon av meieriprodukter.
                 Fra disse erfaringene kommer kunnskapen jeg har om gode råvarer og foredlingen av disse.
                 Etter at jeg kom til Norge i 2002, har jeg i mange år jobbet på kjøkkenet hos San Lorenzo i Vika, en italiensk restaurant og pizzeria der jeg utvidet min kunnskap om tradisjonelle matretter fra flere regioner i Italia.
               </p>
